@@ -91,12 +91,12 @@ body.appear .splash-bg{
 }
 
 /*画面遷移の後現れるコンテンツ設定*/
-#container{
+#whole-wrapper{
 	opacity: 0;/*はじめは透過0に*/
 }
 
 /*bodyにappearクラスがついたら出現*/
-body.appear #container{
+body.appear #whole-wrapper{
 	animation-name:PageAnimeAppear;
 	animation-duration: 1s;
 	animation-delay: .8s;
