@@ -20,7 +20,7 @@
 }
 .header-nav-ul {
     display: flex;
-    margin-left: 90%;
+    /* margin-left: 90%; */
     
 }
 .header-nav-li {

@@ -1,58 +1,16 @@
 body {
     overflow-y: hidden;
 }
-#video{
-    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
-    height: 100vh;/*高さを全画面にあわせる*/
-} 
-
-#video-area{
-    /* position: fixed; */
-    z-index: -1;/*最背面に設定*/
-    top: 0;
-    right:0;
-    left:0;
-    bottom:0;
-    overflow: hidden;
+/* スクロールみー非表示 */
+.scrolldown4 {
+    display: none;
 }
-
-#video {
-    /*天地中央配置*/
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*縦横幅指定*/
-    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-    min-height: 100%;
-    min-width: 100%;
-}
-
-/*見出し設定*/
-h1{
-    /*要素の配置*/
-    position:absolute;
-    /*要素を天地中央寄せ*/
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    /*見た目の調整*/
-    color:#fff;
-    text-shadow: 0 0 15px #666;
-}
-
 /* 線 */
 .liner-wrapper {
     position: absolute;
     width: 100%;
     top: 45%;
 }
-  p {
-    padding: 10px;
-  }
-  
   #liner {
     margin: 70px 20px;
   }
@@ -109,7 +67,7 @@ h1{
     /* color: #d2d2d214; */
     /* position: relative; */
 }
-/* 疑似要素、月 */
+/* 疑似要素(何月) */
 .photo-item-style  {
     position: relative;
     width: auto;
@@ -117,17 +75,17 @@ h1{
 }
 .photo-item-style::before {
     position: absolute;
-    content: attr(data-en);
+    content: attr(data-month);
     top: -10%;
     left: 5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Vibur', cursive;
     font-size: 60px;
     color: rgba(255, 255, 255, 0.615);
     z-index: 10000;
 }
 .photo-item-style::after {
     position: absolute;
-    content: attr(data-af);
+    content: attr(data-text);
     top: 80%;
     left: 0;
     font-family: 'Kaisei Decol', serif;
@@ -140,11 +98,8 @@ h1{
 
 
 /* POSSE１から独立し2の設立へ立ち上がった2期生！！！！ */
-#photoItem1 {
-    margin-left: 0;
-    transform: translateY(40%);
-}
 #photoImg1 {
+    transform: translateY(40%);
     width: auto;
     height: auto;
     margin-left: 0;
@@ -152,16 +107,17 @@ h1{
 }
 
 /* POSSE2爆誕！！！！ */
-#photoItem2 {
-    transform: translateY(-30%);
-}
 #photoImg2 {
+    transform: translateY(-30%);
     width: auto;
     height: auto;
     margin-left: 0;
     font-size: 40px;
 }
-
+/* リアイベで徐々に仲を深めてく!!!! */ 
+#photoImg3  {
+    transform: translateX(-8rem);
+}
 /* 課題サポート会で2.5期生の課題を手助けし、、、 */
 #photoImg3 {
     width: auto;
@@ -170,9 +126,63 @@ h1{
     font-size: 1rem;
 }
 /* 2.5期生一ヶ月の学習の成果を発揮する時！！！ */
+#photoItem4 {
+    transform: translateX(-7rem);
+}
 #photoImg4 {
     width: auto;
     height: auto;
     margin-left: 0;
     font-size: 1rem;
+    transform: translateY(5rem);
 }
+/* 2.5期生一ヶ月の学習の成果を発揮する時！！！-2 */
+#photoImg5 {
+    margin-left: 0;
+    transform: translateY(10rem);
+    font-size: 1.5rem;
+}
+/* クリスマスパーティーや初詣を経て、、、 */
+#photoItem7 {
+    transform: translateX(3rem);
+}
+#photoImg7 {
+    transform: translateY(5rem);
+    font-size: 1.5rem;
+}
+#photoImg8 {
+    transform: translateY(8rem);
+    font-size: 1.5rem;
+}
+/* 大学生最大の試練　期末期間に突入！！！ */
+#photoImg9 {
+    transform: translateX(5rem);
+    font-size: 1.5rem;
+}
+/* <!-- 2期生と2.5期生の絆が試される時！！！ --> */
+#photoImg10 {
+    transform: translateY(5rem);
+    font-size: 1.5rem;
+}
+/* スマホ対応レスポンシブデザイン */
+@media (max-width: 900px) { 
+    /* 線非表示 */
+    .liner-wrapper {
+        display: none;
+    }
+
+    
+
+.photos-wrapper {
+	overflow-y: auto;
+	white-space: nowrap;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+ }
