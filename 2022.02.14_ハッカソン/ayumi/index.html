@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,85 @@
   <title>あゆみページ</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/ayumu.css">
+  <link rel="stylesheet" href="../css/header.css">
 </head>
+
 <body>
-  <h1>ayumi</h1>
+  <div>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header-logo">
+        <img class="header-logo-img" src="../picture/8.png" alt="">
+      </div>
+      <div class="header-nav">
+        <ul class="header-nav-ul">
+          <li class="header-nav-li">
+            <a href="../index.html">
+              <span class="header-nav-li-text">Home</span>
+            </a>
+          </li>
+          <li class="header-nav-li">
+            <a href="ayumi/index.html">
+              <span class="header-nav-li-text">ayumi</span>
+            </a>
+          </li>
+          <li class="header-nav-li"><a href="../miniGame/index.html">
+              <span class="header-nav-li-text">miniGame</span> </a></li>
+          <li class="header-nav-li"><a href="../free/index.html"><span class="header-nav-li-text">free</span></a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- 線 -->
+    <div class="liner-wrapper">
+    <div id="liner">
+      <p class="border">posse2 History</p>
+    </div>
+    <!-- <hr> -->
+    <p>
+      <a href="https://1-notes.com/css-border-animation/" target="_blank" rel="noopener"></a>
+    </p>
+  </div>
+  <!-- 写真 -->
+  <div class="photos-wrapper">
+    <div class="photo">a</div>
+    <div class="photo">b</div>
+    <div class="photo">c</div>
+  </div>
+
+
+  <!-- スライダーボタン -->
+  <div class="next_prev_buttons">
+    <div class="slider_button" id="prev_button">
+      <svg width="12" height="18">
+        <g stroke="#FFF" stroke-width="1.7" fill="none" fill-rule="evenodd">
+          <path d="M4.078 10.835l6.6 6.071M.778 9.823l9.9-9.107"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="slider_button" id="next_button">
+      <svg width="10" height="15">
+        <g stroke="#FFF" stroke-width="1.7" fill="none" fill-rule="evenodd">
+          <path d="M6.664 8.923l-5.4 5M9.364 8.09l-8.1-7.5"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+  
+  <!-- ビデオ表示 -->
+    <div class="ayumu-wrapper">
+      <div id="video">
+        <div id="video-area">
+          <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+            <source src="../video/Nebula Blue - 37783.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/ayumi.js"></script>
 </body>
+
 </html>
