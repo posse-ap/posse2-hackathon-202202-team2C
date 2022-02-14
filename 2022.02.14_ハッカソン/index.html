@@ -7,9 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>トップページ</title>
 </head>
+<!-- google fontsはここから -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+
+<!-- ファイルの読み込みはここから -->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/loading.css">
+<!-- <link rel="stylesheet" href="css/loading.css"> -->
+<link rel="stylesheet" href="css/toppage.css">
 
 <body>
   <!-- ローディング画面 -->
@@ -195,13 +203,25 @@
     </div>
   </div>
   <div class="splash-bg"></div>
+
+  <!-- ローディング画面終わった後の中身ここから -->
   <div id="container">
+
+    <!-- first view -->
+    <div class="logo"><b>Welcom<span>e </span>to <span>Pos</span>se2</b></div>
+    <div class="wavey-button">
+      <a href="#" class="btnripple2"><span></span></a>
+    </div>
+
+    <div class="scrolldown3"><span>Scroll</span></div>
     <h1>トップページだよ</h1>
+
   </div>
+
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/loading.js"></script>
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script src="js/loading.js"></script> -->
 </body>
 
 </html>
