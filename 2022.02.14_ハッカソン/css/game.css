@@ -1,16 +1,30 @@
 body{
   margin: 0 auto;
-  background-color: black;
+  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
 }
 .main-inner-game{
   padding-top: 200px;
-  padding-bottom:200px;
+  padding-bottom:50px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
-  height: 1200px;
+  height: 900px;
+  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+  background-repeat: repeat;
 }
 
+.introduction-part{
+  display: block;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 
+  0 0 5px #FFF,
+  0 0 12px #FFF,
+  0 0 21px rgb(6, 238, 122),
+  0 0 33px green;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
 
 .game-title-ribbon {
   display: inline-block;
@@ -74,7 +88,7 @@ body{
 }
 
 .carpet{
-  width: ;
+  width: 100%;
   position: relative;
   height: 740px;
   background-image: url(../miniGame/game_pictures/redcarpet.jpg)
