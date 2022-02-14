@@ -1,114 +1,136 @@
-html,body{
-  height:100%
+html, body {
+    height: 100%
 }
-/* first veiwの welcome to posse2 */
-body {
-  background: #112 url(https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
-  background-size:cover;
-  margin:0
-}
-.logo {
-  text-align: center;
-  width: 65%;
-  height: 250px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   user-select: none;
-}
-.logo b{
-  font: 400 15vh "Vibur";
-  font-family: 'Vibur', cursive;
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-.logo b span{
-  animation: blink linear infinite 2s;
-}
-.logo b span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-}
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79%{
-     color: #333;
-  }
-  80% {
+
+/* first viewの welcome to posse2 */
+.first-view {
+    width: 100%;
+    height: 100vh;
+    background: #112 url(https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center no-repeat;
+    background-size: cover;
+    margin: 0;
     
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
+}
+
+.logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.logo b {
+    font: 400 15vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+}
+
+.logo b span {
+    animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
 }
 
 
 /* follow me @nodws */
-#btn-twtr{
-  clear:both;
-  color:#fff;
-  border:2px solid;
-  border-radius:3px;
-  text-align:center;
-  text-decoration:none;
-  display:block;
-  font-family: 'Staatliches', cursive;
-  font-size:14px;
-  width:13em;
-  padding:5px 10px;
-  font-weight:600;
-  position:absolute;
-  bottom:20px;
-  left:0;
-  right:0;
-  margin:0 auto;
-  background:rgba(0,0,0,0.2);
-  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
-  opacity:0.4
-}#btn-twtr:hover{color:#fff;opacity:1}
+#btn-twtr {
+    clear: both;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: 'Staatliches', cursive;
+    font-size: 14px;
+    width: 13em;
+    padding: 5px 10px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+    opacity: 0.4
+}
+
+#btn-twtr:hover {
+    color: #fff;
+    opacity: 1
+}
+
 /* first viewの動画再生ボタン */
 /* 無限に波紋が広がる */
-.btnripple2{
+.btnripple2 {
     /*波紋の基点とするためrelativeを指定*/
-  position: relative;
+    position: relative;
     /*波紋の形状*/
-  display:inline-block;
-  background:rgb(227, 227, 227,0.6);
-  width:70px;
-  height:70px;
-  border-radius: 50%;
-  color:#ccc;
+    display: inline-block;
+    background: rgb(227, 227, 227, 0.6);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #ccc;
     outline: none;
     /*アニメーションの設定*/
     transition: all .3s;
 }
 
 /*hoverした際の背景色の設定*/
-.btnripple2:hover{
-  background:rgb(240, 240, 240);  
+.btnripple2:hover {
+    background: rgb(240, 240, 240);
 }
 
 /*波形を2つ設定*/
@@ -127,23 +149,24 @@ body {
     /*はじめは不透明*/
     opacity: 1;
     /*ループするアニメーションの設定*/
-    animation:1s circleanime linear infinite;
+    animation: 1s circleanime linear infinite;
 }
 
 /*波形の2つ目は0.5秒遅らせてアニメーション*/
 .btnripple2::before {
-    animation-delay:.5s; 
+    animation-delay: .5s;
 }
 
 /*波形のアニメーション*/
-@keyframes circleanime{
-  0%{
-    transform: scale(0.68);
-  }
-  100%{
-    transform: scale(1.2);
-    opacity: 0;
-  }
+@keyframes circleanime {
+    0% {
+        transform: scale(0.68);
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 /*中央矢印*/
@@ -162,13 +185,14 @@ body {
 
 /*========= レイアウトのためのCSS ===============*/
 
-body{
+body {
     text-align: center;
 }
 
-p{
+p {
     margin: 0 0 10px 0;
 }
+
 .wavey-button {
     position: absolute;
     top: 70%;
@@ -178,66 +202,76 @@ p{
 
 /* スクロールマーク */
 /*スクロールダウン全体の場所*/
-.scrolldown3{
+.scrolldown3 {
     /*描画位置※位置は適宜調整してください*/
-	position:absolute;
-	bottom:10px;
-	right:50%;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
     /*マウスの動き1.6秒かけて動く永遠にループ*/
-	animation:mousemove 1.6s ease-in-out infinite;
+    animation: mousemove 1.6s ease-in-out infinite;
 }
 
 /*下からの距離が変化して上から下に動く*/
-@keyframes mousemove{
-      0%{bottom:15px;}
-      50%{bottom:5px;}
-     100%{bottom:15px;}
- }
+@keyframes mousemove {
+    0% {
+        bottom: 15px;
+    }
+
+    50% {
+        bottom: 5px;
+    }
+
+    100% {
+        bottom: 15px;
+    }
+}
 
 /*Scrollテキストの描写*/
-.scrolldown3 span{
+.scrolldown3 span {
     /*描画位置*/
-	position: absolute;
-	left:-15px;
-	bottom:45px;
+    position: absolute;
+    left: -15px;
+    bottom: 45px;
     /*テキストの形状*/
-	color: rgba(238, 238, 238, 0.483);
-	font-size: 0.7rem;
-	letter-spacing: 0.05em;
+    color: rgba(238, 238, 238, 0.483);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
 }
 
 /*マウスの中の線描写 */
-.scrolldown3 span::after{
-	content: "";
+.scrolldown3 span::after {
+    content: "";
     /*描画位置*/
-	position: absolute;
-	top:10px;
-	left:17px;
+    position: absolute;
+    top: 10px;
+    left: 17px;
     /*線の形状*/
-	width: 1px;
-	height: 15px;
-	background: rgba(238, 238, 238, 0.572);
+    width: 1px;
+    height: 15px;
+    background: rgba(238, 238, 238, 0.572);
     /*線の動き1.4秒かけて動く。永遠にループ*/
-	animation: mousepathmove 1.4s linear infinite;
-	opacity:0;
+    animation: mousepathmove 1.4s linear infinite;
+    opacity: 0;
 }
 
 /*上からの距離・不透明度・高さが変化して上から下に流れる*/
-@keyframes mousepathmove{
-	0%{
-		height:0;
-		top:10px;
-		opacity: 0;
-	}
-	50%{
-		height:30px;
-		opacity: 1;
-	}
-	100%{
-		height:0;
-		top:30px;
-		opacity: 0;
-	}
+@keyframes mousepathmove {
+    0% {
+        height: 0;
+        top: 10px;
+        opacity: 0;
+    }
+
+    50% {
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        top: 30px;
+        opacity: 0;
+    }
 }
 
 /*マウスの描写 */
@@ -245,26 +279,44 @@ p{
     content: "";
     /*描画位置*/
     position: absolute;
-    bottom:0;
-    left:-10px;
+    bottom: 0;
+    left: -10px;
     /*マウスの形状*/
-	width:25px;
-	height:30px;
-	border-radius: 10px;
-	border:1px solid rgba(238, 238, 238, 0.49);
+    width: 25px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(238, 238, 238, 0.49);
 }
 
 
 /*マウスの中の丸の描写*/
-.scrolldown3:after{
-	content:"";
+.scrolldown3:after {
+    content: "";
     /*描画位置*/
-	position: absolute;
-	bottom:20px;
-	left:0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
     /*丸の形状*/
-	width:5px;
-	height: 5px;
-	border-radius: 50%;
-	border:1px solid rgba(238, 238, 238, 0.531);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(238, 238, 238, 0.531);
+}
+/* ↑ここまでファーストビュー */
+
+.sns-links-position  {
+    position: fixed;
+    top: 50%;
+}
+.sns-link {
+    padding: 1rem;
+}
+.sns-link-img-size {
+    width: 30px;
+    height: 30px;
+}
+.sns-link-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
 }
