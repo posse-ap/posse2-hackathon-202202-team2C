@@ -4,9 +4,10 @@
     color: white;
     position: fixed;
     display: flex;
+    z-index: 99999999;
 }
 .header-logo {
-    width: 130px;
+    width: 120px;
     height: 100px;
     padding: 1rem;
     opacity: 0.5;
