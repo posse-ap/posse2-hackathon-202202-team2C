@@ -2,7 +2,9 @@
     width: 100%;
     margin: 0 auto;
     max-width: 650px;
-  
+  }
+  .first-view-under-wrapper {
+    background: linear-gradient(#07070A,black);
   }
   .quiz {
     margin-top: 30px;

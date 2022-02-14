@@ -1,0 +1,111 @@
+
+#video{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+} 
+
+#video-area{
+    /* position: fixed; */
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/*見出し設定*/
+h1{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+}
+
+/* 線 */
+.liner-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+  p {
+    padding: 10px;
+  }
+  
+  #liner {
+    margin: 70px 20px;
+  }
+  
+  .border{
+    position: relative;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .border:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px rgb(255, 255, 255,0.7);
+    animation: border_anim 5s linear infinite;
+  }
+  
+  @keyframes border_anim {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+/* 写真 */
+.photos-wrapper {
+    position: absolute;
+    display: flex;
+    top: 50%;
+}
+.photo  {
+    
+}
+/* 写真のボタン */
+
+.next_prev_buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+}
+
+.slider_button {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
