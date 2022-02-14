@@ -63,7 +63,7 @@ text-shadow: 5px 3px 0px #fff;
   height: 300px;
   display: flex;
   margin: 50px 0;
-  box-shadow: 0 0 0 0.5px #fff, 12px 12px 0 0 #333, 12px 12px 0 0.5px #fff;
+  box-shadow: 0 0 0 0.5px #fff, 12px 12px 0 0 #fff, 12px 12px 0 0.5px #fff;
 }
 
 .interview-content-list-profile {
@@ -80,6 +80,7 @@ text-shadow: 5px 3px 0px #fff;
 
 .interview-content-list-profile-text {
   text-align: right;
+  font-size: 1.3vw;
   padding: 2rem;
   position: absolute;
   bottom: 0;
