@@ -2,7 +2,7 @@ html, body {
     height: 100%
 }
 
-/* first viewの welcome to posse2 */
+/* トップページのロゴ */
 .first-view {
     width: 100%;
     height: 100vh;
@@ -67,6 +67,91 @@ html, body {
 .History-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+/* miniGameのロゴ */
+.mini-game-logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.mini-game-logo b {
+    font: 400 15vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+}
+
+.mini-game-logo b span {
+    animation: blink linear infinite 2s;
+}
+
+.mini-game-logo b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+/* interviewのロゴ */
+.interview-logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.interview-logo b {
+    font: 400 15vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+}
+
+.interview-logo b span {
+    animation: blink linear infinite 2s;
+}
+
+.interview-logo b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+/* interviewのロゴ -2 */
+.interview-logo-2 {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: -35%;
+    left: -30%;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.interview-logo-2 b {
+    font: 400 5vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+}
+
+.interview-logo-2 b span {
+    animation: blink linear infinite 2s;
+}
+
+.interview-logo-2 b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+/* ロゴのアニメーション */
 @keyframes blink {
     78% {
         color: inherit;
