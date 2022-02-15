@@ -314,6 +314,16 @@ html {
 .gotop:hover {
   opacity: 1;
 }
+
+/* posse1へのリンク */
+.posse1-link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.posse1-link-button {
+  background: cornsilk;
+}
 @media (max-width: 750px) {
   .gotop {
     width: 40px;

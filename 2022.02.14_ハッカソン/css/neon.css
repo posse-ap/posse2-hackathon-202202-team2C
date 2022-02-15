@@ -182,7 +182,7 @@
     font: 400 5vh "Vibur";
     font-family: 'Vibur', cursive;
     color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff64495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff6d4495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
 }
 /* quizのネオンロゴ */
 .question-text {
@@ -257,7 +257,7 @@
         user-select: none;
     }
     .top-page-logo b {
-        font: 400 10vh "Vibur";
+        font: 400 8vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
@@ -330,5 +330,128 @@
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+ }
+
+ /* スマホ対応レスポンシブデザイン */
+ @media (max-width: 400px) {
+    .top-page-logo {
+        text-align: center;
+        width: 65%;
+        height: 250px;
+        margin: auto;
+        position: absolute;
+        top: -20%;
+        left: 0;
+
+        user-select: none;
+    }
+    .top-page-logo b {
+        font: 400 10vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .History-logo {
+        text-align: center;
+        width: 65%;
+        height: 250px;
+        margin: auto;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        right: 0;
+        bottom: 0;
+        user-select: none;
+    }
+    .History-logo b {
+        font: 400 6vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .mini-game-logo {
+        text-align: center;
+        width: 65%;
+        height: 250px;
+        margin: auto;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        right: 0;
+        bottom: 0;
+        user-select: none;
+    }
+
+    .mini-game-logo b {
+        font: 400 6vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .interview-logo {
+        text-align: center;
+        width: 65%;
+        height: 250px;
+        margin: auto;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        right: 0;
+        bottom: 0;
+        user-select: none;
+    }
+
+    .interview-logo b {
+        font: 400 6vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .interview-logo-2 b {
+        font: 400 3vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    
+    .interview-logo-2 b span {
+        animation: blink linear infinite 2s;
+    }
+    
+    .interview-logo-2 b span:nth-of-type(2) {
+        animation: blink linear infinite 3s;
+    }
+    .coming-soon-logo {
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        user-select: none;
+    }
+
+    .coming-soon-logo b {
+        font: 400 3vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .header-home-logo {
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        user-select: none;
+    }
+    
+    .header-home-logo b {
+        font: 400 3vh "Vibur";
+        font-family: 'Vibur', cursive;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff64495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    }
+    .footer-logo b {
+        font: 300 5vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
  }
