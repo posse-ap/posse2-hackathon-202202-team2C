@@ -13,7 +13,7 @@ body {
 
 .content-wrapper {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 60%;
 }
 .first-view-under-wrapper {
   background: linear-gradient(#07070a, black);
