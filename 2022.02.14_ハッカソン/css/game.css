@@ -18,46 +18,76 @@ body {
   background-repeat: repeat;
 }
 
-.introduction-sentence1{
-  font-size: 2rem;
-  color: #FFF;
-  font-family: 'DotGothic16', sans-serif;
+/* 下にコンテンツあるよボタン */
+.arrow-button {
+  display: block;
+margin: 0 auto;
+width: 7%;
+height: auto;
+margin-top: 15vh;
 }
-.introduction-title{
-  font-size: 5rem;
-  padding: 5%;
-  color: #FFF;
-  text-shadow: 0 0 5px #FFF, 0 0 13px rgb(37, 228, 85), 0 0 21px rgb(44, 218, 111), 0 0 35px #08f08f;
+.arrow-button img {
+  width: 100%;
+  height: 100%;
 }
 
+.introduction-sentence1{
+  font-size: 1rem;
+  color: #FFF;
+  font-family: 'DotGothic16', sans-serif;
+  padding-top: 3rem;
+}
+
+/* プログラミングが切り開く未来 */
+.introduction-title{
+  font-size: 2rem;
+  padding: 5%;
+  color: #FFF;
+  text-shadow: 0 0 5px rgb(115, 114, 114), 0 0 13px rgb(37, 228, 85), 0 0 21px rgb(44, 218, 111), 0 0 35px #08f08f;
+}
+/* アイコンのボックス */
 .image-icons{
-  height:100%;
-  padding: 7%;
-  margin-bottom: 10%;
+  height:80%;
+  width: 50%;
+  padding: 3%;
+  margin: 0 auto 10% auto;
   border: solid 3px #FFF;
-  box-shadow: 0 0 6px #FFF, 0 0 16px rgb(167, 75, 75), 0 0 25px rgb(150, 64, 24), 0 0 34px #faf616;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(77, 167, 75), 0 0 10px rgb(89, 150, 24), 0 0 10px #faf616;
   display: flex;
   justify-content: space-between;
 }
-
+/* 各アイコンの文字の横幅 */
 .image-icon{
   width: 20%;
 }
-/* ネオン風を出すためにboxshadowつける */
-.cheering-message1{
-  line-height: 350%;
-  font-size: 3rem;
-  color: #FFF;
-  text-shadow: 0 0 3px rgb(233, 231, 218), 0 0 15px rgb(242, 243, 161), 0 0 28px rgb(247, 244, 87), 0 0 40px rgb(247, 243, 9);
+.img-icon img {
+  width: 100%;
+  height: 100%;
+}
+.image-icon-text {
+  font-size: 1rem;
+  padding-top: .5rem;
 }
 
-.cheering-message2{
+/* プログラミングができるとさまざまな世界に触れ合える */
+/* ネオン風を出すためにboxshadowつける */
+/* 主張落とすためにネオン外す */
+.cheering-message1{
+  line-height: 350%;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.736);
+  /* text-shadow: 0 0 3px rgb(233, 231, 218), 0 0 15px rgb(242, 243, 161), 0 0 28px rgb(247, 244, 87), 0 0 40px rgb(247, 243, 9); */
+}
+
+.cheering-message2 {
   margin: 5%;
   line-height: 300%;
 }
-
-.cheering-message2 b{
-  font-size: 6rem;
+.cheering-message2 span {
+  font-size: 1rem;
+}
+.cheering-message2-text {
+  font-size: 1rem;
   color: #FFF;
   text-shadow: 0 0 2px #FFF, 0 0 15px rgb(152, 240, 181), 0 0 20px rgb(103, 248, 110), 0 0 32px rgb(5, 240, 36);
 }
@@ -103,10 +133,17 @@ body {
   }
 }
 
+/* プログラミングによって生み出された世界を体感せよ */
 .guide-message{
-  font-size: 3.5rem;
+  font-size: 1.8rem;
   color: #FFF;
   text-shadow: 0 0 3px #FFF, 0 0 17px rgb(240, 250, 182), 0 0 26px rgb(197, 226, 91), 0 0 39px rgb(232, 247, 22);
+}
+/* シンプル ネオンなしのガイドメッセージ */
+.guide-message-simple {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.538);
+  
 }
 
 .guide-message span{
@@ -118,24 +155,26 @@ body {
 
 
 
-/* 遷移ボタンの色 */
+/* 遷移ボタンの色 tap to playボタン */
 .transition-button{
   position:relative;
-  margin-top: 5%;
+  margin-top: 10%;
   padding: 3%;
   display: inline-block;
   color: white;
   text-transform:uppercase;
   letter-spacing: 4px;
   text-decoration:none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   overflow: hidden; 
   transition: .15s;
+  background: rgba(174, 174, 174, 0.168);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* 遷移ボタンの動き */
 .transition-button:hover{
-  color: rgba(117, 106, 106, 0.658);
+  color: rgba(117, 106, 106, 0.832);
   background: rgb(221, 243, 223);
   box-shadow: 0 0 10px rgb(11, 243, 11), 0 0 40px rgb(128, 223, 125), 0 0 80px rgb(110, 245, 193);
   transition-delay: .7s;
@@ -204,24 +243,7 @@ body {
 
 }
 
-/* ゲームページこんなものも作れるようにのテキスト！！！ */
-.introduction-part{
-  display: block;
-  text-align: center;
-  color: #FFF;
-  text-shadow:
-  0 0 5px #FFF,
-  0 0 12px #FFF,
-  0 0 21px rgb(39, 235, 137),
-  0 0 33px rgb(37, 192, 37);
-  font-size: 2rem;
-  margin-top: 25rem;
-  margin-bottom: 10rem;
-}
-.introduction-part-text {
-  font-family: 'DotGothic16', sans-serif;
-  padding-top: 1rem;
-}
+/* ここからゲーム紹介start */
 
 /* ゲーム説明の枠 */
 .game-introduction-wrapper {
@@ -351,9 +373,9 @@ body {
   padding: 5rem 0;
 }
 .linein-appear  {
-  color: white;
+  color: rgba(255, 255, 255, 0.524);
   font-family: 'DotGothic16', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* 実際にplayのテキスト */
