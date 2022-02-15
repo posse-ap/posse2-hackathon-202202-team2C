@@ -1,12 +1,16 @@
 .header {
     width: 100%;
-    height: 50px;
+    height: 120px;
     color: white;
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: 99999999;
+    align-items: center;
+    z-index: 1100;
 }
+
+
+
 .header-logo {
     width: 120px;
     height: 100px;
@@ -19,6 +23,16 @@
     height: 100%;
     
 }
+
+.header-nav{
+  height: 120px;
+}
+
+/*.doneクラスがついたヘッダーナビゲーション*/
+#headerNav.dnone{
+  opacity: 0;/*透過0にして非表示に*/
+}
+
 .header-nav-ul {
     display: flex;
     padding-top: 3rem;
@@ -38,31 +52,69 @@
 }
 
 
+/* ==スクロールではバーガーが消える機能関係== */
 
-/* 追加 */
+/*fadeDownクラスが付与された後のボタンの出現アニメーション設定*/
+.fadeDown {
+  animation-name: fadeDownAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: block;
+}
 
-@media screen and (max-width: 900px) {
+@keyframes fadeDownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
 
-    .header-nav {
-      display: none;
-    }
-    
-    .hamburger-wrapper{
-      display: block;
-    }
-    
+/*.doneクラスがついたヘッダー*/
+#headerNav.dnone {
+	opacity: 0;/*透過0にして非表示に*/
+}
+
+/*.doneクラスがついたヘッダーのテキストナビゲーションの形状*/
+#headerNav.dnone{
+  /*固定位置にして最背面に*/
+  position:fixed;
+top: 0;
+  left: 0;
+z-index: -1;
+  /*高さと幅*/  
+width:100%;
+height: 100vh;
+  /*天地中央＆テキスト中央揃え*/  
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+  /*はじめは透過0に*/  
+  opacity: 0;
+transition: all 0.4s;
+}
+
+
+
     .hamburger {
       margin-right: 40px;
       /* ↑でハンバーガーメニュー右べたつき解消 */
       padding: 0px;
-      display: block;
+      /* display: none; */
+      opacity: 0;
       position: relative;
       width: 50px;
       height: 45px;
       cursor: pointer;
       transition: 1s;
     }
-    
+
+
     .inner_line {
       display: block;
       position: absolute;
@@ -82,12 +134,10 @@
     #line3 {
       bottom: 0px;
     }
-    
     .line_1,
     .line_2,
     .line_3 {
       background: white;
-    
     }
     .line_1 {
       transform: translateY(20px) rotate(-45deg);
@@ -100,28 +150,31 @@
       transform: translateY(-20px) rotate(45deg);
       bottom: 0;
     }
+    
+
+
+
+    /* 以下ハンバーガーが押されたときに出てくる者たちについて */
     .scroll-prevent {
-        /*動き固定*/
-        position: fixed;
-        /*奥行きを管理*/
-        z-index: -1;
-        /*下2つで背景を元のサイズのまま表示することができる*/
-        width: 100%;
-        height: 100%;
+      /*動き固定*/
+      position: fixed;
+      /*奥行きを管理*/
+      z-index: -1;
+      /*下2つで背景を元のサイズのまま表示することができる*/
+      width: 100%;
+      height: 100%;
     }
-    
-    
-    /* 黒いところ */
     .popup-cover {
       position: fixed; /* ブラウザの定位置に固定 */
-      background: rgba(0, 0, 0, 0.8); /* 背景色を半透明の黒色に */
+      /* background: rgba(0, 0, 0, 0.8);  */
+      /* 背景色を半透明の黒色に */
       width: 100%; /* 要素の横幅を画面全体に */
       height: 100%; /* 要素の高さを画面全体に */
       top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
       left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
       z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
       display: none;
-      background-color: #86b1e6;
+      background-color: black;
     }
     .popup-content {
       /* ポップアップ本体 */
@@ -158,7 +211,7 @@
       padding: 15px;
     }
     .popup-content ul li a {
-      color: black;
+      color: white;
     }
     
-    }
+/* } */

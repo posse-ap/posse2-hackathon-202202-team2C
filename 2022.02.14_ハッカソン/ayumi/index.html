@@ -9,48 +9,59 @@
 
   <!-- google font読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
-<!-- ファイル読み込み -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+  <!-- ファイル読み込み -->
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/ayumu.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
+  <link rel="stylesheet" href="../css/Reheader.css">
 
 </head>
 
 <body>
   <div class="first-view">
     <!-- ヘッダー -->
-    <header class="header">
+    <header id="header">
+        
       <div class="header-logo">
         <img class="header-logo-img" src="../picture/8.png" alt="">
       </div>
-      <div class="header-nav">
-        <ul class="header-nav-ul">
+
+      <nav id="g-navi">
+        <ul class="header-nav-ul" id="headerUl">
           <li class="header-nav-li">
             <a href="../index.html">
               <span class="header-home-logo"><b>Home</b></span>
             </a>
           </li>
           <li class="header-nav-li">
-            <a href="ayumi/index.html">
+            <a href="../index.html">
               <span class="header-home-logo"><b>History</b></span>
             </a>
           </li>
           <li class="header-nav-li"><a href="../miniGame/index.html">
-            <span class="header-home-logo"><b>MiniGame</b></span>
-           </a></li>
-          <li class="header-nav-li"><a href="../free/index.html">
-            <span class="header-home-logo"><b>Introduction</b></span>
-          </a></li>
+            <span class="header-nav-li-text">
+              <span class="header-home-logo"><b>MiniGame</b></span>
+            </a></li>
+            <li class="header-nav-li"><a href="../free/index.html">
+              <span class="header-nav-li-text">
+                <span class="header-home-logo"><b>Interview</b></span>
+              </a>
+            </li>
         </ul>
-      </div>
+      </nav>
+
     </header>
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+
+
     <!-- sns links -->
     <div class="sns-links-position">
       <div class="sns-links-wrapper">
@@ -147,33 +158,53 @@
       </div>
     </li>
     <!-- 大学生最大の試練　期末期間に突入！！！ -->
-    <li class="photo-item" id="photoItem9">
-      <div data-month="January" data-text="大学生最大の試練　期末期間に突入！！！、" class="photo-item-style" id="photoImg9">
-        <img class="photo-item-img" src="../picture/History20 .jpg" alt="">
-      </div>
-    </li>
-    <!-- 2期生と2.5期生の絆が試される時！！！ -->
-    <li class="photo-item" id="photoItem10">
-      <div data-month="February" data-text="2期生と2.5期生の絆が試される時！！！、" class="photo-item-style" id="photoImg10">
-        <img class="photo-item-img" src="../picture/History22 .jpg" alt="">
-      </div>
-    </li>
-    <!-- ハッカソン開催！！！ -->
-    <li class="photo-item" id="photoItem11">
-      <div data-month="February 14-19th" data-text="ハッカソン開催！！！" class="photo-item-style" id="photoImg11">
-        <img class="photo-item-img" src="../picture/History25 .jpg" alt="">
-      </div>
-    </li>
-    <!-- Coming soon…… -->
-    <li class="photo-item" id="photoItem12">
-          <!-- coming soon -->
-    <div class="coming-soon-logo"><b>Commin<span>g</span>s<span>oo</span>n...</b></div>
-    </li>
+  <li class="photo-item" id="photoItem9">
+    <div data-month="January" data-text="大学生最大の試練　期末期間に突入！！！、" class="photo-item-style" id="photoImg9">
+      <img class="photo-item-img" src="../picture/History20 .jpg" alt="">
+    </div>
+  </li>
+  <!-- 2期生と2.5期生の絆が試される時！！！ -->
+  <li class="photo-item" id="photoItem10">
+    <div data-month="February" data-text="2期生と2.5期生の絆が試される時！！！、" class="photo-item-style" id="photoImg10">
+      <img class="photo-item-img" src="../picture/History22 .jpg" alt="">
+    </div>
+  </li>
+  <!-- ハッカソン開催！！！ -->
+  <li class="photo-item" id="photoItem11">
+    <div data-month="February 14-19th" data-text="ハッカソン開催！！！" class="photo-item-style" id="photoImg11">
+      <img class="photo-item-img" src="../picture/History25 .jpg" alt="">
+    </div>
+  </li>
+  <!-- Coming soon…… -->
+  <li class="photo-item" id="photoItem12">
+        <!-- coming soon -->
+  <div class="coming-soon-logo"><b>Commin<span>g</span>s<span>oo</span>n...</b></div>
+  </li>
+  </ul>
 
-</ul>
+      <!-- <hr> -->
+      <p>
+        <a href="https://1-notes.com/css-border-animation/" target="_blank" rel="noopener"></a>
+      </p>
+    </div>
+    
 
-  
-  <!-- ビデオ表示 -->
+
+    <div class="popapp-wrapper">
+      <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true"
+        target="_blank">
+      </a>
+      <div id="fixedInfo" class="fixed-info active">
+        <div class="fixed-info-textbox">
+          <div class="fixed-info-text">
+            <h2>POSSE2申し込みフォームは<br>ここをクリック！</h2>
+          </div>
+        </div>
+        <span id="infoClose" class="fixed-info-close opa"></span>
+      </div>
+    </div>
+
+    <!-- ビデオ表示 -->
     <!-- <div class="ayumu-wrapper">
       <div id="video">
         <div id="video-area">
@@ -183,9 +214,12 @@
         </div>
       </div>
     </div> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/ayumi.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 
 </html>

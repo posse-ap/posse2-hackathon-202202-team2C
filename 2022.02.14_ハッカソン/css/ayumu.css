@@ -115,9 +115,9 @@ body {
   margin-left: 20rem;
 }
 
+
 /* iPad対応レスポンシブデザイン */
 @media (max-width: 900px) {
-
   /* 線非表示 */
   .liner-wrapper {
     display: none;
@@ -125,16 +125,16 @@ body {
 
 
 
-  .photos-wrapper {
-    overflow-y: auto;
-    white-space: nowrap;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+.photos-wrapper {
+overflow-y: auto;
+white-space: nowrap;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 }
