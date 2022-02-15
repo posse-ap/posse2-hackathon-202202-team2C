@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/toppage.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/quizy.css">
+<link rel="stylesheet" href="css/timer.css">
 
 <body>
   <!-- ローディング画面 -->
@@ -307,26 +308,46 @@
       <section class="container content-wrapper">
         <div id="quiz-box"></div>
       </section>
-      <!-- footer -->
-      <footer>
-        <div class="footer-logo">
-          <b>Join us and create <br><span>POSSE2</span></b>
+    <!-- カウントダウンタイマー -->
+    <div class="timer-wrapper">
+      <div class="timer-text">
+        所属POSSE登録まであと
+      </div>
+      <div class="timer-display">
+        <div class="timer-day">
+          <span class="timer-num" id="day"></span>
+          <span class="timer-kanji">日</span>
         </div>
+        <span class="timer-num" id="hour"></span>
+        <span class="timer-kanji">時間</span>
+        <span class="timer-num" id="min"></span>
+        <span class="timer-kanji">分</span>
+        <span class="timer-num" id="sec"></span>
+        <span class="timer-kanji">秒</span>
+      </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <b>Join us and create <br><span>POSSE2</span></b>
         <div class="register-box">
           <div class="register-button rotateback">
-            <a
-              href="https://docs.google.com/forms/d/1dS3LZQfx03eNI5tJp1oYDt009qtBfHKXsUAXjkVA13c/viewform?edit_requested=true">
-            <h1 contenteditable spellcheck="false"><span>To the form</span><span>Click here!!</span></h1>
-          </a>
+            <a href="https://docs.google.com/forms/d/1dS3LZQfx03eNI5tJp1oYDt009qtBfHKXsUAXjkVA13c/viewform?edit_requested=true">
+              <h1 contenteditable spellcheck="false"><span>To the form</span><span>Click here!!</span></h1>
+            </a>
+          </div>
         </div>
       </div>
-    </footer>
+      </footer>
+    
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- <script src="js/loading.js"></script> -->
   <script src="js/quizy.js"></script>
   <script src="js/toppage.js"></script>
+  <script src="js/timer.js"></script>
 </body>
 
 </html>

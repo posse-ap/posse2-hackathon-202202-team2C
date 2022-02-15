@@ -1,3 +1,6 @@
+html{
+    font-size: 1vw;
+}
 html, body {
     height: 100%
 }
@@ -271,7 +274,7 @@ button {
 
 /* ネオンロゴのiPad表示対応 */
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     /* トップページのロゴ */
     .top-page-logo {
         text-align: center;
@@ -281,7 +284,7 @@ button {
         position: absolute;
         top: -20%;
         left: 0;
-        
+
         user-select: none;
     }
     .top-page-logo b {
@@ -320,7 +323,7 @@ button {
         bottom: 0;
         user-select: none;
     }
-    
+
     .mini-game-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -339,7 +342,7 @@ button {
         bottom: 0;
         user-select: none;
     }
-    
+
     .interview-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -352,7 +355,7 @@ button {
         height: 100px;
         user-select: none;
     }
-    
+
     .coming-soon-logo b {
         font: 400 5vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -462,6 +465,18 @@ button {
     border-left-color: rgb(76, 76, 76);
 }
 
+<<<<<<< HEAD
+=======
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+    text-align: center;
+}
+
+/* p {
+    margin: 0 0 10px 0;
+} */
+>>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
 
 .wavey-button {
     position: absolute;
@@ -599,8 +614,13 @@ button {
     height: 100%;
     opacity: 0.6;
 }
+<<<<<<< HEAD
 /* snsリンクのiPad対応 */
 @media (max-width: 900px) { 
+=======
+/* snsリンクのスマホレスポンシブ対応 */
+@media (max-width: 900px) {
+>>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
     .sns-links-position  {
         position: fixed;
         top: 70%;
@@ -609,7 +629,7 @@ button {
         width: 70px;
         height: 70px;
     }
- }
+}
 @import url(//fonts.googleapis.com/css?family=Vibur);
 footer{
     position: relative;
@@ -623,7 +643,7 @@ footer{
     background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -650,7 +670,7 @@ footer{
     color: #333;
     }
     80% {
-    
+
     text-shadow: none;
     }
     81% {
@@ -674,14 +694,15 @@ footer{
     text-shadow: inherit;
     }
 }
-
+.footer {
+    position: relative;
+}
 .register-box{
     display: flex;
     text-align: center;
     position: absolute;
-    width: 300px;
-    top: 280px;
-    left: 26.5%;
+    width: 30%;
+    left: 18%; 
 }
 .register-button{
     position: relative;
@@ -708,7 +729,7 @@ footer{
 }
 .rotateback span:nth-child(1){
     color: #fff;
-    text-shadow: 
+    text-shadow:
     0 0 8px #fff,
     0 0 13px #fff,
     0 0 21px #fff,
@@ -718,7 +739,7 @@ footer{
     border: 0.4rem solid #fff;
     border-radius: 2rem;
     background-color: var(--neon-border-color);
-    transform: rotateX(0deg);/*はじめは回転なし*/
+    transform: rotateX(0deg);
     transform-origin: 0 50%  -25px;/* 回転する起点 */
 }
 .rotateback:hover span:nth-child(1) {
@@ -726,7 +747,7 @@ footer{
 }
 .rotateback span:nth-child(2) {
     color: #fff;
-    text-shadow: 
+    text-shadow:
     0 0 8px #fff,
     0 0 13px rgba(255, 255, 255, 0.582),
     0 0 21px rgba(255, 255, 255, 0.267),
@@ -746,5 +767,28 @@ footer{
     text-decoration: none;
 }
 
+@media screen and (max-width: 550px) {
+    .footer-logo b{
+        font: 300 5vh "Vibur";
+    }
+    .register-box{
+        display: flex;
+        text-align: center;
+        position: absolute;
+        width: 30%;
+        left: 18%;
+    }
+    .register-button h1 span{
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        font-weight: 200;
+        width: 100%;
+        height: 100%;
+        font-style: italic;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+}
 
   /* Media quizzles */

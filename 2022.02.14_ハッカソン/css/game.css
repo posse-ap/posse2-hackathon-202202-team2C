@@ -7,8 +7,13 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
+<<<<<<< HEAD
   height: 900px;
   /* background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg); */
+=======
+  /* height: 900px; */
+  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+>>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
   background-repeat: repeat;
 }
 
@@ -16,13 +21,19 @@ body {
   display: block;
   text-align: center;
   color: #FFF;
-  text-shadow: 
+  text-shadow:
   0 0 5px #FFF,
   0 0 12px #FFF,
+<<<<<<< HEAD
   0 0 21px rgb(39, 235, 137),
   0 0 33px rgb(37, 192, 37);
   font-size: 20px;
   margin-top: 25rem;
+=======
+  /* 0 0 21px rgb(6, 238, 122), */
+  0 0 33px green;
+  font-size: 30px;
+>>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
   margin-bottom: 5%;
 }
 .introduction-part-text {

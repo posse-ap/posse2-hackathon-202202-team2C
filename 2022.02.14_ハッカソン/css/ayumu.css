@@ -31,14 +31,14 @@ body {
     animation: border_anim 3s linear infinite;
   }
   
-  @keyframes border_anim {
+@keyframes border_anim {
     0%{
-      width: 0%;
+    width: 0%;
     }
     100%{
-      width: 100%;
+    width: 100%;
     }
-  }
+}
 
 /* 写真 */
 .photos-wrapper {
