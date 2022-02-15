@@ -8,7 +8,7 @@ body{
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
-  height: 900px;
+  /* height: 900px; */
   background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
   background-repeat: repeat;
 }
@@ -17,10 +17,10 @@ body{
   display: block;
   text-align: center;
   color: #FFF;
-  text-shadow: 
+  text-shadow:
   0 0 5px #FFF,
   0 0 12px #FFF,
-  0 0 21px rgb(6, 238, 122),
+  /* 0 0 21px rgb(6, 238, 122), */
   0 0 33px green;
   font-size: 30px;
   margin-bottom: 5%;

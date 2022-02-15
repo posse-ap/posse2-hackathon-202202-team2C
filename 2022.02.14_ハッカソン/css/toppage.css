@@ -220,7 +220,7 @@ html, body {
 
 /* ネオンロゴのスマホ表示対応 */
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     /* トップページのロゴ */
     .top-page-logo {
         text-align: center;
@@ -230,7 +230,7 @@ html, body {
         position: absolute;
         top: -20%;
         left: 0;
-        
+
         user-select: none;
     }
     .top-page-logo b {
@@ -269,7 +269,7 @@ html, body {
         bottom: 0;
         user-select: none;
     }
-    
+
     .mini-game-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -288,7 +288,7 @@ html, body {
         bottom: 0;
         user-select: none;
     }
-    
+
     .interview-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -301,7 +301,7 @@ html, body {
         height: 100px;
         user-select: none;
     }
-    
+
     .coming-soon-logo b {
         font: 400 5vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -417,9 +417,9 @@ body {
     text-align: center;
 }
 
-p {
+/* p {
     margin: 0 0 10px 0;
-}
+} */
 
 .wavey-button {
     position: absolute;
@@ -549,7 +549,7 @@ p {
     opacity: 0.6;
 }
 /* snsリンクのスマホレスポンシブ対応 */
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     .sns-links-position  {
         position: fixed;
         top: 70%;
@@ -599,7 +599,7 @@ footer{
     color: #333;
     }
     80% {
-    
+
     text-shadow: none;
     }
     81% {
@@ -658,7 +658,7 @@ footer{
 }
 .rotateback span:nth-child(1){
     color: #fff;
-    text-shadow: 
+    text-shadow:
     0 0 8px #fff,
     0 0 13px #fff,
     0 0 21px #fff,
@@ -676,7 +676,7 @@ footer{
 }
 .rotateback span:nth-child(2) {
     color: #fff;
-    text-shadow: 
+    text-shadow:
     0 0 8px #fff,
     0 0 13px rgba(255, 255, 255, 0.582),
     0 0 21px rgba(255, 255, 255, 0.267),
