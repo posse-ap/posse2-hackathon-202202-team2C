@@ -74,3 +74,19 @@ window.onload=function(){
     }
   }
 }
+
+// スクロール処理
+function fadeAnime(){
+  $('.lineTrigger').each(function(){ //lineTriggerというクラス名が
+    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+      $(this).addClass('lineanime');// 画面内に入ったらlineanimeというクラス名を追記
+    }else{
+      $(this).removeClass('lineanime');// 画面外に出たらlineanimeというクラス名を外す
+    }
+  }); }
+  $(window).scroll(function (){
+    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+  });
