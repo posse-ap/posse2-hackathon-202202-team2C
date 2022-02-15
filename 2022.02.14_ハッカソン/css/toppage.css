@@ -273,6 +273,7 @@ button {
 .sns-links-position  {
     position: fixed;
     top: 50%;
+    z-index: 1;
 }
 .sns-link {
     padding: 1rem;
@@ -286,8 +287,10 @@ button {
     height: 100%;
     opacity: 0.6;
 }
+
 /* snsリンクのiPad対応 */
 @media (max-width: 900px) { 
+
     .sns-links-position  {
         position: fixed;
         top: 70%;
@@ -309,7 +312,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-image:  url(../picture/39BD94A7-EAB6-4A2C-99F8-59133FFD3A1A.jpeg);
-    height: 350px;
+    height: 620px;
 }
   /* フッターロゴのデザイン */
 .footer-logo{
@@ -324,7 +327,7 @@ footer{
     user-select: none;
 }
 .footer-logo b{
-    font: 300 13vh "Vibur";
+    font: 300 11vh "Vibur";
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
 }
@@ -366,9 +369,6 @@ footer{
     color: inherit;
     text-shadow: inherit;
     }
-}
-.footer {
-    position: relative;
 }
 .register-box{
     display: flex;
@@ -439,10 +439,29 @@ footer{
 .register-button a {
     text-decoration: none;
 }
+.SNS-icon-containers{
+    margin-top: -20%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SNS-icon{
+    display: none;
+    margin-top: 30%;
+    width: 50%;
+    height: 8%;
+}
 
-@media screen and (max-width: 550px) {
+  /* Media quizzles */
+
+@media screen and (max-width: 920px) and (min-width: 700px){
+    .sns-link-img{
+        display: none;
+    }
     .footer-logo b{
-        font: 300 5vh "Vibur";
+        font: 300 9vh "Vibur";
     }
     .register-box{
         display: flex;
@@ -462,6 +481,61 @@ footer{
         transform-style: preserve-3d;
         transition: 0.5s;
     }
+    .SNS-icon-containers{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .SNS-icon{
+        display: block;
+        margin-top: 100%;
+        margin-left: 26%;
+        width: 40%;
+        height: 8%;
+    }
 }
-
-  /* Media quizzles */
+@media screen and (max-width: 700px){
+    .sns-link-img{
+        display: none;
+    }
+    footer{
+        height: 350px;
+    }
+    .footer-logo b{
+        font: 300 6vh "Vibur";
+    }
+    .register-box{
+        display: flex;
+        text-align: center;
+        position: absolute;
+        width: 30%;
+        left: 18%;
+    }
+    .register-button h1 span{
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        font-weight: 200;
+        width: 100%;
+        height: 100%;
+        font-style: italic;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+    .SNS-icon-containers{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .SNS-icon{
+        display: block;
+        margin-top: 100%;
+        margin-left: 26%;
+        width: 40%;
+        height: 8%;
+    }
+}
