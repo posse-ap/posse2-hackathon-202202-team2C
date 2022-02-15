@@ -323,7 +323,7 @@ button {
 
 .overview-item {}
 
-p::after {
+.typing-text::after {
     content: '';
     border-right: 2px solid;
     animation: flashing 0.6s linear infinite;
