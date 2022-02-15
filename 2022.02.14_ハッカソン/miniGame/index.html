@@ -7,9 +7,11 @@
   <title>MiniGame</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
+  <link rel="stylesheet" href="../css/Reheader.css">
+
 
   <!-- google font読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,12 +32,15 @@
     <!-- miniGame -->
     <div class="mini-game-logo"><b>Mini<span>G</span>a<span>m</span>e</b></div>
   <div>
-    <header class="header">
-      <div class="header-logo">
-        <img class="header-logo-img" src="../picture/8.png" alt="">
+  <!-- ヘッダー -->
+  <header id="header">
+        
+    <div class="header-logo">
+      <img class="header-logo-img" src="../picture/8.png" alt="">
     </div>
-    <div class="header-nav">
-      <ul class="header-nav-ul">
+
+    <nav id="g-navi">
+      <ul class="header-nav-ul" id="headerUl">
         <li class="header-nav-li">
           <a href="../index.html">
             <span class="header-home-logo"><b>Home</b></span>
@@ -46,13 +51,22 @@
             <span class="header-home-logo"><b>History</b></span>
           </a>
         </li>
-        <li class="header-nav-li"><a href="../miniGame/index.html">
-          <span class="header-home-logo"><b>MiniGame</b></span> </a></li>
-        <li class="header-nav-li"><a href="../free/index.html">
-          <span class="header-home-logo"><b>Introduction</b></span></a></li>
+        <li class="header-nav-li"><a href="./index.html">
+          <span class="header-nav-li-text">
+            <span class="header-home-logo"><b>MiniGame</b></span>
+          </a></li>
+          <li class="header-nav-li"><a href="../free/index.html">
+            <span class="header-nav-li-text">
+              <span class="header-home-logo"><b>Interview</b></span>
+            </a>
+          </li>
       </ul>
-    </div>
+    </nav>
+
   </header>
+  <div class="openbtn1"><span></span><span></span><span></span></div>
+
+
   <!-- ここからゲーム -->
   <main>
     <div class="main-inner-game">
@@ -180,6 +194,7 @@
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/header.js"></script>
 
 </body>
 </html>

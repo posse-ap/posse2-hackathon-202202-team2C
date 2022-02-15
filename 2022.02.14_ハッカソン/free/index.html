@@ -15,22 +15,29 @@
     href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/css/reset.css">
   <link rel="stylesheet" type="text/css"
     href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/css/4-14.css">
-  <!-- cssファイル読み込み -->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/free.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/toppage.css">
-  <link rel="stylesheet" href="../css/neon.css">
+    
+    
+    <!-- cssファイル読み込み -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/free.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
+    <link rel="stylesheet" href="../css/toppage.css">
+    <link rel="stylesheet" href="../css/neon.css">
+    <link rel="stylesheet" href="../css/Reheader.css">
 
 </head>
 
 <body>
-  <header class="header">
+
+  <!-- ヘッダー -->
+  <header id="header">
+        
     <div class="header-logo">
       <img class="header-logo-img" src="../picture/8.png" alt="">
     </div>
-    <div class="header-nav">
+
+    <nav id="g-navi">
       <ul class="header-nav-ul" id="headerUl">
         <li class="header-nav-li">
           <a href="../index.html">
@@ -39,21 +46,24 @@
         </li>
         <li class="header-nav-li">
           <a href="../ayumi/index.html">
-            <span class="header-home-logo"><b>Home</b></span>
+            <span class="header-home-logo"><b>History</b></span>
           </a>
         </li>
         <li class="header-nav-li"><a href="../miniGame/index.html">
-            <span class="header-nav-li-text">
-              <span class="header-home-logo"><b>MiniGame</b></span>
+          <span class="header-nav-li-text">
+            <span class="header-home-logo"><b>MiniGame</b></span>
           </a></li>
-        <li class="header-nav-li"><a href="">
+          <li class="header-nav-li"><a href="./index.html">
             <span class="header-nav-li-text">
-              <span class="header-home-logo"><b>Introduction</b></span>
-          </a>
-        </li>
+              <span class="header-home-logo"><b>Interview</b></span>
+            </a>
+          </li>
       </ul>
-    </div>
+    </nav>
+
   </header>
+  
+  <div class="openbtn1"><span></span><span></span><span></span></div>
 
   <div class="first-view">
     <!-- Interview -->
@@ -168,7 +178,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/js/4-14.js"></script>
   <script src="../js/free.js"></script>
-
+  <script src="../js/header.js"></script>
 </body>
 
 </html>
