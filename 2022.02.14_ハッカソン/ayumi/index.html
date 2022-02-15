@@ -30,7 +30,18 @@
       <div class="header-logo">
         <img class="header-logo-img" src="../picture/8.png" alt="">
       </div>
-      <div class="header-nav">
+      <!-- ハンバーガーメニューのボタン -->
+      <div class="hamburger-wrapper">
+        <div class="hamburger" id="hamburger">
+          <span class="inner_line" id="line1"></span>
+          <span class="inner_line" id="line2"></span>
+          <span class="inner_line" id="line3"></span>
+        </div>
+      </div>
+
+
+      <!-- PC用のヘッダーナビゲーション -->
+      <!-- <div class="header-nav">
         <ul class="header-nav-ul">
           <li class="header-nav-li">
             <a href="../index.html">
@@ -44,13 +55,28 @@
           </li>
           <li class="header-nav-li"><a href="../miniGame/index.html">
             <span class="header-home-logo"><b>MiniGame</b></span>
-           </a></li>
+          </a></li>
           <li class="header-nav-li"><a href="../free/index.html">
             <span class="header-home-logo"><b>Introduction</b></span>
           </a></li>
         </ul>
-      </div>
+      </div> -->
     </header>
+
+  <!--ハンバーガー押下で横からメニューが出てくる  -->
+
+  <div class="popup-cover" id="popupCover"></div>
+  <div class="popup-content" id="navi">
+    <ul class="menu-list">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./ayumi/index.html">history<a></li>
+      <li><a href="./miniGame/index.html">miniGame</a></li>
+      <li>
+        <a href="./free/index.html">free</a>
+      </li>
+    </ul>
+  </div>
+
     <!-- History -->
     <div class="History-logo"><b>His<span>t</span>o<span>r</span>y</b></div>
     <!-- スクロールみー -->
@@ -60,7 +86,7 @@
     <div id="liner">
       <p class="border"></p>
     </div>
-   
+  
     <!-- <hr> -->
     <p>
       <a href="https://1-notes.com/css-border-animation/" target="_blank" rel="noopener"></a>
@@ -151,6 +177,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/ayumi.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

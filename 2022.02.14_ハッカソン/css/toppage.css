@@ -23,7 +23,7 @@ button {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    z-index: 99999999;
+    z-index: 99;
     padding: 8rem 10rem;
     background: rgba(94, 92, 92, 0.382);
     
@@ -154,7 +154,7 @@ button {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999999999;
+    z-index: 99;
     cursor: pointer;
 }
 /* 表示非表示用class */

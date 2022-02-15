@@ -22,18 +22,22 @@
   <link rel="stylesheet" href="../css/game.css">
 <script src="../js/game.js" defer></script>
 <!-- game用のリンク　ここまで -->
-<script src="../js/free.js"></script>
+<script src="../js/free.js" defer></script>
+<script src="../js/header.js" defer></script>
 </head>
 <body>
   <div class="first-view">
     <!-- miniGame -->
     <div class="mini-game-logo"><b>Mini<span>G</span>a<span>m</span>e</b></div>
   <div>
+
+    <!-- ヘッダー -->
     <header class="header">
       <div class="header-logo">
         <img class="header-logo-img" src="../picture/8.png" alt="">
     </div>
-    <div class="header-nav">
+
+    <div class="header-nav" id="headerNav">
       <ul class="header-nav-ul">
         <li class="header-nav-li">
           <a href="../index.html">
@@ -51,7 +55,31 @@
           <span class="header-home-logo"><b>Introduction</b></span></a></li>
       </ul>
     </div>
+          <!-- ハンバーガーボタン -->
+          <div class="hamburger" id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+          </div>
+        <!-- ハンバーガーボタン終わり -->
+
+
   </header>
+  <!-- ここまでヘッダー -->
+
+  <!--ハンバーガー押下でが出てくるメニュー  -->
+  <div class="popup-cover" id="popupCover"></div>
+  <div class="popup-content" id="navi">
+    <ul class="menu-list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../ayumi/index.html">history<a></li>
+      <li><a href="./index.html">miniGame</a></li>
+      <li><a href="../free/index.html">free</a></li>
+    </ul>
+  </div>
+
+
+
   <!-- ここからゲーム -->
   <main>
     <div class="main-inner-game">

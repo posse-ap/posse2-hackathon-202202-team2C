@@ -16,15 +16,35 @@ function hamburger() {
 
   document.getElementById('popupCover').classList.toggle('black-out');
 
-  header.classList.toggle('header')
 }
 
 document.getElementById('hamburger').addEventListener('click' , function () {
   hamburger();
-  if($('.header').hasClass('header')){
-    $('#body').removeClass('scroll-prevent');
+  if($('.in').hasClass('in')){
+    $('#body').addClass('scroll-prevent');
     } else {
-      $('#body').addClass('scroll-prevent');
-      console.log('a')
+      $('#body').removeClass('scroll-prevent');
+  
   }
 } );
+
+// ナビゲーションをスイッチ
+
+function FixedAnime(){
+ //ヘッダーの高さを取得
+  var headerH = $('#headerNav').outerHeight(true);
+  var scroll = $(window).scrollTop();
+  if (scroll >= headerH){//ヘッダーの高さ以上までスクロールしたら
+  $('.hamburger').addClass('fadeDown');//.openbtnにfadeDownというクラス名を付与して
+  $('#headerNav').addClass('dnone');//#headerにdnoneというクラス名を付与
+  }else{//それ以外は
+  $('.hamburger').removeClass('fadeDown');//fadeDownというクラス名を除き
+  $('#headerNav').removeClass('dnone');//dnoneというクラス名を除く
+  }
+
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	FixedAnime();//スクロールをするとハンバーガーメニューに変化するための関数を呼ぶ
+});

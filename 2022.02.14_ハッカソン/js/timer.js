@@ -25,7 +25,7 @@ document.getElementById("sec").textContent=String(sec).padStart(2,"0")
 
 setTimeout(countdown,1000);//1秒毎に繰り返す
 
-console.log(day,hour,min,sec);
+// console.log(day,hour,min,sec);
 
 
 }
