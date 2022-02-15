@@ -73,9 +73,9 @@ $("#g-navi li a").click(function () {//ナビゲーションのリンクがク�
 
 //リンク先のidまでスムーススクロール
 //※ページ内リンクを行わない場合は不必要なので削除してください
-    $('#g-navi li a').click(function () {
-  var elmHash = $(this).attr('href');
-  var pos = $(elmHash).offset().top-0;
-  $('body,html').animate({scrollTop: pos}, 1000);
-  return false;
-});
+//     $('#g-navi li a').click(function () {
+//   var elmHash = $(this).attr('href');
+//   var pos = $(elmHash).offset().top-0;
+//   $('body,html').animate({scrollTop: pos}, 1000);
+//   return false;
+// });
