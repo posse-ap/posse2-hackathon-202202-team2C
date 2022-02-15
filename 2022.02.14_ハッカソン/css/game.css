@@ -1,6 +1,5 @@
-body{
-  margin: 0 auto;
-  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+body {
+  background: linear-gradient(#07070A,black);
 }
 .main-inner-game{
   padding-top: 200px;
@@ -8,8 +7,8 @@ body{
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
-  /* height: 900px; */
-  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+  height: 900px;
+  /* background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg); */
   background-repeat: repeat;
 }
 
@@ -20,12 +19,132 @@ body{
   text-shadow:
   0 0 5px #FFF,
   0 0 12px #FFF,
-  /* 0 0 21px rgb(6, 238, 122), */
-  0 0 33px green;
-  font-size: 30px;
+  0 0 21px rgb(39, 235, 137),
+  0 0 33px rgb(37, 192, 37);
+  font-size: 20px;
+  margin-top: 25rem;
   margin-bottom: 5%;
 }
+.introduction-part-text {
+  font-family: 'DotGothic16', sans-serif;
+}
+/*枠線が伸びて出現*/
 
+.lineTrigger{
+  position: relative; /* 枠線が書かれる基点*/
+  opacity:0;
+}
+
+.lineTrigger.lineanime{
+  animation-name:lineAnimeBase;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes lineAnimeBase{
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;  
+}
+}
+
+/*上下線*/
+.lineTrigger::before,
+.lineTrigger::after{
+  position: absolute;
+  content:"";
+  width:0;
+  height:3px;
+  background:rgba(243, 255, 232, 0.8);/* 枠線の色*/
+}
+
+/*左右線*/
+.line2::before,
+.line2::after{
+  position: absolute;
+  content:"";
+  width: 3px;
+  height:0;
+  background:rgba(238, 255, 223, 0.8);/* 枠線の色*/
+}
+
+/*上線*/
+.lineTrigger::before {
+  top:0;
+  left:0;
+}
+
+.lineTrigger.lineanime::before {
+  animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
+}
+
+/*右線*/
+.line2::before{ 
+  top:0;
+  right:0;
+}
+
+.lineTrigger.lineanime .line2::before {
+  animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
+}
+
+/*下線*/
+.lineTrigger::after { 
+  bottom:0;
+  right:0;
+}
+
+.lineTrigger.lineanime::after {
+  animation: lineAnime .5s linear .5s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+}
+
+/*左線*/
+.line2::after{ 
+  bottom:0;
+  left:0;
+}
+
+.lineTrigger.lineanime .line2::after {
+  animation: lineAnime2 .5s linear .5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+}
+
+@keyframes lineAnime {
+  0% {width:0%;}
+    100%{width:100%;}
+}
+
+@keyframes lineAnime2 {
+  0% {height:0%;}
+    100%{height:100%;}
+}
+
+/*枠線内側の要素*/
+
+.lineTrigger.lineanime .linein-appear{
+  animation: lineInnerAnime .5s linear .5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
+  opacity: 0;/*初期値を透過0にする*/ 
+}
+
+@keyframes lineInnerAnime{
+  0% {opacity:0;}
+    100% {opacity:1;}
+}
+.lineTrigger {
+  margin-bottom: 1rem;
+}
+.line2 {
+  padding: 5rem 0;
+}
+.linein-appear  {
+  color: white;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 2rem;
+}
+
+/* ここからゲームのcss */
 .game-title-ribbon {
   display: inline-block;
   position: relative;
@@ -88,26 +207,32 @@ body{
 }
 
 .carpet{
-  width: 100%;
+
+  /* text-align: center; */
+  margin: 0 auto;
   position: relative;
-  height: 740px;
+  height: 800px;
+  width: 1000px;
   background-image: url(../miniGame/game_pictures/redcarpet.jpg)
 }
+
+
 
 
 table{
   /* margin:10px auto; */
   width: 720px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  height: 720px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
   position: absolute;
   /* top: 50%; */
-  left: 50%;
-  transform: translate(-50%, 0%);
-  -webkit-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
+  /* left: 50%; */
+  /* transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%); */
 }
 
 td.card{
@@ -122,4 +247,101 @@ td.card{
 
 td.card.back{
   background-image:url(../miniGame/game_pictures/z01.jpg) !important;
+}
+
+
+
+
+
+
+
+
+
+
+.fixed-info.active {
+  position: fixed;
+  top: 30px;
+  top: 30px;
+}
+.fixed-info {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 170px;
+  right: 30px;
+  z-index: 10;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 70%);
+}
+
+.fixed-info-textbox {
+  padding: 16px 20px;
+}
+
+.fixed-info-text {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.fixed-info-text h5 {
+  font-size: 1rem;
+  color:#333;
+}
+
+.fixed-info-text h5:hover {
+  color: #0095d9;
+}
+
+
+.fixed-info-close {
+  background: #0095d9;
+  /* border-radius: 50%; */
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.fixed-info-close:before {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.fixed-info-close:after {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.opa {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
 }

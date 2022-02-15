@@ -12,15 +12,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
 <!-- ファイルの読み込みはここから -->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
 <!-- <link rel="stylesheet" href="css/loading.css"> -->
 <link rel="stylesheet" href="css/toppage.css">
+<link rel="stylesheet" href="css/neon.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/quizy.css">
 <link rel="stylesheet" href="css/timer.css">
+
 
 <body>
   <!-- ローディング画面 -->
@@ -214,28 +219,67 @@
     <div class="first-view">
 
       <!-- ヘッダー -->
-      <header class="header">
+      <header class="header ">
         <div class="header-logo">
-          <img class="header-logo-img" src="picture/無題20_20220214221319.jpg" alt="">
+          <img class="header-logo-img" src="picture/8.png" alt="">
         </div>
+
+        <!-- ハンバーガーめにう -->
+
+      
+        <div class="hamburger-wrapper">
+          <div class="hamburger" id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+          </div>
+        </div>
+<!-- ハンバーガーめにう終わり -->
+
         <div class="header-nav">
-          <ul class="header-nav-ul">
+          <ul class="header-nav-ul" id="headerUl">
             <li class="header-nav-li">
               <a href="">
-                <span class="header-nav-li-text">Home</span>
+                <span class="header-home-logo"><b>Home</b></span>
               </a>
             </li>
             <li class="header-nav-li">
               <a href="ayumi/index.html">
-                <span class="header-nav-li-text">history</span>
+                <span class="header-home-logo"><b>History</b></span>
               </a>
             </li>
             <li class="header-nav-li"><a href="miniGame/index.html">
-                <span class="header-nav-li-text"><span class="header-nav-li-text">miniGame</span> </a></li>
-            <li class="header-nav-li"><a href="free/index.html"><span class="header-nav-li-text"><span class="header-nav-li-text">free</span></a></li>
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>MiniGame</b></span>
+              </a></li>
+            <li class="header-nav-li"><a href="free/index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>Introduction</b></span>
+              </a>
+            </li>
           </ul>
         </div>
       </header>
+
+      <!-- 動画 -->
+      <div class="introduction-video-wrapper">
+        <div class="introduction-video" id="introductionVideo">
+          <video id="test1" width="500" height="300">
+            <source src="video/posse2.mp4" type="video/mp4">
+          </video>
+          <div class="close-button" id="closeBtn" onclick="close()">
+            <img src="picture/iconmonstr-x-mark-1.svg" alt="">
+          </div>
+          <div class="video-buttons">
+            <button onclick="Play1()">
+              <img src="picture/iconmonstr-triangle-3.svg" alt="" id="playBtn">
+              <button onclick="Pause1()">
+                <img src="picture/iconmonstr-media-control-49.svg" alt=""></button></button>
+            <button onclick="PlayFromFirst1()">
+              <img src="picture/iconmonstr-refresh-2.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
       <!-- sns links -->
       <div class="sns-links-position">
         <div class="sns-links-wrapper">
@@ -269,18 +313,22 @@
       </div>
       <!-- welcome to posse -->
       <div class="top-page-logo"><b>Welcom<span>e </span>to <span>Pos</span>se2</b></div>
-      <div class="wavey-button">
+      <div class="wavey-button" onclick="Play2()" id="waveyBtn">
         <a href="#" class="btnripple2"><span></span></a>
       </div>
       <div class="scrolldown3"><span>Scroll</span></div>
     </div>
+
+
+<!-- first view以下 -->
+    <div class="first-view-under-wrapper"></div>
     <!-- 概要 -->
-    <!-- quiz -->
-    <div class="first-view-under-wrapper">
+    <div class="overview">概要</div>
+      <!-- quiz -->
       <section class="container content-wrapper">
         <div id="quiz-box"></div>
       </section>
-    <!-- カウントダウンタイマー -->
+      <!-- カウントダウンタイマー -->
     <div class="timer-wrapper">
       <div class="timer-text">
         所属POSSE登録まであと
@@ -333,8 +381,11 @@
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
   <!-- <script src="js/loading.js"></script> -->
+  <script src="js/header.js"></script>
   <script src="js/quizy.js"></script>
+  <script src="js/toppage.js"></script>
   <script src="js/timer.js"></script>
 </body>
 
