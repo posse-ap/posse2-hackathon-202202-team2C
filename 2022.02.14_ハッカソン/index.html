@@ -12,21 +12,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
 <!-- ファイルの読み込みはここから -->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/common.css">
-<!-- <link rel="stylesheet" href="css/loading.css"> -->
+<link rel="stylesheet" href="css/loading.css">
 <link rel="stylesheet" href="css/toppage.css">
+<link rel="stylesheet" href="css/neon.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/quizy.css">
 <link rel="stylesheet" href="css/timer.css">
+
 
 <body>
   <!-- ローディング画面 -->
   <div id="splash">
     <div id="splash-logo" class="svg_text">
-      <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1223.000000pt" height="286.000000pt"
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1223.000000pt" height="286.000000pt"
         viewBox="0 0 1223.000000 286.000000" preserveAspectRatio="xMidYMid meet">
 
         <g id="svg_text_wrap" transform="translate(0.000000,286.000000) scale(0.100000,-0.100000)" fill="#000000"
@@ -202,7 +207,7 @@
   -2 -2 -30 -11 -60z m138 -106 c14 -22 44 -52 66 -66 22 -15 40 -30 40 -34 0
   -11 -49 -30 -80 -30 -45 0 -70 40 -70 111 0 33 4 59 9 59 4 0 20 -18 35 -40z" />
         </g>
-      </svg> -->
+      </svg>
     </div>
   </div>
   <div class="splash-bg"></div>
@@ -247,7 +252,7 @@
       <div class="introduction-video-wrapper">
         <div class="introduction-video" id="introductionVideo">
           <video id="test1" width="500" height="300">
-            <source src="video/introduction.mp4" type="video/mp4">
+            <source src="video/posse2.mp4" type="video/mp4">
           </video>
           <div class="close-button" id="closeBtn" onclick="close()">
             <img src="picture/iconmonstr-x-mark-1.svg" alt="">
@@ -294,21 +299,24 @@
         </div>
       </div>
       <!-- welcome to posse -->
-      <div class="top-page-logo"><b>Welcom<span>e </span>to <span>Pos</span>se2</b></div>
+      <div class="top-page-logo"><b>Welcom<span>e </span>to <span>Pos</span>se2</b></div>
       <div class="wavey-button" onclick="Play2()" id="waveyBtn">
         <a href="#" class="btnripple2"><span></span></a>
       </div>
       <div class="scrolldown3"><span>Scroll</span></div>
     </div>
 
+<!-- first view以下 -->
+    <div class="first-view-under-wrapper"></div>
     <!-- 概要 -->
-
-    <!-- quiz -->
-    <div class="first-view-under-wrapper">
+    <div class="overview">概要</div>
+    
+    
+      <!-- quiz -->
       <section class="container content-wrapper">
         <div id="quiz-box"></div>
       </section>
-    <!-- カウントダウンタイマー -->
+      <!-- カウントダウンタイマー -->
     <div class="timer-wrapper">
       <div class="timer-text">
         所属POSSE登録まであと
@@ -344,7 +352,7 @@
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- <script src="js/loading.js"></script> -->
+  <script src="js/loading.js"></script>
   <script src="js/quizy.js"></script>
   <script src="js/toppage.js"></script>
   <script src="js/timer.js"></script>

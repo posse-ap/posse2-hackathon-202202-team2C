@@ -12,42 +12,7 @@ button {
     padding: 0;
     appearance: none;
 }
-/* トップページのロゴ */
-.first-view {
-    width: 100%;
-    height: 100vh;
-    background: #112 url(../picture/39BD94A7-EAB6-4A2C-99F8-59133FFD3A1A.jpeg) center no-repeat;
-    background-size: cover;
-    margin: 0;
-}
 
-.top-page-logo {
-    text-align: center;
-    width: 65%;
-    height: 250px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    user-select: none;
-}
-
-.top-page-logo b {
-    font: 400 15vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.top-page-logo b span {
-    animation: blink linear infinite 2s;
-}
-
-.top-page-logo b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
 /* 動画 */
 
 .introduction-video  {
@@ -80,289 +45,7 @@ button {
     right: 5%;
     cursor: pointer;
 }
-/* History のロゴ */
-.History-logo {
-    text-align: center;
-    width: 65%;
-    height: 250px;
-    margin: auto;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    right: 0;
-    bottom: 0;
-    user-select: none;
-}
 
-.History-logo b {
-    font: 400 15vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.History-logo b span {
-    animation: blink linear infinite 2s;
-}
-
-.History-logo b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
-/* miniGameのロゴ */
-.mini-game-logo {
-    text-align: center;
-    width: 65%;
-    height: 250px;
-    margin: auto;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    right: 0;
-    bottom: 0;
-    user-select: none;
-}
-
-.mini-game-logo b {
-    font: 400 15vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.mini-game-logo b span {
-    animation: blink linear infinite 2s;
-}
-
-.mini-game-logo b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
-/* interviewのロゴ */
-.interview-logo {
-    text-align: center;
-    width: 65%;
-    height: 250px;
-    margin: auto;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    right: 0;
-    bottom: 0;
-    user-select: none;
-}
-
-.interview-logo b {
-    font: 400 15vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.interview-logo b span {
-    animation: blink linear infinite 2s;
-}
-
-.interview-logo b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
-/* interviewのロゴ -2 */
-.interview-logo-2 {
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    position: absolute;
-    top: -35%;
-    left: -30%;
-    right: 0;
-    bottom: 0;
-    user-select: none;
-}
-
-.interview-logo-2 b {
-    font: 400 5vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.interview-logo-2 b span {
-    animation: blink linear infinite 2s;
-}
-
-.interview-logo-2 b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
-/* coming soonのロゴ */
-.coming-soon-logo {
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    user-select: none;
-}
-
-.coming-soon-logo b {
-    font: 400 10vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-}
-
-.coming-soon-logo b span {
-    animation: blink linear infinite 2s;
-}
-
-.coming-soon-logo b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
-}
-/* headerのロゴ */
-.header-home-logo {
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    user-select: none;
-}
-
-.header-home-logo b {
-    font: 400 5vh "Vibur";
-    font-family: 'Vibur', cursive;
-    color: #fee;
-    text-shadow: 0 -40px 400px, 0 0 2px, 0 0 1em #642828, 0 0 0.5em #39662c, 0 0 0.1em #30635e, 0 10px 3px #000;
-}
-/* ロゴのアニメーション */
-@keyframes blink {
-    78% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-
-    79% {
-        color: #333;
-    }
-
-    80% {
-
-        text-shadow: none;
-    }
-
-    81% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-
-    82% {
-        color: #333;
-        text-shadow: none;
-    }
-
-    83% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-
-    92% {
-        color: #333;
-        text-shadow: none;
-    }
-
-    92.5% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-}
-
-/* ネオンロゴのiPad表示対応 */
-
-@media (max-width: 900px) {
-    /* トップページのロゴ */
-    .top-page-logo {
-        text-align: center;
-        width: 65%;
-        height: 250px;
-        margin: auto;
-        position: absolute;
-        top: -20%;
-        left: 0;
-
-        user-select: none;
-    }
-    .top-page-logo b {
-        font: 400 10vh "Vibur";
-        font-family: 'Vibur', cursive;
-        color: #fee;
-        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-    }
-    .History-logo {
-        text-align: center;
-        width: 65%;
-        height: 250px;
-        margin: auto;
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        right: 0;
-        bottom: 0;
-        user-select: none;
-    }
-    .History-logo b {
-        font: 400 10vh "Vibur";
-        font-family: 'Vibur', cursive;
-        color: #fee;
-        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-    }
-    .mini-game-logo {
-        text-align: center;
-        width: 65%;
-        height: 250px;
-        margin: auto;
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        right: 0;
-        bottom: 0;
-        user-select: none;
-    }
-
-    .mini-game-logo b {
-        font: 400 10vh "Vibur";
-        font-family: 'Vibur', cursive;
-        color: #fee;
-        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-    }
-    .interview-logo {
-        text-align: center;
-        width: 65%;
-        height: 250px;
-        margin: auto;
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        right: 0;
-        bottom: 0;
-        user-select: none;
-    }
-
-    .interview-logo b {
-        font: 400 10vh "Vibur";
-        font-family: 'Vibur', cursive;
-        color: #fee;
-        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-    }
-    .coming-soon-logo {
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        user-select: none;
-    }
-
-    .coming-soon-logo b {
-        font: 400 5vh "Vibur";
-        font-family: 'Vibur', cursive;
-        color: #fee;
-        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
-    }
- }
 
 /* follow me @nodws */
 #btn-twtr {
@@ -465,18 +148,6 @@ button {
     border-left-color: rgb(76, 76, 76);
 }
 
-<<<<<<< HEAD
-=======
-/*========= レイアウトのためのCSS ===============*/
-
-body {
-    text-align: center;
-}
-
-/* p {
-    margin: 0 0 10px 0;
-} */
->>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
 
 .wavey-button {
     position: absolute;
@@ -598,6 +269,7 @@ body {
 }
 /* ↑ここまでファーストビュー */
 
+/* snsリンク */
 .sns-links-position  {
     position: fixed;
     top: 50%;
@@ -614,13 +286,8 @@ body {
     height: 100%;
     opacity: 0.6;
 }
-<<<<<<< HEAD
 /* snsリンクのiPad対応 */
 @media (max-width: 900px) { 
-=======
-/* snsリンクのスマホレスポンシブ対応 */
-@media (max-width: 900px) {
->>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
     .sns-links-position  {
         position: fixed;
         top: 70%;
@@ -629,6 +296,12 @@ body {
         width: 70px;
         height: 70px;
     }
+}
+/* 概要 */
+.overview {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 55rem;
 }
 @import url(//fonts.googleapis.com/css?family=Vibur);
 footer{

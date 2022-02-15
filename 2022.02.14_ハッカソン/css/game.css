@@ -7,13 +7,8 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
-<<<<<<< HEAD
   height: 900px;
   /* background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg); */
-=======
-  /* height: 900px; */
-  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
->>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
   background-repeat: repeat;
 }
 
@@ -24,16 +19,10 @@ body {
   text-shadow:
   0 0 5px #FFF,
   0 0 12px #FFF,
-<<<<<<< HEAD
   0 0 21px rgb(39, 235, 137),
   0 0 33px rgb(37, 192, 37);
   font-size: 20px;
   margin-top: 25rem;
-=======
-  /* 0 0 21px rgb(6, 238, 122), */
-  0 0 33px green;
-  font-size: 30px;
->>>>>>> 9a72be2e71a8fb7c23ceefedc910f8c3157c9267
   margin-bottom: 5%;
 }
 .introduction-part-text {
@@ -68,8 +57,8 @@ body {
   position: absolute;
   content:"";
   width:0;
-  height:1px;
-  background:#333;/* 枠線の色*/
+  height:3px;
+  background:rgba(243, 255, 232, 0.8);/* 枠線の色*/
 }
 
 /*左右線*/
@@ -77,9 +66,9 @@ body {
 .line2::after{
   position: absolute;
   content:"";
-  width: 1px;
+  width: 3px;
   height:0;
-  background:#333;/* 枠線の色*/
+  background:rgba(238, 255, 223, 0.8);/* 枠線の色*/
 }
 
 /*上線*/
@@ -109,7 +98,7 @@ body {
 }
 
 .lineTrigger.lineanime::after {
-  animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+  animation: lineAnime .5s linear .5s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
 }
 
 /*左線*/
@@ -119,7 +108,7 @@ body {
 }
 
 .lineTrigger.lineanime .line2::after {
-  animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+  animation: lineAnime2 .5s linear .5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
 }
 
 @keyframes lineAnime {
@@ -135,7 +124,7 @@ body {
 /*枠線内側の要素*/
 
 .lineTrigger.lineanime .linein-appear{
-  animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
+  animation: lineInnerAnime .5s linear .5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
   opacity: 0;/*初期値を透過0にする*/ 
 }
 

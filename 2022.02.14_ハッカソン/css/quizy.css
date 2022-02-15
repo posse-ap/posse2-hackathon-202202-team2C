@@ -1,3 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 24px;
+  letter-spacing: .04em;
+  color: rgb(3, 24, 49);
+  font-family: 'DotGothic16', sans-serif;
+  background-image: url(../picture/2022-02-14\ 18.38のイメージ.jpg);
+  background-size: cover;
+  
+}
+
 .content-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -17,7 +31,7 @@
   }
   
   .quiz-image-container {
-    margin: 10px 0;
+    margin: 0  0 10px 0;
     display: block;
   }
   
@@ -46,7 +60,7 @@
   
   
   .box1 li{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.462);
       font-size: 16px;
       display: block;
       border: 1px solid #ebebeb;
@@ -100,16 +114,8 @@
     color: #fff;
     list-style: none;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  
-  body {
-    line-height: 24px;
-    letter-spacing: .04em;
-    color: rgb(3, 24, 49);
-    font-family: "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "游ゴシック Medium", meiryo, sans-serif;
-    background-color: #161616;
+
+  .question-text {
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
   }
