@@ -23,9 +23,10 @@
 <!-- <link rel="stylesheet" href="css/loading.css"> -->
 <link rel="stylesheet" href="css/toppage.css">
 <link rel="stylesheet" href="css/neon.css">
-<link rel="stylesheet" href="css/header.css">
+<!-- <link rel="stylesheet" href="css/header.css"> -->
 <link rel="stylesheet" href="css/quizy.css">
 <link rel="stylesheet" href="css/timer.css">
+<link rel="stylesheet" href="css/Reheader.css">
 
 
 <body>
@@ -220,27 +221,17 @@
     <div class="first-view">
 
       <!-- ヘッダー -->
-      <header class="header ">
+
+      <header id="header">
+        
         <div class="header-logo">
           <img class="header-logo-img" src="picture/8.png" alt="">
         </div>
 
-        <!-- ハンバーガーめにう -->
-
-
-        <div class="hamburger-wrapper">
-          <div class="hamburger" id="hamburger">
-            <span class="inner_line" id="line1"></span>
-            <span class="inner_line" id="line2"></span>
-            <span class="inner_line" id="line3"></span>
-          </div>
-        </div>
-        <!-- ハンバーガーめにう終わり -->
-
-        <div class="header-nav">
+        <nav id="g-navi">
           <ul class="header-nav-ul" id="headerUl">
             <li class="header-nav-li">
-              <a href="">
+              <a href="./index.html">
                 <span class="header-home-logo"><b>Home</b></span>
               </a>
             </li>
@@ -250,18 +241,22 @@
               </a>
             </li>
             <li class="header-nav-li"><a href="miniGame/index.html">
-                <span class="header-nav-li-text">
-                  <span class="header-home-logo"><b>MiniGame</b></span>
+              <span class="header-nav-li-text">
+                <span class="header-home-logo"><b>MiniGame</b></span>
               </a></li>
-            <li class="header-nav-li"><a href="free/index.html">
+              <li class="header-nav-li"><a href="free/index.html">
                 <span class="header-nav-li-text">
-                  <span class="header-home-logo"><b>Introduction</b></span>
-              </a>
-            </li>
+                  <span class="header-home-logo"><b>Interview</b></span>
+                </a>
+              </li>
           </ul>
-        </div>
-      </header>
+        </nav>
 
+      </header>
+      
+      <div class="openbtn1"><span></span><span class="question-tex"></span><span></span></div>
+
+      
       <!-- 動画 -->
       <div class="introduction-video-wrapper">
         <div class="introduction-video" id="introductionVideo">

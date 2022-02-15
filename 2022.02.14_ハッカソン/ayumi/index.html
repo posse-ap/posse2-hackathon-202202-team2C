@@ -18,40 +18,50 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/ayumu.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
+  <link rel="stylesheet" href="../css/Reheader.css">
 
 </head>
 
 <body>
   <div class="first-view">
     <!-- ヘッダー -->
-    <header class="header">
+    <header id="header">
+        
       <div class="header-logo">
         <img class="header-logo-img" src="../picture/8.png" alt="">
       </div>
-      <div class="header-nav">
-        <ul class="header-nav-ul">
+
+      <nav id="g-navi">
+        <ul class="header-nav-ul" id="headerUl">
           <li class="header-nav-li">
             <a href="../index.html">
               <span class="header-home-logo"><b>Home</b></span>
             </a>
           </li>
           <li class="header-nav-li">
-            <a href="ayumi/index.html">
+            <a href="../index.html">
               <span class="header-home-logo"><b>History</b></span>
             </a>
           </li>
           <li class="header-nav-li"><a href="../miniGame/index.html">
+            <span class="header-nav-li-text">
               <span class="header-home-logo"><b>MiniGame</b></span>
             </a></li>
-          <li class="header-nav-li"><a href="../free/index.html">
-              <span class="header-home-logo"><b>Introduction</b></span>
-            </a></li>
+            <li class="header-nav-li"><a href="../free/index.html">
+              <span class="header-nav-li-text">
+                <span class="header-home-logo"><b>Interview</b></span>
+              </a>
+            </li>
         </ul>
-      </div>
+      </nav>
+
     </header>
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+
+
     <!-- sns links -->
     <div class="sns-links-position">
       <div class="sns-links-wrapper">
@@ -89,10 +99,6 @@
     <div class="scrolldown4"><span>Scroll</span></div>
     <!-- 線 -->
     <div class="liner-wrapper">
-<<<<<<< HEAD
-      <div id="liner">
-        <p class="border"></p>
-=======
     <div id="liner">
       <p class="border"></p>
     </div>
@@ -149,7 +155,6 @@
     <li class="photo-item" id="photoItem7">
       <div data-month="December" data-text="クリスマスパーティーや初詣を経て、、、" class="photo-item-style" id="photoImg8">
         <img class="photo-item-img" src="../picture/History14 .jpg" alt="">
->>>>>>> 061da151b16ea7c21c62f2293783d2eeed1450b7
       </div>
 
       <!-- <hr> -->
@@ -256,6 +261,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/ayumi.js"></script>
+    <script src="../js/header.js"></script>
     <script src="../js/common.js"></script>
 </body>
 
