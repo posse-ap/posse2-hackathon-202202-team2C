@@ -89,6 +89,8 @@ body {
     top: 80%;
     left: 0;
     font-family: 'Kaisei Decol', serif;
+    background: rgba(255, 255, 255, 0.531);
+    padding: 10px;
 }
 .photo-item-img {
     width: 100%;

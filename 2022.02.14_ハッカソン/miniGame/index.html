@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
 <!-- game用のリンク ここから-->
   <link rel="stylesheet" href="../css/game.css">
 <script src="../js/game.js" defer></script>
@@ -56,46 +57,114 @@
   <main>
     <div class="main-inner-game">
       <div class="introduction-part">
-        <h1 class="introduction-part-text">POSSE2に入って一年足らずでこんなものまで作れるように！！！</h1>
+        <div class="introduction-part-text">プログラミングでできることとはWebサイト制作だけではありません</div>
+        <div class="introduction-part-text">POSSE2に入って一年足らずでこんなものまで作れるように！！！</div>
       </div>
-      
-      <div class="lineTrigger">
-        <div class="line2">
-          <div class="linein-appear">枠線が伸びて出現</div>
+  
+      <!-- 神経衰弱ゲーム説明 -->
+      <div class="game-introduction-wrapper">
+        <div class="lineTrigger" id="lineTrigger1">
+          <div class="line2">
+            <div class="game-title-ribbon">
+              <h3 class="game-title-ribbon-text">Servant Leader Card Flip</h3>
+            </div>
+            <div class="linein-appear">
+              <span class="linein-appear-text">
+              皆さんも一度は遊んだことがあるはずの神経衰弱。<br class="br-sp">
+              今回はトランプではなく、<br class="br-sp">
+              POSEE2のサバリメンバーの顔で遊んでみましょう。<br class="br-sp">
+              顔を覚えるまで遊んだあなたはもう立派なPOSSE生。<br class="br-sp">
+              HabarSでも声をかけられそうですね。
+            </span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="lineTrigger">
-        <div class="line2">
-          <div class="linein-appear">枠線が伸びて出現</div>
-        </div>
-      </div>
-      <div class="game-title-ribbon">
-        <h3>Servant Leader Card Flip</h3>
-      </div>
-    
+      <!-- 実際にPLAY -->
+      <div class="game-play-text">実際にPLAY↓↓↓</div>
+      <!-- 神経衰弱ゲーム -->
       <div class="carpet">
-            <table id="table"></table>
+        <table id="table"></table>
+      </div>
+
+      <!-- ブロック崩しゲームの説明 -->
+      <div class="game-introduction-wrapper">
+        <div class="lineTrigger" id="lineTrigger2">
+          <div class="line2">
+            <div class="game-title-ribbon">
+              <h3 class="game-title-ribbon-text">Block Breaking Game</h3>
+            </div>
+            <div class="linein-appear">
+              <span class="linein-appear-text">
+              Googleなどが手軽なミニゲームとして<br class="br-sp">
+              ソースコードを公開しているブロック崩しゲームは<br class="br-sp">
+              プログラミング初心者がコード練習をするには<br class="br-sp">
+              もってこいのサイトです。<br class="br-sp">
+              初心者向けとはいえ、jsにjQuery、canvasなど、<br class="br-sp">
+              必要な知識は幅広く、コードの書きごたえは十分。<br class="br-sp">
+              皆さんがconsole.jsを使いこなしてミニゲームを<br class="br-sp">
+              作ることができる日を楽しみに待っています！！<br class="br-sp">
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 実際にPLAY -->
+      <div class="game-play-text">実際にPLAY↓↓↓</div>
+      <!-- ブロック崩しコード -->
+      <div class="block-breaking-wrapper">
+        <canvas class="canvas" id="myCanvas" width="480" height="320"> </canvas>
+        <form class="dialog" id="dialog1" name="dialog1">
+          <p class="dialog-text">GAME OVER...</p>
+          <p class="dialog-text">continue??</p>
+          <input class="button-text" type="button" name="yes" value="yes." />
+          <input class="button-text" type="button" name="no" value="no." />
+        </form>
+        <form class="dialog" id="dialog2" name="dialog2">
+          <p class="dialog-text">YOU WIN!!!</p>
+          <p class="dialog-text">continue??</p>
+          <input class="button-text" type="button" name="yes" value="yes." />
+          <input class="button-text" type="button" name="no" value="no." />
+        </form>
+        <form class="dialog-3" id="dialog3" name="dialog3">
+          <p class="dialog-text">GAME START!!!</p>
+          <p class="dialog-text">start???</p>
+          <input id="start" class="button-text" type="button" name="start" value="yes." />
+          <input id="none" class="button-text" type="button" name="none" value="no." />
+        </form>
+      </div>
+
+      <!-- 終わりの言葉 -->
+      <div class="game-introduction-wrapper">
+        <div class="lineTrigger">
+          <div class="line2">
+            <div class="game-title-ribbon">
+              <h3 class="game-title-ribbon-text">Mini Game</h3>
+            </div>
+            <div class="linein-appear">
+              <span class="linein-appear-text">
+             ミニゲームを楽しんでいただけたでしょうか？<br class="br-sp">
+             POSSE2では年上の先輩が少なくて技術面が不安！<br class="br-sp">
+             と思うかもしれませんが、先輩が少ない分、<br class="br-sp">
+             個人の自走力が強いです！<br class="br-sp">
+             POSSE2雑談ラインでは、自主制作したサイトを<br class="br-sp">
+             共有したり、一緒にアプリ制作をしようと呼びかけたりと<br class="br-sp">
+             プログラミングモチベの高いメンバーばかり！！<br class="br-sp">
+             仲間とより深い関係でプログラミングを楽しみたい3期生！<br class="br-sp">
+             POSSE2で待ってます！
+            </span>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
   </main>
 
   <!-- ここまでゲーム -->
-  <footer class="game-footer">
-    <!-- <img src="../miniGame/game_pictures/ribbon.png" alt=""> -->
-
-<a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true"
-target="_blank">
-<div id="fixedInfo" class="fixed-info active">
-  <div class="fixed-info-textbox">
-    <div class="fixed-info-text">
-      <h5>POSSE2申し込みフォームは<br>ここをクリック！</h5>
-    </div>
-  </div>
-</a>
-  <div id="infoClose" class="fixed-info-close opa"></div>
-</div>
-  </footer>
+<footer class="footer-wrapper">
+  aaa
+</footer>
     
 </div>
 
