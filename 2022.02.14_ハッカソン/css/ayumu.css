@@ -1,78 +1,86 @@
 body {
   overflow-y: hidden;
 }
+
 /* スクロールみー非表示 */
 .scrolldown4 {
   display: none;
 }
+
 /* 線 */
 .liner-wrapper {
   position: absolute;
   width: 100%;
   top: 45%;
 }
+
 #liner {
   margin: 70px 20px;
 }
 
-.border{
+.border {
   position: relative;
   font-size: 18px;
   color: white;
 }
 
-.border:before{
+.border:before {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  border-bottom: solid 2px rgb(255, 255, 255,0.7);
+  border-bottom: solid 2px rgb(255, 255, 255, 0.7);
   animation: border_anim 3s linear infinite;
 }
 
 @keyframes border_anim {
-  0%{
-  width: 0%;
+  0% {
+    width: 0%;
   }
-  100%{
-  width: 100%;
+
+  100% {
+    width: 100%;
   }
 }
 
 /* 写真 */
 .photos-wrapper {
-overflow-x: auto;
-white-space: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
   position: absolute;
   height: auto;
   width: 1200px;
-  top: 50%;
+  top: 70%;
   left: 0%;
   transform: translateY(-50%);
   /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); */
 }
-.photos-wrapper::-webkit-scrollbar{
+
+.photos-wrapper::-webkit-scrollbar {
   display: none;
 }
+
 .photo-item {
-display: inline-block;
-width: 50%;
-height: 300px;
-/* margin: 16px; */
-font-size: 48px;
-color: #fff;
-background-color: #241f1f00;
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+  /* margin: 16px; */
+  font-size: 48px;
+  color: #fff;
+  background-color: #241f1f00;
   /* color: #d2d2d214; */
   /* position: relative; */
 }
+
 /* 疑似要素(何月) */
-.photo-item-style  {
+.photo-item-style {
   position: relative;
   width: 80%;
   height: auto;
 }
+
 .photo-item-style::before {
   position: absolute;
   content: attr(data-month);
@@ -80,18 +88,21 @@ background-color: #241f1f00;
   left: 5%;
   font-family: 'Vibur', cursive;
   font-size: 60px;
-  color: rgba(255, 255, 255, 0.615);
+  color: rgba(255, 255, 255, 0.599);
   z-index: 10000;
 }
+
 .photo-item-style::after {
   position: absolute;
   content: attr(data-text);
-  top: 80%;
+  top: 110%;
   left: 0;
   font-family: 'Kaisei Decol', serif;
-  background: rgba(255, 255, 255, 0.531);
+  background: rgba(255, 255, 255, 0.188);
+  font-size: 20px;
   padding: 10px;
 }
+
 .photo-item-img {
   width: 100%;
   height: 100%;
@@ -102,13 +113,6 @@ background-color: #241f1f00;
 /* POSSE１から独立し2の設立へ立ち上がった2期生！！！！ */
 #photoItem1 {
   margin-left: 20rem;
-}
-#photoImg1 {
-  transform: translateY(40%);
-  width: auto;
-  height: auto;
-  margin-left: 0;
-  font-size: 24px
 }
 
 /* POSSE2爆誕！！！！ */
@@ -174,7 +178,7 @@ background-color: #241f1f00;
 @media (max-width: 900px) {
   /* 線非表示 */
   .liner-wrapper {
-      display: none;
+    display: none;
   }
 
 
@@ -192,4 +196,3 @@ white-space: nowrap;
   -ms-transform: translate(-50%, -50%);
 }
 }
-
