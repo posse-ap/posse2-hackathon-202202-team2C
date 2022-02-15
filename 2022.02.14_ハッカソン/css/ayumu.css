@@ -14,13 +14,13 @@ body {
   #liner {
     margin: 70px 20px;
   }
-  
+
   .border{
     position: relative;
     font-size: 18px;
     color: white;
   }
-  
+
   .border:before{
     content: '';
     position: absolute;
@@ -30,7 +30,7 @@ body {
     border-bottom: solid 2px rgb(255, 255, 255,0.7);
     animation: border_anim 3s linear infinite;
   }
-  
+
 @keyframes border_anim {
     0%{
     width: 0%;
@@ -119,7 +119,7 @@ body {
     margin-left: 0;
     font-size: 40px;
 }
-/* リアイベで徐々に仲を深めてく!!!! */ 
+/* リアイベで徐々に仲を深めてく!!!! */
 #photoImg3  {
     transform: translateX(-8rem);
 }
@@ -171,13 +171,13 @@ body {
     font-size: 1.5rem;
 }
 /* iPad対応レスポンシブデザイン */
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     /* 線非表示 */
     .liner-wrapper {
         display: none;
     }
 
-    
+
 
 .photos-wrapper {
 	overflow-y: auto;
@@ -192,3 +192,113 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
  }
+
+
+
+
+
+/* ここから先ポップアップ */
+
+.fixed-info.active {
+  position: fixed;
+  top: 150px;
+  z-index: 100;
+}
+.fixed-info {
+  position: absolute;
+  right: 30px;
+  z-index: 10;
+  padding: 20px;
+  box-shadow: 0 0 5px #0095d9, inset 0 0 5px #0095d9, 0 0 10px #0095d9,
+    inset 0 0 10px #0095d9, 0 0 25px #0095d9, inset 0 0 25px #0095d9,
+    0 15px 3px #000;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: auto;
+  height:auto;
+  background-color:#fff;
+}
+
+.fixed-info-textbox {
+  padding: 16px 20px;
+  display: block;
+  line-height: 1.3;
+  color: #ffd8d8;
+}
+
+.fixed-info-text {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color:#333;
+  font-weight:900;
+}
+
+
+
+.fixed-info-text h2{
+  cursor: pointer;
+}
+
+.fixed-info-text h2:hover{
+  color:#0095d9;
+}
+
+.fixed-info-close {
+  box-shadow: 0 0 5px #0095d9, inset 0 0 5px #0095d9, 0 0 10px #0095d9,
+    inset 0 0 10px #0095d9, 0 0 25px #0095d9, inset 0 0 25px #0095d9;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.fixed-info-close:before {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.fixed-info-close:after {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.opa {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
