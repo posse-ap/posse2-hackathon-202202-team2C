@@ -29,7 +29,7 @@
 
 <body>
   <!-- ローディング画面 -->
-  <div id="splash">
+<!--   <div id="splash">
     <div id="splash-logo" class="svg_text">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1223.000000pt" height="286.000000pt"
         viewBox="0 0 1223.000000 286.000000" preserveAspectRatio="xMidYMid meet">
@@ -209,7 +209,7 @@
         </g>
       </svg>
     </div>
-  </div>
+  </div> -->
   <div class="splash-bg"></div>
 
   <!-- ローディング画面終わった後の中身ここから -->
@@ -219,10 +219,23 @@
     <div class="first-view">
 
       <!-- ヘッダー -->
-      <header class="header">
+      <header class="header ">
         <div class="header-logo">
           <img class="header-logo-img" src="picture/8.png" alt="">
         </div>
+
+        <!-- ハンバーガーめにう -->
+
+      
+        <div class="hamburger-wrapper">
+          <div class="hamburger" id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+          </div>
+        </div>
+<!-- ハンバーガーめにう終わり -->
+
         <div class="header-nav">
           <ul class="header-nav-ul" id="headerUl">
             <li class="header-nav-li">
@@ -352,7 +365,9 @@
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/loading.js"></script>
+    
+  <!-- <script src="js/loading.js"></script> -->
+  <script src="js/header.js"></script>
   <script src="js/quizy.js"></script>
   <script src="js/toppage.js"></script>
   <script src="js/timer.js"></script>
