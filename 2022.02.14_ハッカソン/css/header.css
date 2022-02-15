@@ -4,6 +4,7 @@
     color: white;
     position: fixed;
     display: flex;
+    justify-content: space-around;
     z-index: 99999999;
 }
 .header-logo {
@@ -36,3 +37,129 @@
     opacity: 0.5;
     cursor: pointer;
 }
+
+
+
+/* 追加 */
+
+@media screen and (max-width: 900px) {
+
+    .header-nav {
+      display: none;
+    }
+    
+    .hamburger-wrapper{
+      display: block;
+    }
+    
+    .hamburger {
+      margin-right: 40px;
+      /* ↑でハンバーガーメニュー右べたつき解消 */
+      padding: 0px;
+      display: block;
+      position: relative;
+      width: 50px;
+      height: 45px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    
+    .inner_line {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      transition: 1s;
+      border-radius: 4px;
+    }
+    #line1 {
+      top: 0;
+    }
+    #line2 {
+      top: 20px;
+    }
+    #line3 {
+      bottom: 0px;
+    }
+    
+    .line_1,
+    .line_2,
+    .line_3 {
+      background: white;
+    
+    }
+    .line_1 {
+      transform: translateY(20px) rotate(-45deg);
+      top: 0;
+    }
+    .line_2 {
+      opacity: 0;
+    }
+    .line_3 {
+      transform: translateY(-20px) rotate(45deg);
+      bottom: 0;
+    }
+    .scroll-prevent {
+        /*動き固定*/
+        position: fixed;
+        /*奥行きを管理*/
+        z-index: -1;
+        /*下2つで背景を元のサイズのまま表示することができる*/
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    /* 黒いところ */
+    .popup-cover {
+      position: fixed; /* ブラウザの定位置に固定 */
+      background: rgba(0, 0, 0, 0.8); /* 背景色を半透明の黒色に */
+      width: 100%; /* 要素の横幅を画面全体に */
+      height: 100%; /* 要素の高さを画面全体に */
+      top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+      left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+      z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
+      display: none;
+      background-color: #86b1e6;
+    }
+    .popup-content {
+      /* ポップアップ本体 */
+      display: inline-block;
+      position: fixed;
+      width: 75%;
+      z-index: 1100;
+      /* padding: 2%; */
+      top: 10%;
+      left: -100%;
+      position: absolute;
+      transition: 1s;
+      /* display: none; */
+    }
+    .menu-list li:hover{
+      opacity: 0.6;
+    }
+    
+    .black-out {
+      display: block;
+    }
+    .in {
+      /* display: block; */
+      left: 10%;
+    }
+    
+    .popup-content{
+      transform: translateY(30%);
+    }
+    
+    .popup-content ul li {
+      font-size: 30px;
+      list-style: none;
+      padding: 15px;
+    }
+    .popup-content ul li a {
+      color: black;
+    }
+    
+    }
