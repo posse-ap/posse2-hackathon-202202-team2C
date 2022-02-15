@@ -1,3 +1,23 @@
+/* マウスカーソルの非表示 */
+*{
+    cursor:none !important;
+}
+/* マウスストーカーのデザイン */
+#stalker {
+    pointer-events: none;
+    position: fixed;
+    top: -50px;     
+    left: -50px;    
+    width: 100px;   
+    height: 100px; 
+    background: rgba(239, 243, 241, 0.5);
+    border-radius: 50%;
+    transform: translate(0,0);
+    transition: transform 0.2s;  
+    transition-timing-function: ease-out;
+    z-index: 1003;
+}
+
 body {
     overflow-y: hidden;
 }
@@ -11,17 +31,15 @@ body {
     width: 100%;
     top: 45%;
 }
-  #liner {
+#liner {
     margin: 70px 20px;
-  }
-  
-  .border{
+}
+.border{
     position: relative;
     font-size: 18px;
     color: white;
-  }
-  
-  .border:before{
+}
+.border:before{
     content: '';
     position: absolute;
     left: 0;
@@ -29,8 +47,8 @@ body {
     width: 0;
     border-bottom: solid 2px rgb(255, 255, 255,0.7);
     animation: border_anim 3s linear infinite;
-  }
-  
+}
+
 @keyframes border_anim {
     0%{
     width: 0%;
@@ -55,7 +73,7 @@ body {
 }
 .photos-wrapper::-webkit-scrollbar{
     display: none;
-  }
+}
 .photo-item {
 	display: inline-block;
 	width: 50%;
@@ -191,4 +209,4 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
- }
+}
