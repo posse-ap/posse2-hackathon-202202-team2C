@@ -58,7 +58,7 @@ li {
 }
 
 .interview-content {
-  margin: 30px 0;
+  margin: 300px 0;
 }
 
 .interview-content-list {
@@ -198,8 +198,6 @@ li {
   padding: 5px;
 }
 
-
-
 /* レスポンシブ用の申し込みフォーム */
 
 .responsive-popapp-wrapper {
@@ -270,5 +268,64 @@ li {
   }
   .interview-content-answer h3::first-letter {
     font-size: 5rem;
+  }
+}
+
+/* トップに戻る */
+html {
+  scroll-behavior: smooth;
+}
+.gotop {
+  border-radius:50%;
+  padding: 1rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #0095d9,
+    0 0 0.8rem #0095d9, 0 0 2.8rem #0095d9, inset 0 0 1.3rem #0095d9;
+  display: block;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 85%;
+  text-decoration: none;
+  color: #333;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10000;
+}
+.gotop::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 25%;
+  height: 25%;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.gotop:hover {
+  opacity: 1;
+}
+@media (max-width: 750px) {
+  .gotop {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    opacity: 1;
+    border: none;
+    background: none;
+    bottom: 10px;
+    right: 10px;
+  }
+  .gotop::before {
+    bottom: 0;
   }
 }
