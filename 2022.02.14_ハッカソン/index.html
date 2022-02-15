@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/toppage.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/quizy.css">
+<link rel="stylesheet" href="css/timer.css">
 
 <body>
   <!-- ローディング画面 -->
@@ -281,6 +282,25 @@
       <section class="container content-wrapper">
         <div id="quiz-box"></div>
       </section>
+    <!-- カウントダウンタイマー -->
+    <div class="timer-wrapper">
+      <div class="timer-text">
+        所属POSSE登録まであと
+      </div>
+      <div class="timer-display">
+        <div class="timer-day">
+          <span class="timer-num" id="day"></span>
+          <span class="timer-kanji">日</span>
+        </div>
+        <span class="timer-num" id="hour"></span>
+        <span class="timer-kanji">時間</span>
+        <span class="timer-num" id="min"></span>
+        <span class="timer-kanji">分</span>
+        <span class="timer-num" id="sec"></span>
+        <span class="timer-kanji">秒</span>
+      </div>
+
+    </div>
     <!-- footer -->
     <footer>
       <div class="footer-logo">
@@ -299,6 +319,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- <script src="js/loading.js"></script> -->
   <script src="js/quizy.js"></script>
+  <script src="js/timer.js"></script>
 </body>
 
 </html>
