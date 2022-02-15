@@ -34,7 +34,7 @@ function shuffle(arr) {
 //本体
 for(let i = 0; i < quizSet.length; i++) {
     let question_box =
-      `<h1>` +
+      `<h1 class="question-text">` +
       `${i + 1}.${questionsText[i]}` +
       `</h1>` +
       `<div class="quiz-image-container">` +

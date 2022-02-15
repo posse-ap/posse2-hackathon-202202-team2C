@@ -6,13 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>比較ページ</title>
+  <!-- google font読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/css/reset.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/css/4-14.css">
+  <!-- cssファイル読み込み -->
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/free.css">
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/toppage.css">
+  <link rel="stylesheet" href="../css/neon.css">
+
 </head>
 
 <body>
@@ -29,7 +39,7 @@
         </li>
         <li class="header-nav-li">
           <a href="../ayumi/index.html">
-            <span class="header-nav-li-text">ayumi</span>
+            <span class="header-nav-li-text">history</span>
           </a>
         </li>
         <li class="header-nav-li"><a href="../miniGame/index.html">
@@ -38,111 +48,96 @@
       </ul>
     </div>
   </header>
-  <section class="content">
-    <div class="interview-header">
-      <h2 class="interview-title">
-        <span class="interview-title-en">Interview</span>
-        <span class="interview-title-ja">POSSE2メンバーインタビュー</span>
-      </h2>
-    </div>
-    <div class="interview-content">
-      <ul class="interview-content-lists">
-        <li class="interview-content-list">
-          <div class="interview-content-list-profile">
-            <img src="../picture/interview0.PNG" alt="POSSE2">
-            <div class="interview-content-list-profile-text">
-              <p>name</p>
-              <br>
-              <p>college</p>
-              <br>
-              <p>2.0期生</p>
-            </div>
-          </div>
-          <div class="interview-content-list-text">
-            <div class="interview-content-question">
-              <h1>Q. なぜPOSSE2を選んだのですか？</h1>
-            </div>
-            <div class="interview-content-answer">
-              <h1>A.あああああああああああああああああああああああああああああああああああ</h1>
-            </div>
-          </div>
-        </li>
-        <li class="interview-content-list">
-          <div class="interview-content-list-text">
-            <div class="interview-content-question">
-              <h1>Q. なぜPOSSE2を選んだのですか？</h1>
-            </div>
-            <div class="interview-content-answer">
-              <h1>A.あああああああああああああああああああああああああああああああああああ</h1>
-            </div>
-          </div>
-          <div class="interview-content-list-profile">
-            <img src="../picture/interview0.PNG" alt="POSSE2">
-            <div class="interview-content-list-profile-text">
-              <p>name</p>
-              <br>
-              <p>college</p>
-              <br>
-              <p>2.0期生</p>
-            </div>
-          </div>
-        </li>
-        <li class="interview-content-list">
-          <div class="interview-content-list-profile">
-            <img src="../picture/interview0.PNG" alt="POSSE2">
-            <div class="interview-content-list-profile-text">
-              <p>name</p>
-              <br>
-              <p>college</p>
-              <br>
-              <p>2.0期生</p>
-            </div>
-          </div>
-          <div class="interview-content-list-text">
-            <div class="interview-content-question">
-              <h1>Q. なぜPOSSE2を選んだのですか？</h1>
-            </div>
-            <div class="interview-content-answer">
-              <h1>A.あああああああああああああああああああああああああああああああああああ</h1>
-            </div>
-          </div>
-        </li>
-        <li class="interview-content-list">
-          <div class="interview-content-list-text">
-            <div class="interview-content-question">
-              <h1>Q. なぜPOSSE2を選んだのですか？</h1>
-            </div>
-            <div class="interview-content-answer">
-              <h1>A.あああああああああああああああああああああああああああああああああああ</h1>
-            </div>
-          </div>
-          <div class="interview-content-list-profile">
-            <img src="../picture/interview0.PNG" alt="POSSE2">
-            <div class="interview-content-list-profile-text">
-              <p>name</p>
-              <br>
-              <p>college</p>
-              <br>
-              <p>2.0期生</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
 
-    <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true"
-      target="_blank">
-      <div id="fixedInfo" class="fixed-info active">
-        <div class="fixed-info-textbox">
-          <div class="fixed-info-text">
-            <h5>POSSE2申し込みフォームは<br>ここをクリック！</h5>
-          </div>
-        </div>
-        <div id="infoClose" class="fixed-info-close opa"></div>
+  <div class="first-view">
+    <!-- Interview -->
+    <div class="interview-logo"><b>In<span>ter</span>vi<span>e</span>w</b></div>
+    <div class="interview-logo-2"><b>posse<span>2 </span>member <span>inter</span>view</b></div>
+    <section class="content" id="interviewContent">
+      <div class="interview-content">
+        <ul class="interview-content-lists">
+          <li class="interview-content-list fadeLeftTrigger">
+            <div class="interview-content-list-profile">
+              <p class="interview-content-list-profile-name">MOMO<br>TOMINAGA</p>
+              <img src="../picture/interview1.PNG" alt="POSSE2momo" style="margin-top: -2rem;">
+            </div>
+            <div class="interview-content-list-text">
+              <div class="interview-content-question">
+                <h3>Q. なぜPOSSE2を選んだのですか？</h3>
+              </div>
+              <div class="interview-content-answer">
+                <h3>A.人が多くて質問できる先輩が少なかったので、広い人脈を持てなくても少人数で深い関係を築き、共に切磋琢磨して行ける場所を作りたいと考えたから。
+                </h3>
+                <p>2.0期生　早稲田大学政治経済学部1年　冨永桃</p>
+              </div>
+            </div>
+          </li>
+          <li class="interview-content-list fadeRightTrigger">
+            <div class="interview-content-list-text">
+              <div class="interview-content-question">
+                <h3>Q.POSSE2のプログラミング面での楽しさを教えてください</h3>
+              </div>
+              <div class="interview-content-answer">
+                <h3>A.新しいスキルを習得するときに、教わる立場に立つことがほとんどだが、POSSE2では自分が知識を取り入れると同時に教える立場にも立てるようになるということ。
+                </h3>
+                <p>2.5期生　慶應義塾大学商学部1年　横山健人健人</p>
+              </div>
+            </div>
+            <div class="interview-content-list-profile">
+              <p class="interview-content-list-profile-name">KENTO<br>YOKOYAMA</p>
+              <img src="../picture/無題21_20220215041425.PNG" alt="POSSE2kennto">
+            </div>
+          </li>
+          <li class="interview-content-list fadeLeftTrigger">
+            <div class="interview-content-list-profile">
+              <p class="interview-content-list-profile-name">TSUTOSHI<br>CHO</p>
+              <img src="../picture/無題21_20220215041511.PNG" alt="POSSE2tuyosi" style="width:500px; margin-top:20px;">
+            </div>
+            <div class="interview-content-list-text">
+              <div class="interview-content-question">
+                <h3>Q. POSSE2で一番印象に残った出来事は？</h3>
+              </div>
+              <div class="interview-content-answer">
+                <h3>
+                  A.新人ハッカソンが非常に印象に残った。僕は人生で何かの目標を達成するために数人でどこかに泊まるという経験をあまりしたことがなかったので、こんな素晴らしい機会を与えてくれたPOSSE2と運営を担当したアキラとナオキとかしけんには感謝しかありません！！！
+                </h3>
+                <p>2.5期生　千葉大学園芸学部1年　張致豪</p>
+              </div>
+            </div>
+          </li>
+          <li class="interview-content-list fadeRightTrigger">
+            <div class="interview-content-list-text">
+              <div class="interview-content-question">
+                <h3>Q.POSSE2の立ち上げで大変だったことは？</h3>
+              </div>
+              <div class="interview-content-answer">
+                <h3>A.立ち上げの時、サーバントリーダーにみんな立候補してたくさんの衝突があった。でも、それは人生において大切な経験になったし、POSSE2だから実現できたことだと思う。</h3>
+                <p>2.0期生　慶應義塾大学商学部1年　田上黎</p>
+              </div>
+            </div>
+            <div class="interview-content-list-profile">
+              <p class="interview-content-list-profile-name">REI<br>TANOUE</p>
+              <img src="../picture/無題21_20220215041517.PNG" alt="POSSE2rei" style="width:500px">
+            </div>
+          </li>
+        </ul>
       </div>
-    </a>
-
-    <script src="../js/free.js"></script>
+  </div>
+  <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true"
+    target="_blank">
+    <div id="fixedInfo" class="fixed-info active">
+      <div class="fixed-info-textbox">
+        <div class="fixed-info-text">
+          <h2>POSSE2申し込みフォームは<br>ここをクリック！</h2>
+        </div>
+      </div>
+      <div id="infoClose" class="fixed-info-close opa"></div>
+    </div>
+  </a>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/js/4-14.js"></script>
+  <script src="../js/free.js"></script>
 
 </body>
 

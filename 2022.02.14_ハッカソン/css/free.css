@@ -3,7 +3,7 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background: linear-gradient(#07070a, black);
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,6 +18,9 @@ li {
 .content {
   margin: 0 auto;
   max-width: 80%;
+}
+#interviewContent {
+  padding-top: 15%;
 }
 
 .interview-title {
@@ -37,7 +40,6 @@ li {
   flex-direction: column;
 }
 
-
 .interview-title-en {
   font-size: 120px;
   font-weight: 500;
@@ -46,7 +48,7 @@ li {
   font-family: "Roboto", sans-serif;
   -webkit-transition: color 0ms 450ms;
   transition: color 0ms 450ms;
-text-shadow: 5px 3px 0px #fff;
+  text-shadow: 5px 3px 0px #fff;
 }
 
 .interview-title-ja {
@@ -62,8 +64,50 @@ text-shadow: 5px 3px 0px #fff;
   width: 100%;
   height: 300px;
   display: flex;
-  margin: 50px 0;
-  box-shadow: 0 0 0 0.5px #fff, 12px 12px 0 0 #fff, 12px 12px 0 0.5px #fff;
+  margin: 100px 0 200px 0;
+  /* box-shadow: 0 0 0 0.5px #fff, 12px 12px 0 0 #fff, 12px 12px 0 0.5px #fff; */
+}
+
+/* 左から */
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 右から */
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .interview-content-list-profile {
@@ -71,24 +115,35 @@ text-shadow: 5px 3px 0px #fff;
   position: relative;
 }
 
+.interview-content-list-profile-name {
+  font-weight: 500;
+  line-height: 1.8181818182;
+  letter-spacing: 0.2em;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  -webkit-transition: 0ms 200ms;
+  transition: 0ms 200ms;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
 .interview-content-list-profile img {
   width: 300px;
-  line-height:300px;
   height: auto;
   filter: drop-shadow(20px 20px 0 #0095d9);
 }
 
 .interview-content-list-profile-text {
   text-align: right;
-  font-size: 1.3vw;
-  padding: 2rem;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
 .interview-content-list-profile-text p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -102,17 +157,16 @@ text-shadow: 5px 3px 0px #fff;
 .interview-content-question {
   padding: 2rem;
 }
-.interview-content-question h1 {
-  padding: 5px 5px 5px 42px;
+.interview-content-question h3 {
+  padding: 5px 5px 5px 20px;
   background: #0095d9;
   font-size: 1.5rem;
   color: white;
-
   line-height: 1.3;
   z-index: -1;
 }
-.interview-content-question h1::first-letter {
-  font-size: 2rem;
+.interview-content-question h3::first-letter {
+  font-size: 2.5rem;
   color: white;
 }
 
@@ -120,17 +174,23 @@ text-shadow: 5px 3px 0px #fff;
   padding: 0 2rem;
 }
 
-.interview-content-answer h1 {
-  padding: 5px 5px 5px 42px;
+.interview-content-answer h3 {
+  padding: 5px 5px 5px 10px;
   color: #0095d9;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   line-height: 1.3;
   z-index: -1;
   font-size: 1.5rem;
 }
-.interview-content-answer::first-letter {
-  font-size: 2rem;
+.interview-content-answer h3::first-letter {
+  font-size: 2.5rem;
   color: #0095d9;
+}
+
+.interview-content-answer p {
+  color: #fff;
+  text-align: right;
+  padding: 5px;
 }
 
 .fixed-info.active {
@@ -157,15 +217,14 @@ text-shadow: 5px 3px 0px #fff;
   line-height: 1.7;
 }
 
-.fixed-info-text h5 {
+.fixed-info-text h2 {
   font-size: 1rem;
-  color:#333;
+  color: #333;
 }
 
-.fixed-info-text h5:hover {
+.fixed-info-text h2:hover {
   color: #0095d9;
 }
-
 
 .fixed-info-close {
   background: #0095d9;
