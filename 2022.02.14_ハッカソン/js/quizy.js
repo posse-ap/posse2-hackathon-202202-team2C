@@ -45,15 +45,15 @@ let quizDivWrapper = document.getElementById("quizBox");
 //htmlへ記述したいことをfor文で繰り返し生成している。
 for (let i = 0; i < 3; i++) {
   let optionHtml = [
-    ` <li id="correctAnswerQ${i + 1}" onclick="show_answer_correct(${i + 1})">${
+    ` <li class="quiz-li" id="correctAnswerQ${i + 1}" onclick="show_answer_correct(${i + 1})">${
       optionTextArray[i][0]
     }<img src="./picture/quiz${i}-1.jpg"></li> `,
 
-    ` <li id="wrongAnswerQ${i + 1}_1" onclick="show_answer_wrong_1(${i + 1})">${
+    ` <li class="quiz-li" id="wrongAnswerQ${i + 1}_1" onclick="show_answer_wrong_1(${i + 1})">${
       optionTextArray[i][1]
     }<img src="./picture/quiz${i}-2.jpg"></li> `,
 
-    ` <li id="wrongAnswerQ${i + 1}_2" onclick="show_answer_wrong_2(${i + 1})">${
+    ` <li class="quiz-li" id="wrongAnswerQ${i + 1}_2" onclick="show_answer_wrong_2(${i + 1})">${
       optionTextArray[i][2]
     }<img src="./picture/quiz${i}-3.jpg"></li> `,
   ];

@@ -1,10 +1,11 @@
 .timer-wrapper{
-background-color: blue ;
+background-image: url(../picture/2022-02-14\ 18.38のイメージ.jpg);
 /* とりあえずわかりやすくするために色付けた */
 }
 
 .timer-text{
   color: white;
+  font-family: 'Iceland', cursive;
 }
 
 .timer-display{
