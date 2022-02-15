@@ -232,7 +232,7 @@ body {
 }
 /* パソコン表示の時は改行させない */
 .br-sp {
-  display: none; 
+  display: none;
 }
 
 /*枠線が伸びて出現*/
@@ -256,7 +256,7 @@ body {
   }
 
   to {
-    opacity:1;  
+    opacity:1;
 }
 }
 
@@ -291,7 +291,7 @@ body {
 }
 
 /*右線*/
-.line2::before{ 
+.line2::before{
   top:0;
   right:0;
 }
@@ -301,7 +301,7 @@ body {
 }
 
 /*下線*/
-.lineTrigger::after { 
+.lineTrigger::after {
   bottom:0;
   right:0;
 }
@@ -311,7 +311,7 @@ body {
 }
 
 /*左線*/
-.line2::after{ 
+.line2::after{
   bottom:0;
   left:0;
 }
@@ -334,7 +334,7 @@ body {
 
 .lineTrigger.lineanime .linein-appear{
   animation: lineInnerAnime .5s linear .5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
-  opacity: 0;/*初期値を透過0にする*/ 
+  opacity: 0;/*初期値を透過0にする*/
 }
 .linein-appear-text {
   line-height: 2;
@@ -622,7 +622,7 @@ canvas {
 }
 .dialog-text {
   color: indianred;
-  font-family: 'Supermercado One', cursive; 
+  font-family: 'Supermercado One', cursive;
   padding-bottom: 0.3rem;
 }
 .button-text {
@@ -630,7 +630,7 @@ canvas {
   border-color: pink;
   background: rgb(243, 213, 213,0.1);
   color: indianred;
-  font-family: 'Supermercado One', cursive; 
+  font-family: 'Supermercado One', cursive;
 }
 /* ゲームの最後の言葉 */
 #lineTrigger3 {
@@ -649,4 +649,129 @@ canvas {
 /* スマホ表示の時は改行させる */
 @media screen and (min-width: 768px){
   .br-sp {display: block; }
-  } 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ここから先ポップアップ */
+
+.fixed-info.active {
+  position: fixed;
+  top: 150px;
+  z-index: 100000000000;
+}
+.fixed-info {
+  position: absolute;
+  right: 30px;
+  z-index: 10;
+  padding: 20px;
+  box-shadow: 0 0 5px #0095d9, inset 0 0 5px #0095d9, 0 0 10px #0095d9,
+    inset 0 0 10px #0095d9, 0 0 25px #0095d9, inset 0 0 25px #0095d9,
+    0 15px 3px #000;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: auto;
+  height:auto;
+  background-color:#fff;
+}
+
+.fixed-info-textbox {
+  padding: 16px 20px;
+  display: block;
+  line-height: 1.3;
+  color: #ffd8d8;
+}
+
+.fixed-info-text {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color:#333;
+  font-weight:900;
+}
+
+
+
+.fixed-info-text h2{
+  cursor: pointer;
+}
+
+.fixed-info-text h2:hover{
+  color:#0095d9;
+}
+
+.fixed-info-close {
+  box-shadow: 0 0 5px #0095d9, inset 0 0 5px #0095d9, 0 0 10px #0095d9,
+    inset 0 0 10px #0095d9, 0 0 25px #0095d9, inset 0 0 25px #0095d9;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.fixed-info-close:before {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.fixed-info-close:after {
+  content: "";
+  background: #ffffff;
+  width: 17px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-top: -1px;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.opa {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
