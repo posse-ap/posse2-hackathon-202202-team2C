@@ -215,26 +215,52 @@
       <!-- ヘッダー -->
       <header class="header">
         <div class="header-logo">
-          <img class="header-logo-img" src="picture/無題20_20220214221319.jpg" alt="">
+          <img class="header-logo-img" src="picture/8.png" alt="">
         </div>
         <div class="header-nav">
-          <ul class="header-nav-ul">
+          <ul class="header-nav-ul" id="headerUl">
             <li class="header-nav-li">
               <a href="">
-                <span class="header-nav-li-text">Home</span>
+                <span class="header-home-logo"><b>Home</b></span>
               </a>
             </li>
             <li class="header-nav-li">
               <a href="ayumi/index.html">
-                <span class="header-nav-li-text">history</span>
+                <span class="header-home-logo"><b>History</b></span>
               </a>
             </li>
             <li class="header-nav-li"><a href="miniGame/index.html">
-                <span class="header-nav-li-text"><span class="header-nav-li-text">miniGame</span> </a></li>
-            <li class="header-nav-li"><a href="free/index.html"><span class="header-nav-li-text"><span class="header-nav-li-text">free</span></a></li>
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>MiniGame</b></span>
+              </a></li>
+            <li class="header-nav-li"><a href="free/index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>Introduction</b></span>
+              </a>
+            </li>
           </ul>
         </div>
       </header>
+
+      <!-- 動画 -->
+      <div class="introduction-video-wrapper">
+        <div class="introduction-video" id="introductionVideo">
+          <video id="test1" width="500" height="300">
+            <source src="video/introduction.mp4" type="video/mp4">
+          </video>
+          <div class="close-button" id="closeBtn" onclick="close()">
+            <img src="picture/iconmonstr-x-mark-1.svg" alt="">
+          </div>
+          <div class="video-buttons">
+            <button onclick="Play1()">
+              <img src="picture/iconmonstr-triangle-3.svg" alt="" id="playBtn">
+              <button onclick="Pause1()">
+                <img src="picture/iconmonstr-media-control-49.svg" alt=""></button></button>
+            <button onclick="PlayFromFirst1()">
+              <img src="picture/iconmonstr-refresh-2.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
       <!-- sns links -->
       <div class="sns-links-position">
         <div class="sns-links-wrapper">
@@ -268,7 +294,7 @@
       </div>
       <!-- welcome to posse -->
       <div class="top-page-logo"><b>Welcom<span>e </span>to <span>Pos</span>se2</b></div>
-      <div class="wavey-button">
+      <div class="wavey-button" onclick="Play2()" id="waveyBtn">
         <a href="#" class="btnripple2"><span></span></a>
       </div>
       <div class="scrolldown3"><span>Scroll</span></div>
@@ -281,14 +307,15 @@
       <section class="container content-wrapper">
         <div id="quiz-box"></div>
       </section>
-    <!-- footer -->
-    <footer>
-      <div class="footer-logo">
-        <b>Join us and create <br><span>POSSE2</span></b>
-      </div>
-      <div class="register-box">
-        <div class="register-button rotateback">
-          <a href="https://docs.google.com/forms/d/1dS3LZQfx03eNI5tJp1oYDt009qtBfHKXsUAXjkVA13c/viewform?edit_requested=true">
+      <!-- footer -->
+      <footer>
+        <div class="footer-logo">
+          <b>Join us and create <br><span>POSSE2</span></b>
+        </div>
+        <div class="register-box">
+          <div class="register-button rotateback">
+            <a
+              href="https://docs.google.com/forms/d/1dS3LZQfx03eNI5tJp1oYDt009qtBfHKXsUAXjkVA13c/viewform?edit_requested=true">
             <h1 contenteditable spellcheck="false"><span>To the form</span><span>Click here!!</span></h1>
           </a>
         </div>
@@ -299,6 +326,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- <script src="js/loading.js"></script> -->
   <script src="js/quizy.js"></script>
+  <script src="js/toppage.js"></script>
 </body>
 
 </html>

@@ -16,16 +16,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 <!-- game用のリンク ここから-->
   <link rel="stylesheet" href="../css/game.css">
-<script src="../js/game.js"></script>
+<script src="../js/game.js" defer></script>
 <!-- game用のリンク　ここまで -->
 
 </head>
 <body>
   <div class="first-view">
     <!-- miniGame -->
-    <div class="mini-game-logo"><b>mini<span>G</span>a<span>m</span>e</b></div>
+    <div class="mini-game-logo"><b>Mini<span>G</span>a<span>m</span>e</b></div>
   <div>
     <header class="header">
       <div class="header-logo">
@@ -35,17 +36,18 @@
       <ul class="header-nav-ul">
         <li class="header-nav-li">
           <a href="../index.html">
-            <span class="header-nav-li-text">Home</span>
+            <span class="header-home-logo"><b>Home</b></span>
           </a>
         </li>
         <li class="header-nav-li">
           <a href="../ayumi/index.html">
-            <span class="header-nav-li-text">history</span>
+            <span class="header-home-logo"><b>History</b></span>
           </a>
         </li>
         <li class="header-nav-li"><a href="../miniGame/index.html">
-            <span class="header-nav-li-text">miniGame</span> </a></li>
-        <li class="header-nav-li"><a href="../free/index.html"><span class="header-nav-li-text">free</span></a></li>
+          <span class="header-home-logo"><b>MiniGame</b></span> </a></li>
+        <li class="header-nav-li"><a href="../free/index.html">
+          <span class="header-home-logo"><b>Introduction</b></span></a></li>
       </ul>
     </div>
   </header>
@@ -53,7 +55,17 @@
   <main>
     <div class="main-inner-game">
       <div class="introduction-part">
-        <h1>POSSE2に入って一年足らずでこんなものまで作れるように！！！</h1>
+        <h1 class="introduction-part-text">POSSE2に入って一年足らずでこんなものまで作れるように！！！</h1>
+      </div>
+      <div class="lineTrigger">
+        <div class="line2">
+          <div class="linein-appear">枠線が伸びて出現</div>
+        </div>
+      </div>
+      <div class="lineTrigger">
+        <div class="line2">
+          <div class="linein-appear">枠線が伸びて出現</div>
+        </div>
       </div>
       <div class="game-title-ribbon">
         <h3>Servant Leader Card Flip</h3>
@@ -70,6 +82,6 @@
   <footer class="game-footer">
     <!-- <img src="../miniGame/game_pictures/ribbon.png" alt=""> -->
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 </html>

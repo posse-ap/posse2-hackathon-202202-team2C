@@ -1,6 +1,5 @@
-body{
-  margin: 0 auto;
-  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+body {
+  background: linear-gradient(#07070A,black);
 }
 .main-inner-game{
   padding-top: 200px;
@@ -9,7 +8,7 @@ body{
   padding-right: 40px;
   text-align: center;
   height: 900px;
-  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+  /* background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg); */
   background-repeat: repeat;
 }
 
@@ -20,12 +19,132 @@ body{
   text-shadow: 
   0 0 5px #FFF,
   0 0 12px #FFF,
-  0 0 21px rgb(6, 238, 122),
-  0 0 33px green;
-  font-size: 30px;
+  0 0 21px rgb(39, 235, 137),
+  0 0 33px rgb(37, 192, 37);
+  font-size: 20px;
+  margin-top: 25rem;
   margin-bottom: 5%;
 }
+.introduction-part-text {
+  font-family: 'DotGothic16', sans-serif;
+}
+/*枠線が伸びて出現*/
 
+.lineTrigger{
+  position: relative; /* 枠線が書かれる基点*/
+  opacity:0;
+}
+
+.lineTrigger.lineanime{
+  animation-name:lineAnimeBase;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes lineAnimeBase{
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;  
+}
+}
+
+/*上下線*/
+.lineTrigger::before,
+.lineTrigger::after{
+  position: absolute;
+  content:"";
+  width:0;
+  height:1px;
+  background:#333;/* 枠線の色*/
+}
+
+/*左右線*/
+.line2::before,
+.line2::after{
+  position: absolute;
+  content:"";
+  width: 1px;
+  height:0;
+  background:#333;/* 枠線の色*/
+}
+
+/*上線*/
+.lineTrigger::before {
+  top:0;
+  left:0;
+}
+
+.lineTrigger.lineanime::before {
+  animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
+}
+
+/*右線*/
+.line2::before{ 
+  top:0;
+  right:0;
+}
+
+.lineTrigger.lineanime .line2::before {
+  animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
+}
+
+/*下線*/
+.lineTrigger::after { 
+  bottom:0;
+  right:0;
+}
+
+.lineTrigger.lineanime::after {
+  animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+}
+
+/*左線*/
+.line2::after{ 
+  bottom:0;
+  left:0;
+}
+
+.lineTrigger.lineanime .line2::after {
+  animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+}
+
+@keyframes lineAnime {
+  0% {width:0%;}
+    100%{width:100%;}
+}
+
+@keyframes lineAnime2 {
+  0% {height:0%;}
+    100%{height:100%;}
+}
+
+/*枠線内側の要素*/
+
+.lineTrigger.lineanime .linein-appear{
+  animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
+  opacity: 0;/*初期値を透過0にする*/ 
+}
+
+@keyframes lineInnerAnime{
+  0% {opacity:0;}
+    100% {opacity:1;}
+}
+.lineTrigger {
+  margin-bottom: 1rem;
+}
+.line2 {
+  padding: 5rem 0;
+}
+.linein-appear  {
+  color: white;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 2rem;
+}
+
+/* ここからゲームのcss */
 .game-title-ribbon {
   display: inline-block;
   position: relative;
@@ -88,6 +207,7 @@ body{
 }
 
 .carpet{
+  z-index: 9999;
   width: 100%;
   position: relative;
   height: 740px;

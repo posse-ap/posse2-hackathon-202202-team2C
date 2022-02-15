@@ -1,7 +1,14 @@
 html, body {
     height: 100%
 }
-
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
 /* トップページのロゴ */
 .first-view {
     width: 100%;
@@ -37,6 +44,38 @@ html, body {
 
 .top-page-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
+}
+/* 動画 */
+
+.introduction-video  {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 99999999;
+    padding: 8rem 10rem;
+    background: rgba(94, 92, 92, 0.382);
+    
+}
+.video-buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    opacity: 0.8;
+}
+#playBtn {
+    padding-right: .5rem;
+    padding-bottom: .2rem;
+    transform: rotate(-30deg);
+}
+.close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
 }
 /* History のロゴ */
 .History-logo {
@@ -163,7 +202,7 @@ html, body {
     font: 400 10vh "Vibur";
     font-family: 'Vibur', cursive;
     color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
 }
 
 .coming-soon-logo b span {
@@ -172,6 +211,21 @@ html, body {
 
 .coming-soon-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
+}
+/* headerのロゴ */
+.header-home-logo {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    user-select: none;
+}
+
+.header-home-logo b {
+    font: 400 5vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 400px, 0 0 2px, 0 0 1em #642828, 0 0 0.5em #39662c, 0 0 0.1em #30635e, 0 10px 3px #000;
 }
 /* ロゴのアニメーション */
 @keyframes blink {
@@ -215,7 +269,7 @@ html, body {
     }
 }
 
-/* ネオンロゴのスマホ表示対応 */
+/* ネオンロゴのiPad表示対応 */
 
 @media (max-width: 900px) { 
     /* トップページのロゴ */
@@ -332,7 +386,7 @@ html, body {
 }
 
 #btn-twtr:hover {
-    color: #fff;
+    color: rgb(13, 12, 12);
     opacity: 1
 }
 
@@ -408,21 +462,21 @@ html, body {
     border-left-color: rgb(76, 76, 76);
 }
 
-/*========= レイアウトのためのCSS ===============*/
-
-body {
-    text-align: center;
-}
-
-p {
-    margin: 0 0 10px 0;
-}
 
 .wavey-button {
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 999999999;
+    cursor: pointer;
+}
+/* 表示非表示用class */
+.real {
+    opacity: 1;
+}
+.fake {
+    opacity: 0;
 }
 
 /* スクロールマーク */
@@ -545,7 +599,7 @@ p {
     height: 100%;
     opacity: 0.6;
 }
-/* snsリンクのスマホレスポンシブ対応 */
+/* snsリンクのiPad対応 */
 @media (max-width: 900px) { 
     .sns-links-position  {
         position: fixed;

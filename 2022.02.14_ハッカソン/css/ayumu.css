@@ -45,13 +45,13 @@ body {
 	overflow-x: auto;
 	white-space: nowrap;
     position: absolute;
-    height: 100%;
-    width: 70%;
+    height: auto;
+    width: 1200px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translateY(-50%);
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
 }
 .photos-wrapper::-webkit-scrollbar{
     display: none;
@@ -70,7 +70,7 @@ body {
 /* 疑似要素(何月) */
 .photo-item-style  {
     position: relative;
-    width: auto;
+    width: 80%;
     height: auto;
 }
 .photo-item-style::before {
@@ -98,6 +98,9 @@ body {
 
 
 /* POSSE１から独立し2の設立へ立ち上がった2期生！！！！ */
+#photoItem1 {
+    margin-left: 20rem;
+}
 #photoImg1 {
     transform: translateY(40%);
     width: auto;
@@ -147,6 +150,7 @@ body {
     transform: translateX(3rem);
 }
 #photoImg7 {
+    margin-left: 10rem;
     transform: translateY(5rem);
     font-size: 1.5rem;
 }
@@ -164,7 +168,7 @@ body {
     transform: translateY(5rem);
     font-size: 1.5rem;
 }
-/* スマホ対応レスポンシブデザイン */
+/* iPad対応レスポンシブデザイン */
 @media (max-width: 900px) { 
     /* 線非表示 */
     .liner-wrapper {
