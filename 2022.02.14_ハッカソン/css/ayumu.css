@@ -119,7 +119,7 @@ background-color: #241f1f00;
   margin-left: 0;
   font-size: 40px;
 }
-/* リアイベで徐々に仲を深めてく!!!! */ 
+/* リアイベで徐々に仲を深めてく!!!! */
 #photoImg3  {
   transform: translateX(-8rem);
 }
@@ -171,13 +171,13 @@ background-color: #241f1f00;
   font-size: 1.5rem;
 }
 /* iPad対応レスポンシブデザイン */
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
   /* 線非表示 */
   .liner-wrapper {
       display: none;
   }
 
-  
+
 
 .photos-wrapper {
 overflow-y: auto;
@@ -192,3 +192,4 @@ white-space: nowrap;
   -ms-transform: translate(-50%, -50%);
 }
 }
+
