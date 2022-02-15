@@ -26,7 +26,7 @@ button {
     z-index: 99999999;
     padding: 8rem 10rem;
     background: rgba(94, 92, 92, 0.382);
-    
+
 }
 .video-buttons {
     position: absolute;
@@ -289,7 +289,7 @@ button {
 }
 
 /* snsリンクのiPad対応 */
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
 
     .sns-links-position  {
         position: fixed;
@@ -375,7 +375,7 @@ footer{
     text-align: center;
     position: absolute;
     width: 30%;
-    left: 18%; 
+    left: 18%;
 }
 .register-button{
     position: relative;
