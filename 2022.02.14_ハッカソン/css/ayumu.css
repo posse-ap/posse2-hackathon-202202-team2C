@@ -115,9 +115,67 @@ body {
   margin-left: 20rem;
 }
 
+/* POSSE2爆誕！！！！ */
+#photoImg2 {
+  transform: translateY(-30%);
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  font-size: 40px;
+}
+/* リアイベで徐々に仲を深めてく!!!! */
+#photoImg3  {
+  transform: translateX(-8rem);
+}
+/* 課題サポート会で2.5期生の課題を手助けし、、、 */
+#photoImg3 {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  font-size: 1rem;
+}
+/* 2.5期生一ヶ月の学習の成果を発揮する時！！！ */
+#photoItem4 {
+  transform: translateX(-7rem);
+}
+#photoImg4 {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  font-size: 1rem;
+  transform: translateY(5rem);
+}
+/* 2.5期生一ヶ月の学習の成果を発揮する時！！！-2 */
+#photoImg5 {
+  margin-left: 0;
+  transform: translateY(10rem);
+  font-size: 1.5rem;
+}
+/* クリスマスパーティーや初詣を経て、、、 */
+#photoItem7 {
+  transform: translateX(3rem);
+}
+#photoImg7 {
+  margin-left: 10rem;
+  transform: translateY(5rem);
+  font-size: 1.5rem;
+}
+#photoImg8 {
+  transform: translateY(8rem);
+  font-size: 1.5rem;
+}
+/* 大学生最大の試練　期末期間に突入！！！ */
+#photoImg9 {
+  transform: translateX(5rem);
+  font-size: 1.5rem;
+}
+/* <!-- 2期生と2.5期生の絆が試される時！！！ --> */
+#photoImg10 {
+  transform: translateY(5rem);
+  font-size: 1.5rem;
+}
 /* iPad対応レスポンシブデザイン */
 @media (max-width: 900px) {
-
   /* 線非表示 */
   .liner-wrapper {
     display: none;
@@ -125,16 +183,16 @@ body {
 
 
 
-  .photos-wrapper {
-    overflow-y: auto;
-    white-space: nowrap;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+.photos-wrapper {
+overflow-y: auto;
+white-space: nowrap;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 }
