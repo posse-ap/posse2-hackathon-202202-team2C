@@ -1,0 +1,125 @@
+body{
+  margin: 0 auto;
+  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+}
+.main-inner-game{
+  padding-top: 200px;
+  padding-bottom:50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  height: 900px;
+  background-image: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+  background-repeat: repeat;
+}
+
+.introduction-part{
+  display: block;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 
+  0 0 5px #FFF,
+  0 0 12px #FFF,
+  0 0 21px rgb(6, 238, 122),
+  0 0 33px green;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
+.game-title-ribbon {
+  display: inline-block;
+  position: relative;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+
+  margin-bottom: 30px;
+}
+.game-title-ribbon:before {/*左側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  left: -35px;
+  z-index: -2;
+  border: 20px solid #C90000;
+  border-left-color: transparent;/*山形に切り抜き*/
+}
+
+.game-title-ribbon:after {/*右側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  right: -35px;
+  z-index: -2;
+  border: 20px solid #C90000;
+  border-right-color: transparent;/*山形に切り抜き*/
+}
+
+.game-title-ribbon h3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  /* font-family: ; */
+  color: #FFF;
+  background: #FB0000;/*真ん中の背景色*/
+}
+.game-title-ribbon h3:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-right: solid 15px #740000;/*左の折り返し部分*/
+}
+.game-title-ribbon h3:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-left: solid 15px #740000;/*右の折り返し部分*/
+}
+
+.carpet{
+  width: 100%;
+  position: relative;
+  height: 740px;
+  background-image: url(../miniGame/game_pictures/redcarpet.jpg)
+}
+
+
+table{
+  /* margin:10px auto; */
+  width: 720px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+td.card{
+  width:120px;
+  height:180px;
+  /* width:160px;
+  height:240px; */
+
+  background-size:cover;
+  border-radius: 10px;
+}
+
+td.card.back{
+  background-image:url(../miniGame/game_pictures/z01.jpg) !important;
+}

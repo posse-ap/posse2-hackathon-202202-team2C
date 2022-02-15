@@ -1,0 +1,28 @@
+.timer-wrapper{
+background-color: blue ;
+/* とりあえずわかりやすくするために色付けた */
+}
+
+.timer-text{
+  color: white;
+}
+
+.timer-display{
+margin-top: 20px;
+}
+
+
+
+.timer-num{
+  color: white;
+  font-size: 40px;
+}
+
+.timer-kanji{
+  color: white;
+  font-size: 25px;
+}
+
+.timer-day{
+  margin-bottom: 10px;
+}

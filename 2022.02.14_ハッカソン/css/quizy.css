@@ -1,0 +1,115 @@
+.content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  .first-view-under-wrapper {
+    background: linear-gradient(#07070A,black);
+  }
+  .quiz {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .quiz-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .quiz-image-container {
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .box-container{
+    width: auto;
+    margin: 15px;
+  }
+  
+  
+  .quiz-title{
+      font-size: 19px;
+      line-height: 27px;
+      font-weight: 700;
+      margin-bottom: 0;
+      color: #161616;
+  }
+  
+  
+  
+  h1{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  
+  .box1 li{
+    background-color:white;
+      font-size: 16px;
+      display: block;
+      border: 1px solid #ebebeb;
+      padding: 13px;
+      margin: 10px 0;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 3px 2px -2px rgb(0 0 0 / 13%);
+      -webkit-box-shadow: 0 3px 2px -2px rgb(0 0 0 / 13%);
+      -moz-box-shadow: 0 3px 2px -2px rgba(0,0,0,.13);
+  }
+  
+  
+  .quiz-result {
+    background-color: #f5f5f5;
+    padding: 17px;
+    border-radius: 3px;
+    display: none;
+  }
+  
+  .quiz-result-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  /* 文字の下に青の線を出す */
+  .quiz-result-title-succeeded {
+    border-bottom: 3px solid #287dff;
+  }
+  
+  /* 文字の下に赤の線を出す */
+  .quiz-result-title-failed {
+    border-bottom: 3px solid #ff5128;
+  }
+  
+  /* 正解の操作 */
+  .succeeded {
+    background-color: #287dff !important;
+    color: #fff;
+    list-style: none;
+  }
+  
+  
+  /* 不正解の操作 */
+  .failed {
+    background-color: #ff5128 !important;
+    color: #fff;
+    list-style: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  body {
+    line-height: 24px;
+    letter-spacing: .04em;
+    color: rgb(3, 24, 49);
+    font-family: "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "游ゴシック Medium", meiryo, sans-serif;
+    background-color: #161616;
+  }
