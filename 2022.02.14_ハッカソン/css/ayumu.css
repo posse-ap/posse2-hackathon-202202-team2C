@@ -120,10 +120,8 @@ body {
 @media (max-width: 900px) {
   /* 線非表示 */
   .liner-wrapper {
-    display: none;
+   display: none;
   }
-
-
 
 .photos-wrapper {
 overflow-y: auto;
@@ -137,4 +135,56 @@ white-space: nowrap;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+}
+
+/* スマホ対応レスポンシブデザイン */
+@media (max-width: 400px) {
+  body html {
+    overflow-y: hidden;
+  }
+  .popapp-wrapper {
+    /* display: none; */
+    position: absolute;
+    top: 20%;
+      right: 10%;
+width: 100px;
+height: auto;
+
+  }
+  .fixed-info-text {
+    font-size: .5rem;
+    padding: 0;
+  }
+  /* 線非表示 */
+  .liner-wrapper {
+    display: none;
+  }
+  /* 擬似要素の大きさ */
+  .photo-item-style::before {
+    position: absolute;
+    content: attr(data-month);
+    top: -10%;
+    left: 5%;
+    font-family: 'Vibur', cursive;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.599);
+    z-index: 10000000;
+  }
+  
+  .photo-item-style::after {
+    display: none;
+  }
+  .photos-wrapper {
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    position: absolute;
+    height: auto;
+    width: 1200px;
+    top: 70%;
+    left: 0%;
+    transform: translateY(-50%);
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+  }
 }
