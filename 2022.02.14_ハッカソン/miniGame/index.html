@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
   <link rel="stylesheet" href="../css/Reheader.css">
-
   <link rel="stylesheet" href="../css/game.css">
 
   <!-- google font読み込み -->
@@ -69,29 +68,61 @@
     <div class="mini-game-logo"><b>Mini<span>G</span>a<span>m</span>e</b></div>
     <div>
       <!-- ヘッダー -->
-      <nav id="g-navi">
-        <ul class="header-nav-ul" id="headerUl">
-          <li class="header-nav-li">
-            <a href="../index.html">
-              <span class="header-home-logo"><b>Home</b></span>
-            </a>
-          </li>
-          <li class="header-nav-li">
-            <a href="../ayumi/index.html">
-              <span class="header-home-logo"><b>History</b></span>
-            </a>
-          </li>
-          <li class="header-nav-li"><a href="./index.html">
-            <span class="header-nav-li-text">
-              <span class="header-home-logo"><b>MiniGame</b></span>
-            </a></li>
-            <li class="header-nav-li"><a href="../free/index.html">
-              <span class="header-nav-li-text">
-                <span class="header-home-logo"><b>Interview</b></span>
+
+
+      <header id="header">
+
+        <div class="header-logo">
+          <img class="header-logo-img" src="../picture/8.png" alt="">
+        </div>
+
+        
+        <!-- スマホのハンバーガー -->
+        <div class="hamburger" id="hamburger">
+          <span class="inner_line" id="line1"></span>
+          <span class="inner_line" id="line2"></span>
+          <span class="inner_line" id="line3"></span>
+        </div>
+
+        <!-- PC用のメニュー -->
+        <nav id="g-navi">
+          <ul class="header-nav-ul" id="headerUl">
+            <li class="header-nav-li">
+              <a href="../index.html">
+                <span class="header-home-logo"><b>Home</b></span>
               </a>
             </li>
-        </ul>
-      </nav>
+            <li class="header-nav-li">
+              <a href="../ayumi/index.html">
+                <span class="header-home-logo"><b>History</b></span>
+              </a>
+            </li>
+            <li class="header-nav-li"><a href="./index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>MiniGame</b></span>
+              </a></li>
+            <li class="header-nav-li"><a href="../free/index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>Interview</b></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <div class="openbtn1"><span></span><span class="question-tex"></span><span></span></div>
+
+            <!-- スマホのときメニュー -->
+            <div class="popup-cover" id="popupCover"></div>
+            <div class="popup-content" id="navi">
+              <ul class="menu-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../ayumi/index.html">History</a></li>
+                <li><a href="index.html">MiniGame</a></li>
+                <li><a href="../free/index.html">Interview</a></li>
+              </ul>
+            </div>
 
 
       <!-- ここからゲーム -->

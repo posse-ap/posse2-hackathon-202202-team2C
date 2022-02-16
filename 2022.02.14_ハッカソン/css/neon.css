@@ -184,6 +184,17 @@
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff6d4495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
 }
+
+.popup-content ul li{
+    font: 400 5vh "Vibur";
+    font-family: 'Vibur', cursive;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff6d4495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+}
+
+
+
+
 /* quizのネオンロゴ */
 .question-text {
     text-align: center;
@@ -449,6 +460,9 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff64495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
+
+
     .footer-logo b {
         font: 300 5vh "Vibur";
     color: #fee;
