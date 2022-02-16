@@ -1,28 +1,63 @@
-.timer-wrapper{
-background-color: blue ;
-/* とりあえずわかりやすくするために色付けた */
+.timer-wrapper {
+  background-image: url(../picture/2022-02-14\ 18.38のイメージ.jpg);
+  /* とりあえずわかりやすくするために色付けた */
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.timer-text{
+.timer-text {
   color: white;
+  font-size: 20px;
+  font-family: 'DotGothic16', sans-serif;
 }
 
-.timer-display{
-margin-top: 20px;
+.timer-display {
+  margin-top: 30px;
 }
 
-
-
-.timer-num{
+.timer-num {
   color: white;
-  font-size: 40px;
+  font-size: 60px;
+  font-family: 'Iceland', cursive;
 }
 
-.timer-kanji{
+.timer-kanji {
   color: white;
   font-size: 25px;
+  font-family: 'Iceland', cursive;
+
 }
 
-.timer-day{
+.timer-day {
   margin-bottom: 10px;
+}
+
+.timer-below-text {
+  color: white;
+  font-size: 20px;
+  padding: 3rem 0;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+@media (max-width: 400px) {
+  .timer-text {
+    color: white;
+    font-family: 'Iceland', cursive;
+
+  }
+
+  .timer-num {
+    color: white;
+    font-size: 20px;
+    font-family: 'Iceland', cursive;
+  }
+
+  .timer-kanji {
+    color: white;
+    font-size: 20px;
+    font-family: 'Iceland', cursive;
+  }
 }

@@ -1,115 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgb(3, 24, 49);
+  font-family: "DotGothic16", sans-serif;
+  background-image: url(./picture/2022-02-14\ 18.38のイメージ.jpg);
+  background-size: cover;
+}
+
 .content-wrapper {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.first-view-under-wrapper {
+  background: linear-gradient(#07070a, black);
+}
+
+.quiz {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  z-index: 10000000000000000000;
+}
+
+.quiz-image {
+  display: block;
+  width: 100%;
+}
+
+.quiz-image-container {
+  margin: 10px 0;
+  display: block;
+}
+
+.box-container {
+  width: auto;
+  margin: 15px;
+}
+
+.quiz-title {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+
+}
+
+.box1 {
+  margin-bottom: 100px;
+}
+
+.box1 h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+}
+
+.box1 ul {
+  display: flex;
+}
+
+.box1 li {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.box1 img {
+  width: 100%;
+  height: auto;
+}
+
+.quiz-li {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.quiz-result {
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  margin: 10px;
+  text-align: center;
+}
+
+.quiz-result p {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.quiz-result-title {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quiz-result p {
+  color: #fff;
+}
+
+/* 文字の下に青の線を出す */
+.quiz-result-title-succeeded {
+  border-bottom: 3px solid #287dff;
+}
+
+/* 文字の下に赤の線を出す */
+.quiz-result-title-failed {
+  border-bottom: 3px solid #ff5128;
+}
+
+/* 正解の操作 */
+.succeeded {
+  color: #287dff !important;
+  list-style: none;
+}
+
+/* 不正解の操作 */
+.failed {
+  color: #ff5128 !important;
+  list-style: none;
+}
+
+.hidden_message_correct {
+  display: none;
+}
+
+.hidden_message_wrong {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgb(3, 24, 49);
+  font-family: "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont,
+    "Hiragino Sans", "游ゴシック Medium", meiryo, sans-serif;
+  background: linear-gradient(#000000, #151515);
+}
+
+.question {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 12px #fff, 0 0 21px rgb(39, 235, 137),
+    0 0 33px rgb(37, 192, 37);
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: "DotGothic16", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .box1 {
+    margin-bottom: initial;
+  }
+
+  .box1 li {
     width: 100%;
-    margin: 0 auto;
-    max-width: 650px;
+    text-align: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
   }
-  .first-view-under-wrapper {
-    background: linear-gradient(#07070A,black);
-  }
-  .quiz {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .quiz-image {
-    display: block;
-    width: 100%;
-  }
-  
-  .quiz-image-container {
-    margin: 10px 0;
-    display: block;
-  }
-  
-  .box-container{
-    width: auto;
-    margin: 15px;
-  }
-  
-  
-  .quiz-title{
-      font-size: 19px;
-      line-height: 27px;
-      font-weight: 700;
-      margin-bottom: 0;
-      color: #161616;
-  }
-  
-  
-  
-  h1{
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 600;
-    display: inline-block;
-  }
-  
-  
-  .box1 li{
-    background-color:white;
-      font-size: 16px;
-      display: block;
-      border: 1px solid #ebebeb;
-      padding: 13px;
-      margin: 10px 0;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 3px 2px -2px rgb(0 0 0 / 13%);
-      -webkit-box-shadow: 0 3px 2px -2px rgb(0 0 0 / 13%);
-      -moz-box-shadow: 0 3px 2px -2px rgba(0,0,0,.13);
-  }
-  
-  
-  .quiz-result {
-    background-color: #f5f5f5;
-    padding: 17px;
-    border-radius: 3px;
+
+  .box1 img {
     display: none;
   }
-  
-  .quiz-result-title {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    padding-bottom: 3px;
-    margin-bottom: 10px;
-    display: inline-block;
+
+  .quiz-result {
+    padding: 20px;
   }
-  
-  /* 文字の下に青の線を出す */
-  .quiz-result-title-succeeded {
-    border-bottom: 3px solid #287dff;
-  }
-  
-  /* 文字の下に赤の線を出す */
-  .quiz-result-title-failed {
-    border-bottom: 3px solid #ff5128;
-  }
-  
-  /* 正解の操作 */
-  .succeeded {
-    background-color: #287dff !important;
-    color: #fff;
-    list-style: none;
-  }
-  
-  
-  /* 不正解の操作 */
-  .failed {
-    background-color: #ff5128 !important;
-    color: #fff;
-    list-style: none;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  
-  body {
-    line-height: 24px;
-    letter-spacing: .04em;
-    color: rgb(3, 24, 49);
-    font-family: "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "游ゴシック Medium", meiryo, sans-serif;
-    background-color: #161616;
-  }
+}

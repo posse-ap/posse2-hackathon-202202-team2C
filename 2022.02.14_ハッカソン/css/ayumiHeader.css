@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+/*========= 途中からハンバーガーメニューに変化するのためのCSS ===============*/
+
+/*========= ボタンのためのCSS ===============*/
+
+/*ボタン全体の形状*/
+.openbtn1 {
+  /*はじめは非表示に*/
+  display: none;
+  /*ボタンの位置*/
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1500;
+  /*ボタンの形状*/
+  /* background:#666; */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+/*ボタンのアイコン設定*/
+.openbtn1 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+/*activeクラスが付与された後のボタンのアイコン設定*/
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/*fadeDownクラスが付与された後のボタンの出現アニメーション設定*/
+.fadeDown {
+  animation-name: fadeDownAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: block;
+}
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*========= ヘッダーナビゲーションのためのCSS ===============*/
+
+/*==ヘッダーの形状*/
+#header {
+  position: fixed;
+
+  width: 100%;
+  height: 120px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11000;
+
+  /* background:#333; */
+  /* text-align: center; */
+  /* padding: 20px; */
+}
+
+/*.doneクラスがついたヘッダー*/
+#header.dnone {
+  opacity: 1; /*透過0にして非表示に*/
+  /* なんかここを０から１にしたら画面真ん中にナビゲーション出てくるバグなくなった */
+}
+
+/*メニューボタンをクリックした際に付与されるpanelactiveクラスがついたら*/
+#header.dnone.panelactive {
+  opacity: 1; /*不透明にして出現*/
+}
+
+.header-logo {
+  width: 120px;
+  height: 100px;
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.header-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*==ヘッダーのテキストナビゲーションの形状*/
+#g-navi ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 20rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#g-navi ul li a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  padding: 10px;
+}
+#g-navi ul li:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#g-navi ul li.current a,
+#g-navi ul li a:hover {
+  color: #fff;
+}
+
+/*.doneクラスがついたヘッダーのテキストナビゲーションの形状*/
+#header.dnone #g-navi {
+  /*固定位置にして最背面に*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*高さと幅*/
+  width: 100%;
+  height: 100vh;
+  /*天地中央＆テキスト中央揃え*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*はじめは透過0に*/
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+/*メニューボタンをクリックした際に付与されるpanelactiveクラスがついたナビゲーションの形状*/
+#header.dnone.panelactive #g-navi {
+  opacity: 1; /*不透明に*/
+  z-index: 1000; /*最前面に*/
+  background: black;
+}
+
+#header.dnone.panelactive #g-navi ul {
+  display: block; /*flexの横並びをblockにして縦並びに*/
+}
+
+/*リストの形状*/
+
+#header.dnone.panelactive #g-navi li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.hamburger {
+  display: none;
+}
+
+.scroll-prevent {
+  /*動き固定*/
+  position: fixed;
+  /*奥行きを管理*/
+  z-index: -1;
+  /*下2つで背景を元のサイズのまま表示することができる*/
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  position: fixed;
+
+  margin-right: 40px;
+  /* ↑でハンバーガーメニュー右べたつき解消 */
+  padding: 0px;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  transition: 1s;
+  /* background-color: white; */
+
+  z-index: 1220000;
+}
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1 {
+  top: 0;
+  display: block;
+}
+#line2 {
+  top: 20px;
+  display: block;
+}
+#line3 {
+  bottom: 0px;
+  display: block;
+}
+
+.line_1,
+.line_2,
+.line_3 {
+  /* background: red; */
+  z-index: 55555;
+  display: block;
+}
+.line_1 {
+  transform: translateY(20px) rotate(-45deg);
+  top: 0;
+  display: block;
+}
+.line_2 {
+  opacity: 0;
+  display: block;
+}
+.line_3 {
+  transform: translateY(-20px) rotate(45deg);
+  bottom: 0;
+  display: block;
+}
+
+/* 黒いところ */
+.popup-cover {
+  position: fixed; /* ブラウザの定位置に固定 */
+  background: rgba(0, 0, 0, 0.8); /* 背景色を半透明の黒色に */
+  width: 100%; /* 要素の横幅を画面全体に */
+  height: 100%; /* 要素の高さを画面全体に */
+  top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+  left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+  z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
+  display: none;
+  /* background-color: #86b1e6; */
+}
+.popup-content {
+  /* ポップアップ本体 */
+  display: inline-block;
+  position: fixed;
+  width: 75%;
+  z-index: 1100;
+  /* padding: 2%; */
+  top: 10%;
+  left: -100%;
+  position: absolute;
+  transition: 1s;
+  /* display: none; */
+}
+.menu-list li:hover {
+  opacity: 0.6;
+}
+
+.black-out {
+  display: block;
+}
+.in {
+  /* display: block; */
+  left: 10%;
+}
+
+.popup-content {
+  transform: translateY(30%);
+}
+
+.popup-content ul li {
+  font-size: 30px;
+  list-style: none;
+  padding: 15px;
+}
+.popup-content ul li a {
+  color: white;
+}
+
+.scroll-prevent {
+  /*動き固定*/
+  position: fixed;
+  /*奥行きを管理*/
+  z-index: -1;
+  /*下2つで背景を元のサイズのまま表示することができる*/
+  width: 100%;
+  height: 100%;
+}

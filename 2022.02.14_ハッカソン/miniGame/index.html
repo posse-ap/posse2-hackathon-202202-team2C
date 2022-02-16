@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,296 @@
   <title>MiniGame</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/header.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="stylesheet" href="../css/toppage.css">
+  <link rel="stylesheet" href="../css/neon.css">
+  <link rel="stylesheet" href="../css/Reheader.css">
+  <link rel="stylesheet" href="../css/game.css">
 
   <!-- google font読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Vibur&display=swap" rel="stylesheet">
-<!-- game用のリンク ここから-->
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+  <!-- game用のリンク ここから-->
   <link rel="stylesheet" href="../css/game.css">
-<script src="../js/game.js"></script>
-<!-- game用のリンク　ここまで -->
-
+  <script src="../js/game.js" defer></script>
+  <!-- game用のリンク　ここまで -->
+  <script src="../js/free.js"></script>
 </head>
+
 <body>
+  <!-- ファーストビュー -->
   <div class="first-view">
+    <!-- sns links -->
+    <div class="sns-links-position">
+      <div class="sns-links-wrapper">
+        <ul class="sns-links">
+          <li class="sns-link instagram">
+            <a href="https://www.instagram.com/posse_programming
+        " target="_blank">
+              <div class="sns-link-img-size">
+                <img class="sns-link-img" src="../picture/iconmonstr-instagram-11-240.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="sns-link twitter">
+            <a href="https://twitter.com/posse_program
+      " target="_blank">
+              <div class="sns-link-img-size">
+                <img class="sns-link-img" src="../picture/iconmonstr-twitter-1-240.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="sns-link line">
+
+            <a href="https://www.facebook.com/HarborS-110032910423433" target="_blank">
+              <div class="sns-link-img-size">
+                <img class="sns-link-img" src="../picture/iconmonstr-line-1-240.png" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- miniGame -->
-    <div class="mini-game-logo"><b>mini<span>G</span>a<span>m</span>e</b></div>
-  <div>
-    <header class="header">
-      <div class="header-logo">
-        <img class="header-logo-img" src="../picture/8.png" alt="">
-    </div>
-    <div class="header-nav">
-      <ul class="header-nav-ul">
-        <li class="header-nav-li">
-          <a href="../index.html">
-            <span class="header-nav-li-text">Home</span>
-          </a>
-        </li>
-        <li class="header-nav-li">
-          <a href="../ayumi/index.html">
-            <span class="header-nav-li-text">history</span>
-          </a>
-        </li>
-        <li class="header-nav-li"><a href="../miniGame/index.html">
-            <span class="header-nav-li-text">miniGame</span> </a></li>
-        <li class="header-nav-li"><a href="../free/index.html"><span class="header-nav-li-text">free</span></a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- ここからゲーム -->
-  <main>
-    <div class="main-inner-game">
-      <div class="introduction-part">
-        <h1>POSSE2に入って一年足らずでこんなものまで作れるように！！！</h1>
+    <div class="mini-game-logo"><b>Mini<span>G</span>a<span>m</span>e</b></div>
+    <div>
+      <!-- ヘッダー -->
+
+
+      <header id="header">
+        <a href="https://posse-ap.com/">
+          <div class="header-logo">
+            <img class="header-logo-img" src="../picture/8.png" alt="">
+          </div>
+        </a>
+
+        <!-- スマホのハンバーガー -->
+        <div class="hamburger" id="hamburger">
+          <span class="inner_line" id="line1"></span>
+          <span class="inner_line" id="line2"></span>
+          <span class="inner_line" id="line3"></span>
+        </div>
+
+        <!-- PC用のメニュー -->
+        <nav id="g-navi">
+          <ul class="header-nav-ul" id="headerUl">
+            <li class="header-nav-li">
+              <a href="../index.html">
+                <span class="header-home-logo"><b>Home</b></span>
+              </a>
+            </li>
+            <li class="header-nav-li">
+              <a href="../ayumi/index.html">
+                <span class="header-home-logo"><b>History</b></span>
+              </a>
+            </li>
+            <li class="header-nav-li"><a href="./index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>MiniGame</b></span>
+              </a></li>
+            <li class="header-nav-li"><a href="../free/index.html">
+                <span class="header-nav-li-text">
+                  <span class="header-home-logo"><b>Interview</b></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <div class="openbtn1"><span></span><span class="question-tex"></span><span></span></div>
+
+      <!-- スマホのときメニュー -->
+      <div class="popup-cover" id="popupCover"></div>
+      <div class="popup-content" id="navi">
+        <ul class="menu-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ayumi/index.html">History</a></li>
+          <li><a href="index.html">MiniGame</a></li>
+          <li><a href="../free/index.html">Interview</a></li>
+        </ul>
       </div>
-      <div class="game-title-ribbon">
-        <h3>Servant Leader Card Flip</h3>
-      </div>
-    
-      <div class="carpet">
+
+
+      <!-- ここからゲーム -->
+      <main>
+        <div class="main-inner-game">
+
+          <!-- ゲームへの遷移ボタン tap to play-->
+          <script src="https://kit.fontawesome.com/95a02bd20d.js" defer></script>
+          <a class="transition-button" href="#TransitionDestination">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            Tap To PLAY Now
+          </a>
+
+          <!-- 下にコンテンツあるよボタン -->
+          <div class="arrow-button">
+            <img src="../picture/iconmonstr-arrow-69-240.png" alt="">
+          </div>
+          <!-- 紹介文その１ -->
+          <div class="introduction-sentence1">
+            <h1 class="introduction-title">プログラミングが切り開く世界</h1>
+            <ul class="image-icons">
+              <li class="image-icon">
+                <img
+                  src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-system-artificial-intelligence-kiranshastry-gradient-kiranshastry.png" />
+                <p class="image-icon-text">システム開発</p>
+              </li>
+              <li class="image-icon">
+                <img src="https://img.icons8.com/nolan/64/robot.png" />
+                <p class="image-icon-text">ロボット開発</p>
+              </li>
+              <li class="image-icon">
+                <img
+                  src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-game-coding-kiranshastry-gradient-kiranshastry.png" />
+                <p class="image-icon-text">ゲーム開発</p>
+              </li>
+              <li class="image-icon">
+                <img
+                  src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/64/000000/external-application-notification-alert-xnimrodx-lineal-gradient-xnimrodx.png" />
+                <p class="image-icon-text">WEBページ開発</p>
+              </li>
+              <li class="image-icon">
+                <img
+                  src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-webpage-medical-kiranshastry-gradient-kiranshastry.png" />
+                <p class="image-icon-text">アプリ開発</p>
+              </li>
+            </ul>
+            <p class="cheering-message1">プログラミングができると様々な世界に触れ合える！！！<br>そしてそれをマスターした暁には、、、、</p>
+            <div class="cheering-message2">
+              <span class="cheering-message2-text">自分だけのデジタル世界を作ることができる！！！</span>
+            </div>
+            <div>
+              <p class="guide-message-simple"><span>POSSE2に入って</span>一年足らずで<span>こんなものまで</span>作れるように！！！</p><br><br><br>
+              <p class="guide-message"><span>プログラミング</span>によって生み出された<span>ゲーム</span>を体感せよ</p><br>
+
+            </div>
+          </div>
+          <!-- 下にコンテンツあるよボタン -->
+          <div class="arrow-button">
+            <img src="../picture/iconmonstr-arrow-69-240.png" alt="">
+          </div>
+
+          <!-- 神経衰弱ゲーム説明 -->
+          <div class="game-introduction-wrapper">
+            <div class="lineTrigger" id="lineTrigger1">
+              <div class="line2">
+                <div id="TransitionDestination"></div>
+                <div class="game-title-ribbon">
+                  <h3 class="game-title-ribbon-text">Servant Leader Card Flip</h3>
+                </div>
+
+                <div class="linein-appear">
+                  <span class="linein-appear-text">
+                    皆さんも一度は遊んだことがあるはずの神経衰弱。<br class="br-sp">
+                    今回はトランプではなく、<br class="br-sp">
+                    POSEE2のサバリメンバーの顔で遊んでみましょう。<br class="br-sp">
+                    顔を覚えるまで遊んだあなたはもう立派なPOSSE生。<br class="br-sp">
+                    HabarSでも声をかけられそうですね。
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 実際にPLAY -->
+          <div class="game-play-text">実際にPLAY↓↓↓</div>
+          <!-- 神経衰弱ゲーム -->
+          <div class="carpet">
             <table id="table"></table>
-      </div>
+          </div>
+
+          <!-- ブロック崩しゲームの説明 -->
+          <div class="game-introduction-wrapper" id="gameIntroBlock">
+            <div class="lineTrigger" id="lineTrigger2">
+              <div class="line2">
+                <div class="game-title-ribbon">
+                  <h3 class="game-title-ribbon-text">Block Breaking Game</h3>
+                </div>
+                <div class="linein-appear">
+                  <span class="linein-appear-text">
+                    Googleなどが手軽なミニゲームとして<br class="br-sp">
+                    ソースコードを公開しているブロック崩しゲームは<br class="br-sp">
+                    プログラミング初心者がコード練習をするには<br class="br-sp">
+                    もってこいのサイトです。<br class="br-sp">
+                    初心者向けとはいえ、jsにjQuery、canvasなど、<br class="br-sp">
+                    必要な知識は幅広く、コードの書きごたえは十分。<br class="br-sp">
+                    皆さんがconsole.jsを使いこなしてミニゲームを<br class="br-sp">
+                    作ることができる日を楽しみに待っています！！<br class="br-sp">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 実際にPLAY -->
+          <div class="game-play-text">実際にPLAY↓↓↓音あり</div>
+          <!-- ブロック崩しコード -->
+          <div class="block-breaking-wrapper">
+            <div class="breakout">
+              <header>BREAKOUT</header>
+              <canvas id="canvas" width="480" height="500"></canvas>
+              <a id="start" onclick="gameButton();startTimer()" class="btn-circle-border-double">START</a>
+              <audio id="soundBrick" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot01.mp3" type="audio/mp3"
+                preload="auto"></audio>
+              <audio id="soundBar" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot03.mp3" type="audio/mp3"
+                preload="auto"></audio>
+              <audio id="soundFail" src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerdown02.mp3"
+                type="audio/mp3" preload="auto"></audio>
+              <audio id="soundUp" src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerup05.mp3"
+                type="audio/mp3" preload="auto"></audio>
+            </div>
+          </div>
+
+          <!-- 終わりの言葉 -->
+          <div class="game-introduction-wrapper" id="gameFinalWords">
+            <div class="lineTrigger">
+              <div class="line2">
+                <div class="game-title-ribbon">
+                  <h3 class="game-title-ribbon-text">Mini Game Ending</h3>
+                </div>
+                <div class="linein-appear">
+                  <span class="linein-appear-text">
+                    ミニゲームを楽しんでいただけたでしょうか？<br class="br-sp">
+                    POSSE2では年上の先輩が少なくて技術面が不安！<br class="br-sp">
+                    と思うかもしれませんが、先輩が少ない分、<br class="br-sp">
+                    個人の自走力が強いです！<br class="br-sp">
+                    POSSE2雑談ラインでは、自主制作したサイトを<br class="br-sp">
+                    共有したり、一緒にアプリ制作をしようと呼びかけたりと<br class="br-sp">
+                    プログラミングモチベの高いメンバーばかり！！<br class="br-sp">
+                    仲間とより深い関係でプログラミングを楽しみたい3期生！<br class="br-sp">
+                    POSSE2で待ってます！
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- ここまでゲーム -->
+      <footer class="footer-wrapper">
+      </footer>
 
     </div>
-  </main>
 
-  <!-- ここまでゲーム -->
-  <footer class="game-footer">
-    <!-- <img src="../miniGame/game_pictures/ribbon.png" alt=""> -->
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/game.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
 </body>
+
 </html>
