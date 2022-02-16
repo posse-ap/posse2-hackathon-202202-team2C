@@ -21,7 +21,7 @@
   <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
-  <link rel="stylesheet" href="../css/Reheader.css">
+  <link rel="stylesheet" href="../css/ayumiHeader.css">
 
 </head>
 
@@ -34,7 +34,14 @@
         <img class="header-logo-img" src="../picture/8.png" alt="">
       </div>
 
-      <nav id="g-navi">
+      <!-- スマホのハンバーガー -->
+      <div class="hamburger" id="hamburger">
+        <span class="inner_line" id="line1"></span>
+        <span class="inner_line" id="line2"></span>
+        <span class="inner_line" id="line3"></span>
+      </div>
+ <!-- PC用のメニュー -->
+      <!-- <nav id="g-navi">
         <ul class="header-nav-ul" id="headerUl">
           <li class="header-nav-li">
             <a href="../index.html">
@@ -56,11 +63,21 @@
               </a>
             </li>
         </ul>
-      </nav>
+      </nav> -->
 
     </header>
-    <div class="openbtn1"><span></span><span></span><span></span></div>
+    <!-- <div class="openbtn1"><span></span><span></span><span></span></div> -->
 
+          <!-- スマホのときメニュー -->
+          <div class="popup-cover" id="popupCover"></div>
+          <div class="popup-content" id="navi">
+            <ul class="menu-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="index.html">History</a></li>
+              <li><a href="../miniGame/index.html">MiniGame</a></li>
+              <li><a href="../free/index.html">Interview</a></li>
+            </ul>
+          </div>
 
     <!-- sns links -->
     <div class="sns-links-position">
