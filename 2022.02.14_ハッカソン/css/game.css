@@ -1,15 +1,15 @@
 body {
-  display:flex;
-  background: linear-gradient(#07070A,black);
+  display: flex;
+  background: linear-gradient(#07070a, black);
   margin: 0;
   padding: 0;
   align-items: center;
   justify-content: center;
-  min-height:100vh;
+  min-height: 100vh;
 }
-.main-inner-game{
+.main-inner-game {
   padding-top: 200px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -21,46 +21,47 @@ body {
 /* 下にコンテンツあるよボタン */
 .arrow-button {
   display: block;
-margin: 0 auto;
-width: 7%;
-height: auto;
-margin-top: 15vh;
-opacity: 0.5;
+  margin: 0 auto;
+  width: 7%;
+  height: auto;
+  margin-top: 15vh;
+  opacity: 0.5;
 }
 .arrow-button img {
   width: 100%;
   height: 100%;
 }
 
-.introduction-sentence1{
+.introduction-sentence1 {
   font-size: 1rem;
-  color: #FFF;
-  font-family: 'DotGothic16', sans-serif;
+  color: #fff;
+  font-family: "DotGothic16", sans-serif;
   padding-top: 3rem;
 }
 
 /* プログラミングが切り開く未来 */
-.introduction-title{
+.introduction-title {
   font-size: 2rem;
   padding: 5%;
-  color: #FFF;
-  text-shadow: 0 0 5px rgb(115, 114, 114), 0 0 13px rgb(37, 228, 85), 0 0 21px rgb(44, 218, 111), 0 0 35px #08f08f;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(115, 114, 114), 0 0 13px rgb(37, 228, 85),
+    0 0 21px rgb(44, 218, 111), 0 0 35px #08f08f;
 }
 /* アイコンのボックス */
-.image-icons{
-  height:80%;
+.image-icons {
+  height: 80%;
   width: 50%;
   padding: 3%;
   margin: 0 auto 10% auto;
-  border: solid 3px #FFF;
-  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(77, 167, 75), 0 0 10px rgb(89, 150, 24), 0 0 10px #faf616;
+  border: solid 3px #fff;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(77, 167, 75),
+    0 0 10px rgb(89, 150, 24), 0 0 10px #faf616;
   display: flex;
   justify-content: space-between;
 }
 /* 各アイコンの文字の横幅 */
-.image-icon{
+.image-icon {
   width: 20%;
-  
 }
 .img-icon img {
   width: 100%;
@@ -68,13 +69,13 @@ opacity: 0.5;
 }
 .image-icon-text {
   font-size: 1rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 /* プログラミングができるとさまざまな世界に触れ合える */
 /* ネオン風を出すためにboxshadowつける */
 /* 主張落とすためにネオン外す */
-.cheering-message1{
+.cheering-message1 {
   line-height: 350%;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.736);
@@ -90,159 +91,155 @@ opacity: 0.5;
 }
 .cheering-message2-text {
   font-size: 1rem;
-  color: #FFF;
-  text-shadow: 0 0 2px #FFF, 0 0 15px rgb(152, 240, 181), 0 0 20px rgb(103, 248, 110), 0 0 32px rgb(5, 240, 36);
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 15px rgb(152, 240, 181),
+    0 0 20px rgb(103, 248, 110), 0 0 32px rgb(5, 240, 36);
 }
 
-.cheering-message2 b span{
+.cheering-message2 b span {
   animation: blink linear infinite 2s;
 }
-.cheering-message2 b span:nth-of-type(2){
+.cheering-message2 b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
 /* 文字の点滅の仕方の指定 */
 @keyframes blink {
   78% {
-  color: inherit;
-  text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
-  79%{
-  color: #333;
+  79% {
+    color: #333;
   }
   80% {
-
-  text-shadow: none;
+    text-shadow: none;
   }
   81% {
-  color: inherit;
-  text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   82% {
-  color: #333;
-  text-shadow: none;
+    color: #333;
+    text-shadow: none;
   }
   83% {
-  color: inherit;
-  text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   92% {
-  color: #333;
-  text-shadow: none;
+    color: #333;
+    text-shadow: none;
   }
   92.5% {
-  color: inherit;
-  text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
 }
 
 /* プログラミングによって生み出された世界を体感せよ */
-.guide-message{
+.guide-message {
   font-size: 1.8rem;
-  color: #FFF;
-  text-shadow: 0 0 3px #FFF, 0 0 17px rgb(240, 250, 182), 0 0 26px rgb(197, 226, 91), 0 0 39px rgb(232, 247, 22);
+  color: #fff;
+  text-shadow: 0 0 3px #fff, 0 0 17px rgb(240, 250, 182),
+    0 0 26px rgb(197, 226, 91), 0 0 39px rgb(232, 247, 22);
 }
 /* シンプル ネオンなしのガイドメッセージ */
 .guide-message-simple {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.538);
-  
 }
 
-.guide-message span{
+.guide-message span {
   animation: blink linear infinite 1.2s;
 }
-.guide-message span:nth-of-type(2){
+.guide-message span:nth-of-type(2) {
   animation: blink linear infinite 2.3s;
 }
 
-
-
 /* 遷移ボタンの色 tap to playボタン */
-.transition-button{
-  position:relative;
+.transition-button {
+  position: relative;
   margin-top: 10%;
   padding: 3%;
   display: inline-block;
   color: white;
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 4px;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 1.5rem;
-  overflow: hidden; 
-  transition: .15s;
+  overflow: hidden;
+  transition: 0.15s;
   background: rgba(174, 174, 174, 0.168);
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* 遷移ボタンの動き */
-.transition-button:hover{
+.transition-button:hover {
   color: rgba(117, 106, 106, 0.832);
   background: rgb(221, 243, 223);
-  box-shadow: 0 0 10px rgb(11, 243, 11), 0 0 40px rgb(128, 223, 125), 0 0 80px rgb(110, 245, 193);
-  transition-delay: .7s;
-  animation : infinite;
-} 
-.transition-button div{
+  box-shadow: 0 0 10px rgb(11, 243, 11), 0 0 40px rgb(128, 223, 125),
+    0 0 80px rgb(110, 245, 193);
+  transition-delay: 0.7s;
+  animation: infinite;
+}
+.transition-button div {
   position: absolute;
-  display:block;
+  display: block;
 }
 
-.transition-button div:nth-child(1){
-  top:0;
+.transition-button div:nth-child(1) {
+  top: 0;
   left: -100%;
-  width:100%;;
-  height:4px;
-  background: linear-gradient(90deg,transparent, rgb(230, 88, 142));
-
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, rgb(230, 88, 142));
 }
 
-.transition-button:hover div:nth-child(1){
-  left:100%;
-  transition:.5s;
+.transition-button:hover div:nth-child(1) {
+  left: 100%;
+  transition: 0.5s;
 }
 
-.transition-button div:nth-child(3){
-  bottom:0;
+.transition-button div:nth-child(3) {
+  bottom: 0;
   right: -100%;
-  width:100%;;
-  height:4px;
-  background: linear-gradient(270deg,transparent, rgb(243, 41, 91));
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, rgb(243, 41, 91));
 }
 
-.transition-button:hover div:nth-child(3){
-  right:100%;
-  transition:.3s;
-  transition-delay:.4s;
+.transition-button:hover div:nth-child(3) {
+  right: 100%;
+  transition: 0.3s;
+  transition-delay: 0.4s;
 }
 
-.transition-button div:nth-child(2){
-  top:-100%;
-  right:0;
-  height:100%;;
-  width:4px;
-  background: linear-gradient(180deg,transparent, rgb(247, 55, 103));
+.transition-button div:nth-child(2) {
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(180deg, transparent, rgb(247, 55, 103));
 }
 
-.transition-button:hover div:nth-child(2){
-  top:100%;
-  transition: .5s;
-  transition-delay: .25s;
-
+.transition-button:hover div:nth-child(2) {
+  top: 100%;
+  transition: 0.5s;
+  transition-delay: 0.25s;
 }
 
-.transition-button div:nth-child(4){
-  bottom:-100%;
-  left:0;
-  height:100%;;
-  width:4px;
-  background: linear-gradient(45deg,transparent,rgb(245, 9, 9));
+.transition-button div:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(45deg, transparent, rgb(245, 9, 9));
 }
 
-:hover div:nth-child(4){
-  bottom:100%;
-  transition: .3s;
-  transition-delay: .6s;
-
+:hover div:nth-child(4) {
+  bottom: 100%;
+  transition: 0.3s;
+  transition-delay: 0.6s;
 }
 
 /* ここからゲーム紹介start */
@@ -260,113 +257,125 @@ opacity: 0.5;
 }
 
 /*枠線が伸びて出現*/
-.lineTrigger{
+.lineTrigger {
   position: relative; /* 枠線が書かれる基点*/
-  opacity:0;
+  opacity: 0;
 }
 #lineTrigger1 {
   margin-top: 5rem;
 }
 
-.lineTrigger.lineanime{
-  animation-name:lineAnimeBase;
-  animation-duration:1s;
-  animation-fill-mode:forwards;
+.lineTrigger.lineanime {
+  animation-name: lineAnimeBase;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes lineAnimeBase{
+@keyframes lineAnimeBase {
   from {
-    opacity:0;
+    opacity: 0;
   }
 
   to {
-    opacity:1;
-}
+    opacity: 1;
+  }
 }
 
 /*上下線*/
 .lineTrigger::before,
-.lineTrigger::after{
+.lineTrigger::after {
   position: absolute;
-  content:"";
-  width:0;
-  height:3px;
-  background:rgba(243, 255, 232, 0.8);/* 枠線の色*/
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgba(243, 255, 232, 0.8); /* 枠線の色*/
 }
 
 /*左右線*/
 .line2::before,
-.line2::after{
+.line2::after {
   position: absolute;
-  content:"";
+  content: "";
   width: 3px;
-  height:0;
-  background:rgba(238, 255, 223, 0.8);/* 枠線の色*/
+  height: 0;
+  background: rgba(238, 255, 223, 0.8); /* 枠線の色*/
 }
 
 /*上線*/
 .lineTrigger::before {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
 .lineTrigger.lineanime::before {
-  animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
+  animation: lineAnime 0.5s linear 0s forwards; /*表示されて0秒後に上線が0.5秒かけて表示*/
 }
 
 /*右線*/
-.line2::before{
-  top:0;
-  right:0;
+.line2::before {
+  top: 0;
+  right: 0;
 }
 
 .lineTrigger.lineanime .line2::before {
-  animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
+  animation: lineAnime2 0.5s linear 0.5s forwards; /*表示されて0.5秒後に右線が0.5秒かけて表示*/
 }
 
 /*下線*/
 .lineTrigger::after {
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
 }
 
 .lineTrigger.lineanime::after {
-  animation: lineAnime .5s linear .5s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+  animation: lineAnime 0.5s linear 0.5s forwards; /*表示されて1秒後に下線が0.5秒かけて表示*/
 }
 
 /*左線*/
-.line2::after{
-  bottom:0;
-  left:0;
+.line2::after {
+  bottom: 0;
+  left: 0;
 }
 
 .lineTrigger.lineanime .line2::after {
-  animation: lineAnime2 .5s linear .5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+  animation: lineAnime2 0.5s linear 0.5s forwards; /*表示されて1.5秒後に左線が0.5秒かけて表示*/
 }
 
 @keyframes lineAnime {
-  0% {width:0%;}
-    100%{width:100%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes lineAnime2 {
-  0% {height:0%;}
-    100%{height:100%;}
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 /*枠線内側の要素*/
 
-.lineTrigger.lineanime .linein-appear{
-  animation: lineInnerAnime .5s linear .5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
-  opacity: 0;/*初期値を透過0にする*/
+.lineTrigger.lineanime .linein-appear {
+  animation: lineInnerAnime 0.5s linear 0.5s forwards; /*1.5秒後に中央のエリアが0.5秒かけて表示*/
+  opacity: 0; /*初期値を透過0にする*/
 }
 .linein-appear-text {
   line-height: 2;
   opacity: 0.8;
 }
-@keyframes lineInnerAnime{
-  0% {opacity:0;}
-    100% {opacity:1;}
+@keyframes lineInnerAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .lineTrigger {
   margin-bottom: 1rem;
@@ -374,9 +383,9 @@ opacity: 0.5;
 .line2 {
   padding: 5rem 0;
 }
-.linein-appear  {
+.linein-appear {
   color: rgba(255, 255, 255, 0.524);
-  font-family: 'DotGothic16', sans-serif;
+  font-family: "DotGothic16", sans-serif;
   font-size: 1.5rem;
   width: 60%;
   margin: 0 auto;
@@ -386,17 +395,13 @@ opacity: 0.5;
 .game-play-text {
   display: block;
   text-align: center;
-  color: #FFF;
-  text-shadow:
-  0 0 5px #FFF,
-  0 0 12px #FFF,
-  0 0 21px rgb(39, 235, 137),
-  0 0 33px rgb(37, 192, 37);
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 12px #fff, 0 0 21px rgb(39, 235, 137),
+    0 0 33px rgb(37, 192, 37);
   font-size: 2rem;
   margin: 5rem 0 5rem 0;
-  font-family: 'DotGothic16', sans-serif;
+  font-family: "DotGothic16", sans-serif;
 }
-
 
 /* ここから神経衰弱ゲームのcss */
 
@@ -409,26 +414,28 @@ opacity: 0.5;
   box-sizing: border-box;
   margin-bottom: 30px;
 }
-.game-title-ribbon:before {/*左側のリボン端*/
-  content: '';
+.game-title-ribbon:before {
+  /*左側のリボン端*/
+  content: "";
   position: absolute;
   width: 10px;
   bottom: -10px;
   left: -35px;
   z-index: -2;
-  border: 20px solid #C90000;
-  border-left-color: transparent;/*山形に切り抜き*/
+  border: 20px solid #c90000;
+  border-left-color: transparent; /*山形に切り抜き*/
 }
 
-.game-title-ribbon:after {/*右側のリボン端*/
-  content: '';
+.game-title-ribbon:after {
+  /*右側のリボン端*/
+  content: "";
   position: absolute;
   width: 10px;
   bottom: -10px;
   right: -35px;
   z-index: -2;
-  border: 20px solid #C90000;
-  border-right-color: transparent;/*山形に切り抜き*/
+  border: 20px solid #c90000;
+  border-right-color: transparent; /*山形に切り抜き*/
 }
 
 .game-title-ribbon h3 {
@@ -439,44 +446,44 @@ opacity: 0.5;
   line-height: 45px;
   font-size: 18px;
   /* font-family: ; */
-  color: #FFF;
-  background: #FB0000;/*真ん中の背景色*/
+  color: #fff;
+  background: #fb0000; /*真ん中の背景色*/
 }
 .game-title-ribbon h3:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 0;
   border: none;
   border-bottom: solid 10px transparent;
-  border-right: solid 15px #740000;/*左の折り返し部分*/
+  border-right: solid 15px #740000; /*左の折り返し部分*/
 }
 .game-title-ribbon h3:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   right: 0;
   border: none;
   border-bottom: solid 10px transparent;
-  border-left: solid 15px #740000;/*右の折り返し部分*/
+  border-left: solid 15px #740000; /*右の折り返し部分*/
 }
-.game-title-ribbon-text  {
-  font-family: 'Quintessential', cursive;
+.game-title-ribbon-text {
+  font-family: "Quintessential", cursive;
   font-style: italic;
 }
 
 /* 神経衰弱ゲーム */
-.carpet{
+.carpet {
   z-index: 999999;
   /* text-align: center; */
   margin: 0 auto 10rem;
   position: relative;
   height: 800px;
   width: 1000px;
-  background-image: url(../miniGame/game_pictures/redcarpet.jpg)
+  background-image: url(../miniGame/game_pictures/redcarpet.jpg);
 }
 
-table{
+table {
   /* margin:10px auto; */
   width: 720px;
   height: 720px;
@@ -485,35 +492,33 @@ table{
   margin-left: 140px;
   margin-right: 140px;
   position: absolute;
-
 }
 
-td.card{
-  width:120px;
-  height:180px;
+td.card {
+  width: 120px;
+  height: 180px;
   /* width:160px;
   height:240px; */
 
-  background-size:cover;
+  background-size: cover;
   border-radius: 10px;
 }
 
-td.card.back{
-  background-image:url(../miniGame/game_pictures/z01.jpg) !important;
+td.card.back {
+  background-image: url(../miniGame/game_pictures/z01.jpg) !important;
 }
 
-
 /* ここからブロックゲームのcss */
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 .breakout {
   text-align: center;
   margin: 0 auto;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 canvas {
   background: #000;
   display: block;
-  border: solid 1.0px #eeeeee;
+  border: solid 1px #eeeeee;
   margin: 0 auto;
 }
 .btn-circle-border-double {
@@ -527,7 +532,7 @@ canvas {
   border: double 4px #ffffffa5;
   text-align: center;
   overflow: hidden;
-  transition: .6s;
+  transition: 0.6s;
 }
 .btn-circle-border-double:hover {
   -webkit-transform: rotateY(360deg);
@@ -537,11 +542,9 @@ canvas {
   margin-bottom: 10rem;
 }
 
-
-
 /* スマホ対応レスポンシブデザイン */
 @media (max-width: 400px) {
-  .carpet{
+  .carpet {
     z-index: 999999;
     /* text-align: center; */
     margin: 0 auto 100%;
@@ -549,8 +552,7 @@ canvas {
     height: auto;
     width: 400px;
     padding-left: 30px;
-    background-image: url(../miniGame/game_pictures/redcarpet.jpg)
-
+    background-image: url(../miniGame/game_pictures/redcarpet.jpg);
   }
   table {
     /* margin:10px auto; */
@@ -563,27 +565,28 @@ canvas {
     position: absolute;
   }
   /* トランプカードの大きさを設定 */
-  td.card{
-    width:50px;
-    height:60px;
-    background-size:cover;
+  td.card {
+    width: 50px;
+    height: 60px;
+    background-size: cover;
     border-radius: 10px;
   }
 
   /* スマホ版ではブロック崩し非表示 */
- #canvas {
+  #canvas {
     /* display: none; */
     width: 80%;
   }
-  
+
   /* アイコンの中身を縦表示 */
-  .image-icons{
-    height:80%;
+  .image-icons {
+    height: 80%;
     width: 50%;
     padding: 3%;
     margin: 0 auto 10% auto;
-    border: solid 3px #FFF;
-    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(77, 167, 75), 0 0 10px rgb(89, 150, 24), 0 0 10px #faf616;
+    border: solid 3px #fff;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(77, 167, 75),
+      0 0 10px rgb(89, 150, 24), 0 0 10px #faf616;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -598,15 +601,15 @@ canvas {
   }
   .arrow-button {
     display: block;
-  margin: 0 auto;
-  width: 30%;
-  height: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  opacity: 0.5;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    opacity: 0.5;
   }
   /* アイコン横の文字幅 */
-  .image-icon{
+  .image-icon {
     width: 100%;
     padding-left: 10%;
   }
@@ -614,27 +617,27 @@ canvas {
     font-size: 3rem;
   }
   /* ゲーム説明の枠 */
-.game-introduction-wrapper {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-/* リボンの大きさ */
+  .game-introduction-wrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* リボンの大きさ */
   .game-title-ribbon h3 {
     font-size: 10px;
   }
   .line2 {
     padding: 5rem 10%;
   }
-  .linein-appear  {
+  .linein-appear {
     color: rgba(255, 255, 255, 0.524);
-    font-family: 'DotGothic16', sans-serif;
+    font-family: "DotGothic16", sans-serif;
     font-size: 4rem;
   }
   /* footerの縦幅指定 */
   .footer-wrapper {
-height: 30rem;
-width: 100%;
+    height: 30rem;
+    width: 100%;
   }
 }

@@ -619,6 +619,7 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
 .gotop {
   border-radius: 50%;
   padding: 1rem;
@@ -641,6 +642,7 @@ html {
   right: 30px;
   z-index: 10000;
 }
+
 .gotop::before {
   content: "";
   display: block;
@@ -655,9 +657,11 @@ html {
   position: absolute;
   transform: rotate(-45deg);
 }
+
 .gotop:hover {
   opacity: 1;
 }
+
 @media (max-width: 750px) {
   .gotop {
     width: 40px;
@@ -669,10 +673,12 @@ html {
     bottom: 10px;
     right: 10px;
   }
+
   .gotop::before {
     bottom: 0;
   }
 }
+
 /* スマホ対応レスポンシブ */
 
 @media (max-width: 400px) {
@@ -687,14 +693,17 @@ html {
     right: 10px;
     display: none;
   }
+
   .gotop::before {
     bottom: 0;
     top: 15%;
   }
+
   #test1 {
     width: 400px;
     height: 200px;
   }
+
   .introduction-video {
     padding: 0;
   }

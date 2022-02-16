@@ -71,12 +71,12 @@
 
 
       <header id="header">
+        <a href="https://posse-ap.com/">
+          <div class="header-logo">
+            <img class="header-logo-img" src="../picture/8.png" alt="">
+          </div>
+        </a>
 
-        <div class="header-logo">
-          <img class="header-logo-img" src="../picture/8.png" alt="">
-        </div>
-
-        
         <!-- スマホのハンバーガー -->
         <div class="hamburger" id="hamburger">
           <span class="inner_line" id="line1"></span>
@@ -113,16 +113,16 @@
 
       <div class="openbtn1"><span></span><span class="question-tex"></span><span></span></div>
 
-            <!-- スマホのときメニュー -->
-            <div class="popup-cover" id="popupCover"></div>
-            <div class="popup-content" id="navi">
-              <ul class="menu-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../ayumi/index.html">History</a></li>
-                <li><a href="index.html">MiniGame</a></li>
-                <li><a href="../free/index.html">Interview</a></li>
-              </ul>
-            </div>
+      <!-- スマホのときメニュー -->
+      <div class="popup-cover" id="popupCover"></div>
+      <div class="popup-content" id="navi">
+        <ul class="menu-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ayumi/index.html">History</a></li>
+          <li><a href="index.html">MiniGame</a></li>
+          <li><a href="../free/index.html">Interview</a></li>
+        </ul>
+      </div>
 
 
       <!-- ここからゲーム -->
@@ -136,7 +136,7 @@
             <div></div>
             <div></div>
             <div></div>
-            Tap To PLAY  Now
+            Tap To PLAY Now
           </a>
 
           <!-- 下にコンテンツあるよボタン -->
@@ -179,13 +179,13 @@
             <div>
               <p class="guide-message-simple"><span>POSSE2に入って</span>一年足らずで<span>こんなものまで</span>作れるように！！！</p><br><br><br>
               <p class="guide-message"><span>プログラミング</span>によって生み出された<span>ゲーム</span>を体感せよ</p><br>
-              
+
             </div>
           </div>
- <!-- 下にコンテンツあるよボタン -->
- <div class="arrow-button">
-  <img src="../picture/iconmonstr-arrow-69-240.png" alt="">
-</div>
+          <!-- 下にコンテンツあるよボタン -->
+          <div class="arrow-button">
+            <img src="../picture/iconmonstr-arrow-69-240.png" alt="">
+          </div>
 
           <!-- 神経衰弱ゲーム説明 -->
           <div class="game-introduction-wrapper">
@@ -246,10 +246,14 @@
               <header>BREAKOUT</header>
               <canvas id="canvas" width="480" height="500"></canvas>
               <a id="start" onclick="gameButton();startTimer()" class="btn-circle-border-double">START</a>
-              <audio id="soundBrick" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot01.mp3"       type="audio/mp3" preload="auto"></audio>
-              <audio id="soundBar"   src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot03.mp3"       type="audio/mp3" preload="auto"></audio>
-              <audio id="soundFail"  src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerdown02.mp3" type="audio/mp3" preload="auto"></audio>
-              <audio id="soundUp"    src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerup05.mp3"   type="audio/mp3" preload="auto"></audio>
+              <audio id="soundBrick" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot01.mp3" type="audio/mp3"
+                preload="auto"></audio>
+              <audio id="soundBar" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot03.mp3" type="audio/mp3"
+                preload="auto"></audio>
+              <audio id="soundFail" src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerdown02.mp3"
+                type="audio/mp3" preload="auto"></audio>
+              <audio id="soundUp" src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerup05.mp3"
+                type="audio/mp3" preload="auto"></audio>
             </div>
           </div>
 
@@ -289,11 +293,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="../js/game.js"></script>
-  <script src="../js/common.js"></script>
-  <script src="../js/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/game.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

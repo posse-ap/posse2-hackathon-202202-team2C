@@ -149,10 +149,12 @@ body {
   body {
     overflow: hidden;
   }
+
   /* 線非表示 */
   .liner-wrapper {
     display: none;
   }
+
   /* 擬似要素の大きさ */
   .photo-item-style::before {
     position: absolute;
@@ -168,6 +170,7 @@ body {
   .photo-item-style::after {
     display: none;
   }
+
   .photos-wrapper {
     overflow-x: scroll;
     white-space: nowrap;
@@ -181,6 +184,3 @@ body {
     -ms-transform: translate(-50%, -50%); */
   }
 }
-
-
-

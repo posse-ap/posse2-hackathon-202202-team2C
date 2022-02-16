@@ -34,6 +34,7 @@
 .top-page-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* History のロゴ */
 .History-logo {
     text-align: center;
@@ -62,6 +63,7 @@
 .History-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* miniGameのロゴ */
 .mini-game-logo {
     text-align: center;
@@ -90,6 +92,7 @@
 .mini-game-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* interviewのロゴ */
 .interview-logo {
     text-align: center;
@@ -118,6 +121,7 @@
 .interview-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* interviewのロゴ -2 */
 .interview-logo-2 {
     text-align: center;
@@ -146,6 +150,7 @@
 .interview-logo-2 b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* coming soonのロゴ */
 .coming-soon-logo {
     text-align: center;
@@ -169,6 +174,7 @@
 .coming-soon-logo b span:nth-of-type(2) {
     animation: blink linear infinite 3s;
 }
+
 /* headerのロゴ */
 .header-home-logo {
     text-align: center;
@@ -185,7 +191,7 @@
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff6d4495, 0 0 0.5em #a0ee8e, 0 0 0.1em #44ffe9, 0 10px 3px #000;
 }
 
-.popup-content ul li{
+.popup-content ul li {
     font: 400 5vh "Vibur";
     font-family: 'Vibur', cursive;
     color: #fee;
@@ -203,6 +209,7 @@
     margin: auto;
     user-select: none;
 }
+
 .question-text {
     padding-top: 2rem;
     font: 400 4vh "Vibur";
@@ -210,6 +217,7 @@
     color: #fee;
     text-shadow: 0 -40px 400px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #37ff00, 0 0 0.1em #00ffe5, 0 10px 3px #000;
 }
+
 /* ロゴのアニメーション */
 @keyframes blink {
     78% {
@@ -255,6 +263,7 @@
 /* ネオンロゴのiPad表示対応 */
 
 @media (max-width: 900px) {
+
     /* トップページのロゴ */
     .top-page-logo {
         text-align: center;
@@ -267,12 +276,14 @@
 
         user-select: none;
     }
+
     .top-page-logo b {
         font: 400 8vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .History-logo {
         text-align: center;
         width: 65%;
@@ -285,12 +296,14 @@
         bottom: 0;
         user-select: none;
     }
+
     .History-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .mini-game-logo {
         text-align: center;
         width: 65%;
@@ -310,6 +323,7 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .interview-logo {
         text-align: center;
         width: 65%;
@@ -329,6 +343,7 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .coming-soon-logo {
         text-align: center;
         width: 100%;
@@ -342,10 +357,10 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
- }
+}
 
- /* スマホ対応レスポンシブデザイン */
- @media (max-width: 400px) {
+/* スマホ対応レスポンシブデザイン */
+@media (max-width: 400px) {
     .top-page-logo {
         text-align: center;
         width: 65%;
@@ -357,12 +372,14 @@
 
         user-select: none;
     }
+
     .top-page-logo b {
         font: 400 10vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .History-logo {
         text-align: center;
         width: 65%;
@@ -375,12 +392,14 @@
         bottom: 0;
         user-select: none;
     }
+
     .History-logo b {
         font: 400 6vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .mini-game-logo {
         text-align: center;
         width: 65%;
@@ -400,6 +419,7 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .interview-logo {
         text-align: center;
         width: 65%;
@@ -419,20 +439,22 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .interview-logo-2 b {
         font: 400 3vh "Vibur";
         font-family: 'Vibur', cursive;
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
-    
+
     .interview-logo-2 b span {
         animation: blink linear infinite 2s;
     }
-    
+
     .interview-logo-2 b span:nth-of-type(2) {
         animation: blink linear infinite 3s;
     }
+
     .coming-soon-logo {
         text-align: center;
         width: 100%;
@@ -446,6 +468,7 @@
         color: #fee;
         text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff644, 0 0 0.5em #5edc42, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
+
     .header-home-logo {
         text-align: center;
         width: 100%;
@@ -453,7 +476,7 @@
         margin: auto;
         user-select: none;
     }
-    
+
     .header-home-logo b {
         font: 400 3vh "Vibur";
         font-family: 'Vibur', cursive;
@@ -465,7 +488,7 @@
 
     .footer-logo b {
         font: 300 5vh "Vibur";
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
+        color: #fee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #b7c4c7, 0 0 0.1em #44ffe9, 0 10px 3px #000;
     }
- }
+}

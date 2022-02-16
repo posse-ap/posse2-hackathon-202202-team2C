@@ -1,6 +1,5 @@
 "use strict";
 
-
 $(".fadeLeftTrigger").each(function () {
   //fadeLeftTriggerというクラス名が
   var elemPos = $(this).offset().top - 20; //要素より、50px上の

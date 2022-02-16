@@ -15,12 +15,18 @@ body {
   margin: 0 auto;
   max-width: 60%;
 }
+
 .first-view-under-wrapper {
   background: linear-gradient(#07070a, black);
 }
+
 .quiz {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.container {
+  z-index: 10000000000000000000;
 }
 
 .quiz-image {
@@ -44,7 +50,7 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   color: #fff;
-  
+
 }
 
 .box1 {
@@ -75,19 +81,24 @@ body {
   margin-top: 10px;
   border-radius: 5px;
 }
+
 .box1 img {
   width: 100%;
   height: auto;
 }
+
 .quiz-li {
   font-family: 'DotGothic16', sans-serif;
 }
+
 .quiz-result {
   padding: 30px;
   border-radius: 5px;
   border: 1px solid #ebebeb;
-  margin: 10px;text-align: center;
+  margin: 10px;
+  text-align: center;
 }
+
 .quiz-result p {
   font-family: 'DotGothic16', sans-serif;
 }
@@ -146,7 +157,7 @@ body {
   color: rgb(3, 24, 49);
   font-family: "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont,
     "Hiragino Sans", "游ゴシック Medium", meiryo, sans-serif;
-  background: linear-gradient(#000000,#151515);
+  background: linear-gradient(#000000, #151515);
 }
 
 .question {
@@ -165,19 +176,23 @@ body {
   .content-wrapper {
     max-width: 100%;
   }
+
   .box1 {
-    margin-bottom:initial;
+    margin-bottom: initial;
   }
+
   .box1 li {
     width: 100%;
     text-align: center;
     justify-content: flex-end;
     font-size: 1.5rem;
   }
-  .box1 img{
+
+  .box1 img {
     display: none;
   }
-  .quiz-result{
+
+  .quiz-result {
     padding: 20px;
   }
 }
