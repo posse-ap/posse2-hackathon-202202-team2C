@@ -1,6 +1,7 @@
 a {
   list-style: none;
   text-decoration: none;
+  cursor: pointer;
 }
 li {
   list-style: none;
@@ -14,6 +15,11 @@ li {
   right: 30px;
   z-index: 10;
   display: block;
+}
+
+
+.popapp-wrapper a{
+  display: inline-block;
 }
 .fixed-info {
   padding: 20px;
@@ -106,4 +112,34 @@ li {
   color: inherit;
   text-decoration: none;
   transition: 0.3s;
+}
+
+
+
+@media (max-width: 700px){
+  .popapp-wrapper {
+    top: initial;
+    position: absolute;
+    bottom: 5%;
+    right:0;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .popapp-wrapper a{
+    display: inline-block;
+  }
+
+  .fixed-info{
+    padding: 0 2rem;
+
+  }
+  .fixed-info-text {
+    font-size: 0.5rem;
+    padding: 0;
+  }
+  .fixed-info-close{
+    top: 0;
+  }
 }

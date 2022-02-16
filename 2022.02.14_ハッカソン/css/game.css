@@ -25,6 +25,7 @@ margin: 0 auto;
 width: 7%;
 height: auto;
 margin-top: 15vh;
+opacity: 0.5;
 }
 .arrow-button img {
   width: 100%;
@@ -59,6 +60,7 @@ margin-top: 15vh;
 /* 各アイコンの文字の横幅 */
 .image-icon{
   width: 20%;
+  
 }
 .img-icon img {
   width: 100%;
@@ -376,6 +378,8 @@ margin-top: 15vh;
   color: rgba(255, 255, 255, 0.524);
   font-family: 'DotGothic16', sans-serif;
   font-size: 1.5rem;
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* 実際にplayのテキスト */
@@ -394,7 +398,7 @@ margin-top: 15vh;
 }
 
 
-/* ここからゲームのcss */
+/* ここから神経衰弱ゲームのcss */
 
 /* リボンのスタイル */
 .game-title-ribbon {
@@ -481,11 +485,7 @@ table{
   margin-left: 140px;
   margin-right: 140px;
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(0%, 0%);
-  -webkit-transform: translate(0%, 0%);
-  -ms-transform: translate(0%, 0%); */
+
 }
 
 td.card{
@@ -501,6 +501,44 @@ td.card{
 td.card.back{
   background-image:url(../miniGame/game_pictures/z01.jpg) !important;
 }
+
+
+/* ここからブロックゲームのcss */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+.breakout {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Press Start 2P', cursive;
+}
+canvas {
+  background: #000;
+  display: block;
+  border: solid 1.0px #eeeeee;
+  margin: 0 auto;
+}
+.btn-circle-border-double {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffffaf;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: double 4px #ffffffa5;
+  text-align: center;
+  overflow: hidden;
+  transition: .6s;
+}
+.btn-circle-border-double:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+.block-breaking-wrapper {
+  margin-bottom: 10rem;
+}
+
+
+
 /* スマホ対応レスポンシブデザイン */
 @media (max-width: 400px) {
   .carpet{
@@ -514,7 +552,7 @@ td.card.back{
     background-image: url(../miniGame/game_pictures/redcarpet.jpg)
 
   }
-  table{
+  table {
     /* margin:10px auto; */
     width: 200px;
     height: 200px;
@@ -523,33 +561,21 @@ td.card.back{
     margin-left: 10px;
     margin-right: 10px;
     position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(0%, 0%);
-    -webkit-transform: translate(0%, 0%);
-    -ms-transform: translate(0%, 0%); */
   }
-  
+  /* トランプカードの大きさを設定 */
   td.card{
     width:50px;
     height:60px;
-    /* width:160px;
-    height:240px; */
-  
     background-size:cover;
     border-radius: 10px;
   }
 
   /* スマホ版ではブロック崩し非表示 */
-  canvas {
-    display: none;
+ #canvas {
+    /* display: none; */
+    width: 80%;
   }
-  form {
-    display: none;
-  }
-  #gameIntroBlock {
-    display: none;
-  }
+  
   /* アイコンの中身を縦表示 */
   .image-icons{
     height:80%;
@@ -573,8 +599,42 @@ td.card.back{
   .arrow-button {
     display: block;
   margin: 0 auto;
-  width: 15%;
+  width: 30%;
   height: auto;
-  margin-top: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  opacity: 0.5;
+  }
+  /* アイコン横の文字幅 */
+  .image-icon{
+    width: 100%;
+    padding-left: 10%;
+  }
+  .guide-message {
+    font-size: 3rem;
+  }
+  /* ゲーム説明の枠 */
+.game-introduction-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* リボンの大きさ */
+  .game-title-ribbon h3 {
+    font-size: 10px;
+  }
+  .line2 {
+    padding: 5rem 10%;
+  }
+  .linein-appear  {
+    color: rgba(255, 255, 255, 0.524);
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 4rem;
+  }
+  /* footerの縦幅指定 */
+  .footer-wrapper {
+height: 30rem;
+width: 100%;
   }
 }

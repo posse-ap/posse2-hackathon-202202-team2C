@@ -16,12 +16,12 @@
     height: 100px;
     padding: 1rem;
     opacity: 0.5;
-    
+
 }
 .header-logo-img {
     width: 100%;
-    height: 100%;
-    
+    height: auto;
+
 }
 
 .header-nav{
@@ -86,15 +86,15 @@
 top: 0;
   left: 0;
 z-index: -1;
-  /*高さと幅*/  
+  /*高さと幅*/
 width:100%;
 height: 100vh;
-  /*天地中央＆テキスト中央揃え*/  
+  /*天地中央＆テキスト中央揃え*/
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-  /*はじめは透過0に*/  
+  /*はじめは透過0に*/
   opacity: 0;
 transition: all 0.4s;
 }
@@ -150,7 +150,7 @@ transition: all 0.4s;
       transform: translateY(-20px) rotate(45deg);
       bottom: 0;
     }
-    
+
 
 
 
@@ -192,7 +192,7 @@ transition: all 0.4s;
     .menu-list li:hover{
       opacity: 0.6;
     }
-    
+
     .black-out {
       display: block;
     }
@@ -200,11 +200,11 @@ transition: all 0.4s;
       /* display: block; */
       left: 10%;
     }
-    
+
     .popup-content{
       transform: translateY(30%);
     }
-    
+
     .popup-content ul li {
       font-size: 30px;
       list-style: none;
@@ -213,5 +213,5 @@ transition: all 0.4s;
     .popup-content ul li a {
       color: white;
     }
-    
+
 /* } */
