@@ -208,28 +208,18 @@
             </div>
           </div>
           <!-- 実際にPLAY -->
-          <div class="game-play-text">実際にPLAY↓↓↓</div>
+          <div class="game-play-text">実際にPLAY↓↓↓音あり</div>
           <!-- ブロック崩しコード -->
           <div class="block-breaking-wrapper">
-            <canvas class="canvas" id="myCanvas" width="480" height="320"> </canvas>
-            <form class="dialog" id="dialog1" name="dialog1">
-              <p class="dialog-text">GAME OVER...</p>
-              <p class="dialog-text">continue??</p>
-              <input class="button-text" type="button" name="yes" value="yes." />
-              <input class="button-text" type="button" name="no" value="no." />
-            </form>
-            <form class="dialog" id="dialog2" name="dialog2">
-              <p class="dialog-text">YOU WIN!!!</p>
-              <p class="dialog-text">continue??</p>
-              <input class="button-text" type="button" name="yes" value="yes." />
-              <input class="button-text" type="button" name="no" value="no." />
-            </form>
-            <form class="dialog-3" id="dialog3" name="dialog3">
-              <p class="dialog-text">GAME START!!!</p>
-              <p class="dialog-text">start???</p>
-              <input id="start" class="button-text" type="button" name="start" value="yes." />
-              <input id="none" class="button-text" type="button" name="none" value="no." />
-            </form>
+            <div class="breakout">
+              <header>BREAKOUT</header>
+              <canvas id="canvas" width="480" height="500"></canvas>
+              <a id="start" onclick="gameButton();startTimer()" class="btn-circle-border-double">START</a>
+              <audio id="soundBrick" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot01.mp3"       type="audio/mp3" preload="auto"></audio>
+              <audio id="soundBar"   src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot03.mp3"       type="audio/mp3" preload="auto"></audio>
+              <audio id="soundFail"  src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerdown02.mp3" type="audio/mp3" preload="auto"></audio>
+              <audio id="soundUp"    src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerup05.mp3"   type="audio/mp3" preload="auto"></audio>
+            </div>
           </div>
 
           <!-- 終わりの言葉 -->
@@ -237,7 +227,7 @@
             <div class="lineTrigger">
               <div class="line2">
                 <div class="game-title-ribbon">
-                  <h3 class="game-title-ribbon-text">Mini Game</h3>
+                  <h3 class="game-title-ribbon-text">Mini Game Ending</h3>
                 </div>
                 <div class="linein-appear">
                   <span class="linein-appear-text">
@@ -261,7 +251,6 @@
 
       <!-- ここまでゲーム -->
       <footer class="footer-wrapper">
-        aaa
       </footer>
 
     </div>

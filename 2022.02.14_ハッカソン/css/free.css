@@ -314,6 +314,10 @@ html {
 .gotop:hover {
   opacity: 1;
 }
+.footer-wrapper {
+  height: 30rem;
+  width: 100%;
+    }
 
 /* posse1へのリンク */
 

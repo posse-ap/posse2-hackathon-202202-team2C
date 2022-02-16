@@ -44,6 +44,7 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   color: #fff;
+  
 }
 
 .box1 {
@@ -78,12 +79,17 @@ body {
   width: 100%;
   height: auto;
 }
-
+.quiz-li {
+  font-family: 'DotGothic16', sans-serif;
+}
 .quiz-result {
   padding: 30px;
   border-radius: 5px;
   border: 1px solid #ebebeb;
   margin: 10px;text-align: center;
+}
+.quiz-result p {
+  font-family: 'DotGothic16', sans-serif;
 }
 
 .quiz-result-title {
@@ -94,7 +100,6 @@ body {
   padding-bottom: 3px;
   margin-bottom: 10px;
   display: inline-block;
-
 }
 
 .quiz-result p {
