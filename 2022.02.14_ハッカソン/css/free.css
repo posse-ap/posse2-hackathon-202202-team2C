@@ -239,10 +239,6 @@ li {
 }
 
 @media screen and (max-width: 700px) {
-  .popapp-wrapper {
-    display: none;
-  }
-
   .content {
     margin-top: 50%;
   }
@@ -319,14 +315,7 @@ html {
 
 @media (max-width: 750px) {
   .gotop {
-    width: 40px;
-    height: 40px;
-    text-indent: -9999px;
-    opacity: 1;
-    border: none;
-    background: none;
-    bottom: 10px;
-    right: 10px;
+   display: none;
   }
   .gotop::before {
     bottom: 0;
