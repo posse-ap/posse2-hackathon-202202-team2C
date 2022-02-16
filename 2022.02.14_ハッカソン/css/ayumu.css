@@ -1,5 +1,7 @@
 body {
-  overflow-y: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 /* スクロールみー非表示 */
@@ -25,7 +27,7 @@ body {
 }
 
 .border:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -86,7 +88,7 @@ body {
   content: attr(data-month);
   top: -10%;
   left: 5%;
-  font-family: 'Vibur', cursive;
+  font-family: "Vibur", cursive;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.599);
   z-index: 10000000;
@@ -97,7 +99,7 @@ body {
   content: attr(data-text);
   top: 110%;
   left: 0;
-  font-family: 'Kaisei Decol', serif;
+  font-family: "Kaisei Decol", serif;
   background: rgba(255, 255, 255, 0.188);
   font-size: 20px;
   padding: 10px;
@@ -109,12 +111,10 @@ body {
   opacity: 0.9;
 }
 
-
 /* POSSE１から独立し2の設立へ立ち上がった2期生！！！！ */
 #photoItem1 {
   margin-left: 20rem;
 }
-
 
 /* iPad対応レスポンシブデザイン */
 @media (max-width: 900px) {
