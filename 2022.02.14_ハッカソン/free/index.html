@@ -22,13 +22,80 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/toppage.css">
   <link rel="stylesheet" href="../css/neon.css">
-
+  <link rel="stylesheet" href="../css/Reheader.css">
 </head>
 
 <body>
 
-  <!-- ヘッダー -->
-  <header class="header">
+  <!-- posse1へのリンク -->
+  <a href="https://kohei23n.github.io/posse-1/toppage.html" class="posse1-link">
+    <div class="posse1-link-button">
+      <span class="posse1-link-text">
+        posse1のサイトに<br>
+        興味がある方は<br>
+        こちらをクリック！<br>
+      </span>
+    </div>
+  </a>
+  
+<!-- ヘッダー -->
+  <header id="header">
+
+    <div class="header-logo">
+      <img class="header-logo-img" src="../picture/8.png" alt="">
+    </div>
+
+
+        <!-- スマホのハンバーガー -->
+        <div class="hamburger" id="hamburger">
+          <span class="inner_line" id="line1"></span>
+          <span class="inner_line" id="line2"></span>
+          <span class="inner_line" id="line3"></span>
+        </div>
+
+        <!-- PC用のメニュー -->
+    <nav id="g-navi">
+      <ul class="header-nav-ul" id="headerUl">
+        <li class="header-nav-li">
+          <a href="../index.html">
+            <span class="header-home-logo"><b>Home</b></span>
+          </a>
+        </li>
+        <li class="header-nav-li">
+          <a href="../ayumi/index.html">
+            <span class="header-home-logo"><b>History</b></span>
+          </a>
+        </li>
+        <li class="header-nav-li"><a href="../miniGame/index.html">
+            <span class="header-nav-li-text">
+              <span class="header-home-logo"><b>MiniGame</b></span>
+          </a></li>
+        <li class="header-nav-li"><a href="index.html">
+            <span class="header-nav-li-text">
+              <span class="header-home-logo"><b>Interview</b></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="openbtn1"><span></span><span class="question-tex"></span><span></span></div>
+
+
+      <!-- スマホのときメニュー -->
+      <div class="popup-cover" id="popupCover"></div>
+      <div class="popup-content" id="navi">
+        <ul class="menu-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ayumi/index.html">History</a></li>
+          <li><a href="../miniGame/index.html">MiniGame</a></li>
+          <li><a href="index.html">Interview</a></li>
+        </ul>
+      </div>
+
+
+  <!-- <header class="header">
     <div class="header-logo">
       <img class="header-logo-img" src="../picture/8.png" alt="">
     </div>
@@ -55,7 +122,7 @@
         </li>
       </ul>
     </div>
-  </header>
+  </header> -->
 
   <div class="first-view">
 
@@ -204,6 +271,7 @@
   <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/js/4-14.js"></script>
   <script src="../js/free.js"></script>
   <script src="../js/common.js"></script>
+  <script src="../js/header.js"></script>
 
 </body>
 
