@@ -312,6 +312,34 @@ html {
 }
 
 /* posse1へのリンク */
+.POSSE1-button-container{
+  position: relative;
+}
+.POSSE1-button{
+  /* 　ボタンの外枠 */
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  border: solid 0.1px black;
+  /* 背景画像のデザイン */
+  background-image: url(../picture//posse1.png);
+  background-size: cover;
+  text-decoration: none;
+  opacity: 0.72;
+}
+​
+.guide-sentence{
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  /* 文字のデザイン*/
+  font-size: 1rem;
+  color: rgb(248, 245, 245);
+  text-shadow: 0 0 2px rgb(118, 223, 236), 0 0 12px rgb(8, 245, 245);
+  text-align: center;
+}
 
 @media (max-width: 750px) {
   .gotop {

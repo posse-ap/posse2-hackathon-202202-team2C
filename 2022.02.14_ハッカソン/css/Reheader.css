@@ -179,7 +179,7 @@
   align-items: center;
   text-align: center;
   /*はじめは透過0に*/
-  transform: translateX(-1000px);
+  transform: translateX(-2000px);
   transition: all 0.4s;
 }
 
